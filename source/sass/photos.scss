@@ -1,0 +1,86 @@
+.page-main__img-wrapper--photos-page {
+  
+}
+
+.photos__introduction {
+  min-height: 281px;
+}
+
+.introduction {
+  margin: 0;
+  padding: 0;
+}
+
+.photos-gallery {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.photos-gallery__photo {
+  width: 100%;
+  min-height: 413px;
+  padding: 22px 20px 22px 20px;
+}
+
+.photo-block {
+  margin: 0;
+}
+
+.photo-wrapper {
+  position: relative;
+  height: 280px;
+  width: 280px;
+  margin: 0 0 18px 0;
+  overflow-y: hidden;
+}
+
+.photo-block__img {
+  position: absolute;
+  width: 100%;
+  max-width: none;
+}
+
+
+.photo-block__additional {
+  margin: 0;
+  padding: 0;
+}
+
+
+.additional__photo-title {
+  display: block;
+  margin: 0 0 10px 0;
+  padding: 0;
+
+  @include photo-heading1-mobile();
+}
+
+
+.additional__photo-author {
+  display: block;
+  margin: 0 0 10px 0;
+  padding: 0;
+
+  @include photo-text-mobile();
+}
+
+.additional__photo-likes {
+  display: block;
+  position: relative;
+  margin: 0 0 0 38px;
+  padding: 0;
+
+  @include photo-heading1-mobile();
+}
+
+
+.additional__photo-likes::before {
+  position: absolute;
+  content: url("../img/like-icon.svg");
+  background-size: contain;
+  width: 32px;
+  height: 21px;
+  left: -16px;
+  top: -10px;
+}

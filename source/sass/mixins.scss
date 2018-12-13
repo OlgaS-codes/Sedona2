@@ -1,0 +1,47 @@
+@mixin heading_Text() {
+  font-size: 17px;
+  line-height: 1.5;
+  font-weight: bolder;
+  text-align: center;
+}
+
+
+@mixin content_Text() {
+  font-size: 15px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+@mixin primary_Text() {
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+@mixin table-heading1() {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1.238;
+}
+
+@mixin table-text() {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+@mixin photo-heading1-mobile() {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.238;
+}
+
+@mixin photo-text-mobile() {
+  font-size: 14px;
+  line-height: 1.857;
+}
+
+@mixin photo-heading2-mobile() {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1.238;
+}

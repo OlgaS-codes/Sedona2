@@ -1,0 +1,56 @@
+{
+  "name": "sedona2",
+  "version": "1.0.0",
+  "description": "Sedona",
+  "main": "index.js",
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
+    "test": "npm run editorconfig && npm run stylelint",
+    "build": "gulp build",
+    "start": "npm run build && gulp server"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ],
+  "editorconfig-cli": [
+    "*.json",
+    "*.js",
+    "source/*.html",
+    "source/js/**/*.js",
+    "source/img/**/*.svg",
+    "source/less/**/*.less"
+  ],
+  "engines": {
+    "node": "8.12"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "^1.0.0",
+    "browser-sync": "^2.26.3",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-cheerio": "^0.6.3",
+    "gulp-csso": "^3.0.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-posthtml": "^3.0.4",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-svgstore": "^7.0.0",
+    "gulp-uglify": "^3.0.1",
+    "gulp-webp": "^3.0.0",
+    "normalize-scss": "^7.0.1",
+    "pixel-glass": "^1.0.13",
+    "posthtml-include": "^1.2.0",
+    "run-sequence": "^2.2.1",
+    "stylelint": "^9.9.0",
+    "stylelint-config-htmlacademy": "^0.1.1"
+  },
+  "dependencies": {}
+}

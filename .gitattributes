@@ -1,0 +1,15 @@
+* text eol=lf
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.woff binary
+*.woff2 binary
+# это комментарий
+# звездочка - значит для всех
+# eol - end of line
+# core.eol = lf When Git needs to change line endings to write a file in your working directory it will always use LF to denote end of line.
+#Git’s primary solution to all this is to specify that LF is the best way to store line endings for text files in a Git repository’s object database. It doesn’t force this on you but most developers using Git and GitHub have adopted this as a convention and even our own help recommends setting up your config to do this.
+# binary значит -text -merge -diff
+
