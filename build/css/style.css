@@ -246,7 +246,6 @@
 
 /* ---------------------------------рассмотрим 5 причин по которым Седона круче чем Гранд Каньон*/
 .page-main__content-text {
-  min-width: 255px;
   display: block;
   color: #333333;
   font-size: 15px;
@@ -333,7 +332,7 @@
   .feature-picture__heading {
     display: block;
     margin: 0 0 10px 0;
-    padding: 0;
+    padding: 0 10px 0 7px;
     font-size: 21px;
     font-weight: bold;
     line-height: 1.238; }
@@ -468,9 +467,6 @@
     line-height: 1.5; } }
 
 /*---------------------------------------------------синий блок №2 */
-.feature-picture--right-align {
-  padding: 160px 0 0; }
-
 @media (min-width: 768px) {
   .feature-picture--right-align {
     -webkit-box-orient: horizontal;
@@ -534,7 +530,9 @@
   .feature-number__heading {
     margin: 0;
     margin-bottom: 13px;
-    padding: 0;
+    padding: 0 10px 0 10px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     font-size: 21px;
     font-weight: bold;
     line-height: 1.238; }
@@ -566,7 +564,7 @@
 
 /* -----------------------------заинтересовались и баттон найти гостинницу*/
 .page-main__hotel-search {
-  margin: 20px 12px 50px 12px; }
+  margin: 20px 20px 50px 20px; }
 
 .page-main__heading--search {
   display: block;
@@ -576,7 +574,7 @@
   font-size: 20px; }
 
 .hotel-search__content-text {
-  margin: 0 0 38px 0;
+  margin: 0 0 32px 0;
   font-size: 14px;
   line-height: 1.857;
   text-align: center; }
@@ -648,10 +646,30 @@
 .main-img--photos-page {
   max-width: 100%; }
 
+@media (min-width: 768px) {
+  .page-main__img-wrapper--photos-page {
+    max-height: 292px;
+    min-height: 292px;
+    margin: 0;
+    margin-bottom: 68px;
+    padding: 0;
+    max-width: 100%;
+    overflow: hidden; }
+  .heading--big-photo {
+    margin-bottom: 67px; } }
+
 .heading--big-photo {
   margin: 0;
   margin-bottom: 27px;
   padding: 0; }
+
+@media (min-width: 768px) {
+  .heading--big-photo {
+    margin: 0;
+    margin-bottom: 27px;
+    padding: 0;
+    font-size: 29px;
+    font-weight: 900; } }
 
 .photos__introduction {
   padding: 0 16px 12px 16px; }
@@ -659,17 +677,25 @@
 .introduction {
   margin: 0; }
 
+@media (min-width: 768px) {
+  .photos__introduction {
+    padding: 0 165px 54px 167px; }
+  .page-main__content-text--photo {
+    min-width: none; } }
+
 .photos-gallery {
   list-style: none;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 20px; }
 
 .photos-gallery__photo {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
   min-height: 413px;
-  padding: 22px 20px 22px 20px; }
+  padding: 22px 0 22px 0; }
 
 .photo-block {
   margin: 0; }
@@ -678,7 +704,7 @@
   position: relative;
   min-height: 280px;
   max-width: 280px;
-  margin: 0 0 18px 0;
+  margin: 0;
   overflow-y: hidden; }
 
 .photo-block__img {
@@ -688,7 +714,13 @@
 
 .photo-block__additional {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  padding-top: 18px;
+  background-color: #f2f2f2; }
+
+.additional__wrapper {
+  padding: 0;
+  margin: 0; }
 
 .additional__photo-title {
   display: block;
@@ -724,6 +756,60 @@
   left: -16px;
   top: -10px; }
 
+@media (min-width: 768px) {
+  .photos-gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0 60px 0 60px; }
+  .photos-gallery__photo {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 50%;
+    min-height: 343px;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .photo-wrapper {
+    min-height: 269px;
+    max-width: 100%; }
+  .photo-block--bright {
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+    min-height: 476px;
+    width: 100%;
+    overflow-y: hidden; }
+  .photo-wrapper--bright {
+    min-height: 402px; }
+  .photo-block__additional {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .additional__wrapper {
+    margin: 0;
+    margin-left: 21px;
+    padding: 0; }
+  .additional__photo-likes {
+    margin: 13px 30px 0 0; }
+  .additional__photo-likes::before {
+    left: -30px;
+    top: -8px; } }
+
 .video {
   min-height: 460px;
   margin: 0;
@@ -738,11 +824,33 @@
   font-weight: bold; }
 
 .content-text--video {
+  min-width: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0 34px 0 34px;
   font-size: 14px;
   line-height: 1.65; }
+
+@media (min-width: 768px) {
+  .video {
+    min-height: 746px;
+    margin: 0;
+    padding: 71px 60px 0 60px; }
+  .heading--video {
+    margin: 0;
+    margin-bottom: 27px;
+    padding: 0;
+    font-size: 30px; }
+  .content-text--video {
+    display: block;
+    min-width: 437px;
+    margin: 0 0 26px 0;
+    padding: 0 109px 0 107px;
+    font-size: 14px;
+    line-height: 1.65; }
+  video {
+    width: 647px;
+    height: 502px; } }
 
 body {
   min-width: 320px;
