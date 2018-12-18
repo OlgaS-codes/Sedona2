@@ -1,0 +1,78 @@
+/* ---------------------------------заголовок главной страницы*/
+/* СЕДОНА — НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!
+РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН! */
+
+.intro {
+  @include flex-center-center();
+  flex-direction: column;
+  color: rgb(0, 0, 0);
+}
+
+.intro__heading {
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 700;
+  text-align: center;
+}
+
+.intro__content-text {
+  font-weight: 400;
+  text-align: center;
+}
+
+/*-----------------------------------------------------Индекс-файл */
+.intro--index {
+  padding: 45px 33px 32px 33px;
+}
+
+@media (min-width: $tablet-width) {
+  .intro--index {
+    padding: 53px 139px 55px 139px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro--index {
+    padding: 134px 355px 56px 355px;
+  }
+}
+/*-----------------------------------------------------фото-файл */
+.intro--photo {
+  padding: 46px 24px 35px 28px;
+  border-bottom: 1px solid gray;
+}
+
+@media (min-width: $tablet-width) {
+  .intro--photo {
+    padding: 77px 171px 78px 171px;
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro--photo {
+    padding: 111px 388px 79px 388px;
+    border: none;
+  }
+}
+
+/*-----------------------------------------------------форма-файл */
+
+.intro--form {
+  padding: 41px 21px 21px 24px;
+  border-bottom: 1px solid gray;
+}
+
+@media (min-width: $tablet-width) {
+  .intro--form {
+    padding: 76px 165px 48px 165px;
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro--form {
+    padding: 111px 380px 37px 380px;
+    border: none;
+  }
+}

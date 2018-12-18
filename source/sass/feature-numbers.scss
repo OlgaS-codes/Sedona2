@@ -1,0 +1,90 @@
+/*--------------------------------------------------- блок фич с цифрами */
+.feature-numbers {
+  background-color: #eeeeee;
+}
+
+.feature-numbers__feature-number {
+  margin: 0;
+  padding: 24px 35px 15px 30px;
+}
+
+.feature-number__heading {
+  display: block;
+  margin: 0;
+  margin-bottom: 8px;
+  padding: 1px;
+
+  @include heading_Text();
+}
+
+.feature-number__number {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 8px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include primary_Text();
+}
+
+.feature-number__text {
+  @include primary_Text();
+  margin-right: auto;
+  margin-left: auto;
+  padding: 1px;
+  line-height: 1.5;
+}
+
+@media (min-width: $tablet-width) {
+  .features-list__feature-numbers {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+  }
+
+  .feature-numbers__feature-number {
+    margin: 0;
+    padding: 42px 46px 46px 46px;
+  }
+
+  .feature-number__heading {
+    margin: 0;
+    margin-bottom: 13px;
+    padding: 0 10px 0 10px;
+    box-sizing: border-box;
+
+    @include table-heading1();
+  }
+
+  .feature-number__number {
+    margin-bottom: 19px;
+  }
+
+  .feature-number__text {
+    margin: 0 auto;
+    padding: 0;
+
+    @include table-text();
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .features-list__feature-numbers {
+    display: flex;
+    flex-direction: row;
+    min-height: 254px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .feature-numbers__feature-number {
+    margin: 0;
+    padding: 42px 80px 46px 80px;
+  }
+
+  .feature-number__heading {
+    margin: 0 50px 13px 50px;
+  }
+}

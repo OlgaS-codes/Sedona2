@@ -1,0 +1,121 @@
+/* -------------------------------первый синий блок с картинкой*/
+.features-list__feature-picture {
+  background-color: #81b3d2;
+}
+
+.feature-picture {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+
+  &__content-text {
+    @include flex-center-center();
+    flex-direction: column;
+    padding: 60px 28px 46px 28px;
+  }
+
+  &__heading {
+    @include heading_Text();
+  }
+
+  &__number {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    @include primary_Text();
+  }
+
+  &__text {
+
+    margin-top: 0;
+    margin-bottom: 0;
+
+    @include primary_Text();
+  }
+
+  &__wrapper {
+    min-height: 260px;
+    margin-bottom: 0;
+  }
+
+  &__image {
+    display: block;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .feature-picture {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .feature-picture__content-text {
+    max-width: 257px;
+    box-sizing: border-box;
+    justify-content: center;
+    padding: 45px 46px 40px 44px;
+  }
+
+  .feature-picture__heading {
+    display: block;
+    margin: 0 0 10px 0;
+    padding: 0 10px 0 7px;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.238;
+  }
+
+  .feature-picture__number {
+    display: block;
+    margin: 0 0 22px 0;
+    padding: 0;
+  }
+
+  .feature-picture__text {
+    display: block;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .feature-picture__wrapper {
+    position: relative;
+    flex-grow: 1;
+    overflow-y: hidden;
+    min-height: 257px;
+  }
+
+  .feature-picture__image {
+    position: absolute;
+    width: 100%;
+    max-width: none;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .feature-picture__content-text {
+    max-width: 33.333%;
+    box-sizing: border-box;
+    justify-content: center;
+    padding: 53px 67px 57px 61px;
+  }
+
+  .feature-picture__heading {
+    display: block;
+    margin: 0 28px 10px;
+  }
+}
+
+/*---------------------------------------------------синий блок №2 */
+
+@media (min-width: $tablet-width) {
+  .feature-picture--right-align {
+    flex-direction: row-reverse;
+    margin: 0;
+    padding: 0;
+  }
+}

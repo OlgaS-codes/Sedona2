@@ -1,0 +1,131 @@
+/*-------------------------------------Картинка с каньоном на главной странице */
+
+
+.page-main__img-top {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/background-main.jpg");
+  background-repeat: no-repeat;
+}
+
+/*-------------------------------------Индекс-файл */
+.img-top--index {
+  padding-top: 91px;
+  padding-bottom: 86px;
+  background-position-x: -440px;
+  background-position-y: -35px;
+}
+
+.img-top--index__svg {
+  width: 280px;
+  height: 214px;
+}
+
+@media (min-width: $tablet-width) {
+  .img-top--index {
+    padding-top: 77px;
+    padding-bottom: 92px;
+    background-position-x: -222px;
+    background-position-y: -1px;
+  }
+
+  .img-top--index__svg {
+    width: 460px;
+    height: 350px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .img-top--index {
+    padding-top: 80px;
+    padding-bottom: 91px;
+    background-position-x: left;
+    background-position-y: bottom;
+  }
+}
+
+/*-------------------------------------Фото-файл */
+.img-top--photo {
+  padding-top: 53px;
+  padding-bottom: 67px;
+  background-position-x: -439px;
+  background-position-y: -314px;
+}
+
+.img-top--photo__svg {
+  width: 229px;
+  height: 39px;
+}
+
+@media (min-width: $tablet-width) {
+  .img-top--photo {
+    padding-top: 104px;
+    padding-bottom: 117px;
+    background-position-x: -167px;
+    background-position-y: -203px;
+  }
+
+  .img-top--photo__svg {
+    width: 458px;
+    height: 78px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .img-top--photo {
+    padding-top: 103px;
+    padding-bottom: 120px;
+    background-position-x: 0;
+    background-position-y: -207px;
+  }
+
+  .img-top--photo__svg {
+    width: 461px;
+    height: 80px;
+  }
+}
+
+/*-------------------------------------Форма-файл */
+.img-top--form {
+  padding-top: 51px;
+  padding-bottom: 69px;
+  background-position-x: -439px;
+  background-position-y: -314px;
+}
+
+.img-top--form__svg {
+  width: 229px;
+  height: 39px;
+}
+
+@media (min-width: $tablet-width) {
+  .img-top--form {
+    padding-top: 97px;
+    padding-bottom: 117px;
+    background-position-x: -167px;
+    background-position-y: -203px;
+  }
+
+  .img-top--form__svg {
+    width: 458px;
+    height: 78px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .img-top--form {
+    padding-top: 101px;
+    padding-bottom: 119px;
+    background-position-x: 0;
+    background-position-y: -207px;
+  }
+
+  .img-top--form__svg {
+    width: 461px;
+    height: 80px;
+  }
+}

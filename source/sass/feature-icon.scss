@@ -1,0 +1,179 @@
+/* --------------------------------------------------------------блок фич с иконками*/
+.features-list__feature-icons {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 43px 41px 44px 70px;
+}
+
+.feature-icons__feature-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+  margin: 0;
+  font-size: 15px;
+}
+
+@media (max-width: $mobile-width-only) {
+  .feature-icons__feature-icon:not(:last-child) {
+    margin-bottom: 41px;
+  }
+}
+
+
+.feature-icon {
+  &__heading {
+    position: relative;
+    margin: 0;
+    margin-bottom: 11px;
+    text-align: left;
+    font-weight: 700;
+  }
+
+  &__heading--house::before {
+    position: absolute;
+    content: " ";
+    width: 39px;
+    height: 37px;
+    background-image: url("../img/icon-house.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: -44px;
+    top: -10px;
+  }
+
+  &__heading--food::before {
+    position: absolute;
+    content: " ";
+    width: 39px;
+    height: 38px;
+    background-image: url("../img/icon-burger.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: -44px;
+    top: -10px;
+  }
+
+  &__heading--souvenirs::before {
+    position: absolute;
+    content: " ";
+    width: 39px;
+    height: 35px;
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: -44px;
+    top: -10px;
+  }
+
+  &__text {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+  }
+}
+
+/* ------------------------------------------таблет*/
+@media (min-width: $tablet-width) {
+  .features-list__feature-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    padding: 165px 0 43px 0;
+    margin: 0;
+  }
+
+  .feature-icon--house {
+    order: 1;
+  }
+
+  .feature-icon--food {
+    order: 2;
+  }
+
+  .feature-icon--souvenirs {
+    order: 3;
+  }
+
+  .feature-icons__feature-icon {
+    margin: 0;
+    padding: 0 46px 0 46px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .feature-icon__heading {
+    margin-bottom: 21px;
+    padding: 0;
+    text-align: center;
+  }
+
+  .feature-icon__heading--house::before {
+    width: 75px;
+    height: 62px;
+    left: 57px;
+    top: -79px;
+  }
+
+  .feature-icon__heading--food::before {
+    width: 77px;
+    height: 68px;
+    left: 57px;
+    top: -79px;
+  }
+
+  .feature-icon__heading--souvenirs::before {
+    width: 64px;
+    height: 75px;
+    left: 57px;
+    top: -79px;
+  }
+
+  .feature-icon__text {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+}
+
+/* ------------------------------------------десктоп*/
+@media (min-width: $desktop-width) {
+  .features-list__feature-icons {
+    padding-top: 163px;
+    padding-bottom: 88px;
+  }
+
+  .feature-icons__feature-icon {
+    padding: 0 60px 0 60px;
+  }
+
+  .feature-icon__heading {
+    margin-bottom: 22px;
+  }
+
+  .feature-icon__heading--house::before {
+    width: 75px;
+    height: 72px;
+    left: 110px;
+    top: -116px;
+  }
+
+  .feature-icon__heading--food::before {
+    left: 110px;
+    top: -116px;
+  }
+
+  .feature-icon__heading--souvenirs::before {
+    left: 110px;
+    top: -116px;
+  }
+
+  .feature-icon__text {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+}
