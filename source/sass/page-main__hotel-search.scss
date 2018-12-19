@@ -1,7 +1,7 @@
 /* -----------------------------заинтересовались и баттон найти гостинницу*/
 .page-main__hotel-search {
   margin: 0;
-  padding: 68px 15px 48px 14px;
+  padding: 33px 15px 48px 14px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,11 +10,14 @@
 .page-main__heading--search {
   margin: 0;
   margin-bottom: 18px;
+  padding: 0;
   text-align: center;
   font-size: 20px;
 }
 
 .hotel-search__content-text {
+  margin: 0;
+  padding: 0;
   margin-bottom: 32px;
   font-size: 14px;
   line-height: 1.8;
@@ -23,54 +26,40 @@
 
 .button {
   display: block;
-  padding: 15px 44px 18px 45px;
+  padding: 15px 44px 18px 38px;
   background-color: #81b3d2;
   font-size: 21px;
-  font-weight: bolder;
+  line-height: 26px;
+  font-weight: 700;
   color: #ffffff;
   text-decoration: none;
 }
 
 @media (min-width: $tablet-width) {
   .page-main__hotel-search {
-    margin: 0;
-    padding: 46px 156px 58px 155px;
+    padding: 57px 155px 57px 155px;
   }
 
   .page-main__heading--search {
-    display: block;
-    margin: 0;
     margin-bottom: 29px;
-    padding: 0;
-    text-align: center;
     font-size: 30px;
   }
 
   .hotel-search__content-text {
     @include table-text();
-    margin: 0;
     margin-bottom: 46px;
-    padding: 0;
   }
 
   .button {
-    display: block;
-    padding: 15px 133px 18px 133px;
-    background-color: #81b3d2;
-    font-size: 21px;
-    line-height: 1.238;
-    font-weight: bolder;
-    color: #ffffff;
-    text-decoration: none;
+    padding: 15px 115px 18px 115px;
+    line-height: 1.2;
   }
 }
 
 
 @media (min-width: $desktop-width) {
   .page-main__hotel-search {
-    margin: 0;
     padding: 48px 374px 67px 374px;
-    max-width: 460px;
   }
 
   .hotel-search__content-text {
@@ -78,17 +67,13 @@
   }
 
   .button {
-    padding: 15px 130px 18px 130px;
+    padding: 15px 115px 18px 115px;
   }
 }
 
 .page-main__map-image {
   width: 100%;
   min-height: 350px;
-  background-position: 50% 100%;
-  background-repeat: no-repeat;
+  margin: 0;
 }
 
-.map-image {
-  margin: 0 0 31px 0;
-}

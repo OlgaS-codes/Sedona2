@@ -1,22 +1,29 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding-top: 38px;
+}
+
+.footer__col {
+  margin: 0;
+  padding: 0;
+}
+
+
+.footer__col:not(:last-child) {
+  margin-bottom: 40px;
+}
+
 .hash-tag__link {
-  display: block;
   text-align: center;
   text-decoration: none;
   color: #333333;
   font-size: 21px;
-  font-weight: bold;
-  line-height: 1.238;
-}
-
-.hash-tag {
-  margin: 0px 0px 32px 0px;
-}
-
-.footer__social {
-  margin: 0 auto 25px auto;
-  padding: 0;
-  display: flex;
-  justify-content: center;
+  font-weight: 700;
+  line-height: 1.2;
 }
 
 .social__social__list {
@@ -35,7 +42,6 @@
   padding: 0;
   background-color: #81b3d2;
   margin: 3px;
-  background-image: url("../img/icon-twitter-mobile.svg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-origin: padding-box;
@@ -53,20 +59,6 @@
   }
 }
 
-.social__link__span {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .developed {
   display: flex;
   flex-wrap: nowrap;
@@ -79,31 +71,26 @@
     text-align: center;
     display: flex;
   }
+
+  &__image {
+    margin-left: 12px;
+  }
 }
 
-
+/*-------------------------------таблет  */
 @media (min-width: $tablet-width) {
-  .footer{
-    min-height: 121px;
-    display: flex;
+  .footer {
     flex-direction: row;
+    padding-top: 34px;
   }
 
-  .footer__hash-tag {
-    display: inline-block;
-    width: 33.333%;
-    text-align: center;
+  .footer__col {
+    width: 33%;
+
+    @include flex-center-center();
   }
 
-  .footer__social{
-    display: inline-block;
-    width: 33.333%;
-    text-align: center;
+  .developed {
+    align-self: baseline;
   }
-  .footer__developed {
-    display: inline-block;
-    width: 33.333%;
-    text-align: center;
-  }
-
 }

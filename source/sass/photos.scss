@@ -1,110 +1,25 @@
-.page-main__img-wrapper--photos-page {
-  max-height: 160px;
-  min-height: 160px;
-  margin: 0;
-  margin-bottom: 37px;
-  padding: 0;
-  max-width: 100%;
-  overflow: hidden;
-}
-
-.main-img--photos-page {
-  max-width: 100%;
-}
-
-
-@media (min-width: $tablet-width) {
-  .page-main__img-wrapper--photos-page {
-    max-height: 292px;
-    min-height: 292px;
-    margin: 0;
-    margin-bottom: 68px;
-    padding: 0;
-    max-width: 100%;
-    overflow: hidden;
-  }
-}
-
-
-@media (min-width: $desktop-width) {
-  .page-main__img-wrapper--photos-page {
-    max-height: 302px;
-    min-height: 302px;
-    margin-bottom: 108px;
-  }
-}
-
-.heading--big-photo {
-  margin: 0;
-  margin-bottom: 27px;
-  padding: 0;
-}
-
-@media (min-width: $tablet-width) {
-  .heading--big-photo {
-    margin: 0;
-    margin-bottom: 27px;
-    padding: 0;
-    font-size: 29px;
-    font-weight: 900;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .heading--big-photo {
-    margin-bottom: 24px;
-  }
-}
-
-.photos__introduction {
-  padding: 0 16px 12px 16px;
-}
-
-.introduction {
-  margin: 0;
-}
-
-@media (min-width: $tablet-width) {
-  .photos__introduction {
-    padding: 0 165px 54px 167px;
-  }
-
-  .page-main__content-text--photo {
-    min-width: none;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .photos__introduction {
-    padding: 0 370px 56px 384px;
-  }
-
-  .page-main__content-text--photo {
-    min-width: 455px;
-  }
-}
-
 .photos-gallery {
   list-style: none;
   margin: 0;
   padding: 0;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .photos-gallery__photo {
   box-sizing: border-box;
   width: 100%;
   min-height: 413px;
-  padding: 22px 0 22px 0;
-}
-
-.photo-block {
+  padding: 22px 20px 22px 20px;
   margin: 0;
 }
 
+
+@media (max-width: $mobile-width-only) {
+  .photos-gallery__photo {
+    border-bottom: 1px solid rgba(grey, 0.5);
+  }
+}
+
 .photo-wrapper {
-  position: relative;
   min-height: 280px;
   max-width: 280px;
   margin: 0;
@@ -112,7 +27,6 @@
 }
 
 .photo-block__img {
-  position: absolute;
   width: 100%;
   max-width: none;
 }
@@ -122,7 +36,6 @@
   margin: 0;
   padding: 0;
   padding-top: 18px;
-  background-color: #f2f2f2;
 }
 
 .additional__wrapper {
@@ -159,12 +72,14 @@
 
 .additional__photo-likes::before {
   position: absolute;
-  content: url("../img/like-icon.svg");
+  content: " ";
+  background-image: url("../img/like-icon.svg");
   background-size: contain;
+  background-repeat: no-repeat;
   width: 32px;
   height: 21px;
-  left: -16px;
-  top: -10px;
+  left: -37px;
+  top: -6px;
 }
 
 @media (min-width: $tablet-width) {
@@ -183,7 +98,7 @@
   }
 
   .photo-wrapper {
-    min-height: 269px;
+    max-height: 269px;
     max-width: 100%;
   }
 
@@ -195,13 +110,14 @@
   }
 
   .photo-wrapper--bright {
-    min-height: 402px;
+    max-height: 400px;
   }
 
   .photo-block__additional {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background-color: #f2f2f2;
   }
 
   .additional__wrapper {
@@ -211,12 +127,16 @@
   }
 
   .additional__photo-likes {
-    margin: 13px 30px 0 0;
+    margin: 13px 30px 0 0; // спросить у Ксении, как выровнять его по другому, тк через align-self ничего не выравнивается
   }
 
   .additional__photo-likes::before {
     left: -30px;
     top: -8px;
+  }
+
+  .video__video {
+    max-height: 268px;
   }
 }
 
@@ -249,10 +169,13 @@
 }
 
 .video {
-  min-height: 460px;
+  // min-height: 460px;
   margin: 0;
   padding: 32px 0 0 0;
-  margin-bottom: 43px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .heading--video {
@@ -272,12 +195,15 @@
   line-height: 1.65;
 }
 
+.video__video {
+  min-height: 268px;
+}
 
 @media (min-width: $tablet-width) {
   .video {
-    min-height: 746px;
+    // min-height: 746px;
     margin: 0;
-    padding: 71px 60px 0 60px;
+    padding: 71px 0 0 60px;
   }
 
   .heading--video {

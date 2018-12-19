@@ -706,7 +706,7 @@
 /* -----------------------------заинтересовались и баттон найти гостинницу*/
 .page-main__hotel-search {
   margin: 0;
-  padding: 68px 15px 48px 14px;
+  padding: 33px 15px 48px 14px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -721,10 +721,13 @@
 .page-main__heading--search {
   margin: 0;
   margin-bottom: 18px;
+  padding: 0;
   text-align: center;
   font-size: 20px; }
 
 .hotel-search__content-text {
+  margin: 0;
+  padding: 0;
   margin-bottom: 32px;
   font-size: 14px;
   line-height: 1.8;
@@ -732,80 +735,72 @@
 
 .button {
   display: block;
-  padding: 15px 44px 18px 45px;
+  padding: 15px 44px 18px 38px;
   background-color: #81b3d2;
   font-size: 21px;
-  font-weight: bolder;
+  line-height: 26px;
+  font-weight: 700;
   color: #ffffff;
   text-decoration: none; }
 
 @media (min-width: 768px) {
   .page-main__hotel-search {
-    margin: 0;
-    padding: 46px 156px 58px 155px; }
+    padding: 57px 155px 57px 155px; }
   .page-main__heading--search {
-    display: block;
-    margin: 0;
     margin-bottom: 29px;
-    padding: 0;
-    text-align: center;
     font-size: 30px; }
   .hotel-search__content-text {
     font-size: 14px;
     line-height: 1.5;
-    margin: 0;
-    margin-bottom: 46px;
-    padding: 0; }
+    margin-bottom: 46px; }
   .button {
-    display: block;
-    padding: 15px 133px 18px 133px;
-    background-color: #81b3d2;
-    font-size: 21px;
-    line-height: 1.238;
-    font-weight: bolder;
-    color: #ffffff;
-    text-decoration: none; } }
+    padding: 15px 115px 18px 115px;
+    line-height: 1.2; } }
 
 @media (min-width: 1200px) {
   .page-main__hotel-search {
-    margin: 0;
-    padding: 48px 374px 67px 374px;
-    max-width: 460px; }
+    padding: 48px 374px 67px 374px; }
   .hotel-search__content-text {
     margin-bottom: 50px; }
   .button {
-    padding: 15px 130px 18px 130px; } }
+    padding: 15px 115px 18px 115px; } }
 
 .page-main__map-image {
   width: 100%;
   min-height: 350px;
-  background-position: 50% 100%;
-  background-repeat: no-repeat; }
+  margin: 0; }
 
-.map-image {
-  margin: 0 0 31px 0; }
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding-top: 38px; }
+
+.footer__col {
+  margin: 0;
+  padding: 0; }
+
+.footer__col:not(:last-child) {
+  margin-bottom: 40px; }
 
 .hash-tag__link {
-  display: block;
   text-align: center;
   text-decoration: none;
   color: #333333;
   font-size: 21px;
-  font-weight: bold;
-  line-height: 1.238; }
-
-.hash-tag {
-  margin: 0px 0px 32px 0px; }
-
-.footer__social {
-  margin: 0 auto 25px auto;
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  font-weight: 700;
+  line-height: 1.2; }
 
 .social__social__list {
   margin: 0;
@@ -828,7 +823,6 @@
   padding: 0;
   background-color: #81b3d2;
   margin: 3px;
-  background-image: url("../img/icon-twitter-mobile.svg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-origin: padding-box; }
@@ -838,19 +832,6 @@
     background-image: url("../img/icon-facebook-mobile.svg"); }
   .social__link--yt {
     background-image: url("../img/icon-youtube-mobile.svg"); }
-
-.social__link__span {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden; }
 
 .developed {
   display: -webkit-box;
@@ -869,29 +850,31 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+  .developed__image {
+    margin-left: 12px; }
 
+/*-------------------------------таблет  */
 @media (min-width: 768px) {
   .footer {
-    min-height: 121px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
-            flex-direction: row; }
-  .footer__hash-tag {
-    display: inline-block;
-    width: 33.333%;
-    text-align: center; }
-  .footer__social {
-    display: inline-block;
-    width: 33.333%;
-    text-align: center; }
-  .footer__developed {
-    display: inline-block;
-    width: 33.333%;
-    text-align: center; } }
+            flex-direction: row;
+    padding-top: 34px; }
+  .footer__col {
+    width: 33%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .developed {
+    -ms-flex-item-align: baseline;
+        align-self: baseline; } }
 
 /* ---------------------------------рассмотрим 5 причин по которым Седона круче чем Гранд Каньон*/
 .page-main__content-text {
@@ -919,103 +902,37 @@
     display: block;
     color: black; } }
 
-.page-main__img-wrapper--photos-page {
-  max-height: 160px;
-  min-height: 160px;
-  margin: 0;
-  margin-bottom: 37px;
-  padding: 0;
-  max-width: 100%;
-  overflow: hidden; }
-
-.main-img--photos-page {
-  max-width: 100%; }
-
-@media (min-width: 768px) {
-  .page-main__img-wrapper--photos-page {
-    max-height: 292px;
-    min-height: 292px;
-    margin: 0;
-    margin-bottom: 68px;
-    padding: 0;
-    max-width: 100%;
-    overflow: hidden; } }
-
-@media (min-width: 1200px) {
-  .page-main__img-wrapper--photos-page {
-    max-height: 302px;
-    min-height: 302px;
-    margin-bottom: 108px; } }
-
-.heading--big-photo {
-  margin: 0;
-  margin-bottom: 27px;
-  padding: 0; }
-
-@media (min-width: 768px) {
-  .heading--big-photo {
-    margin: 0;
-    margin-bottom: 27px;
-    padding: 0;
-    font-size: 29px;
-    font-weight: 900; } }
-
-@media (min-width: 1200px) {
-  .heading--big-photo {
-    margin-bottom: 24px; } }
-
-.photos__introduction {
-  padding: 0 16px 12px 16px; }
-
-.introduction {
-  margin: 0; }
-
-@media (min-width: 768px) {
-  .photos__introduction {
-    padding: 0 165px 54px 167px; }
-  .page-main__content-text--photo {
-    min-width: none; } }
-
-@media (min-width: 1200px) {
-  .photos__introduction {
-    padding: 0 370px 56px 384px; }
-  .page-main__content-text--photo {
-    min-width: 455px; } }
-
 .photos-gallery {
   list-style: none;
   margin: 0;
-  padding: 0;
-  padding-left: 20px;
-  padding-right: 20px; }
+  padding: 0; }
 
 .photos-gallery__photo {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
   min-height: 413px;
-  padding: 22px 0 22px 0; }
-
-.photo-block {
+  padding: 22px 20px 22px 20px;
   margin: 0; }
 
+@media (max-width: 767px) {
+  .photos-gallery__photo {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5); } }
+
 .photo-wrapper {
-  position: relative;
   min-height: 280px;
   max-width: 280px;
   margin: 0;
   overflow-y: hidden; }
 
 .photo-block__img {
-  position: absolute;
   width: 100%;
   max-width: none; }
 
 .photo-block__additional {
   margin: 0;
   padding: 0;
-  padding-top: 18px;
-  background-color: #f2f2f2; }
+  padding-top: 18px; }
 
 .additional__wrapper {
   padding: 0;
@@ -1048,12 +965,14 @@
 
 .additional__photo-likes::before {
   position: absolute;
-  content: url("../img/like-icon.svg");
+  content: " ";
+  background-image: url("../img/like-icon.svg");
   background-size: contain;
+  background-repeat: no-repeat;
   width: 32px;
   height: 21px;
-  left: -16px;
-  top: -10px; }
+  left: -37px;
+  top: -6px; }
 
 @media (min-width: 768px) {
   .photos-gallery {
@@ -1075,7 +994,7 @@
         -ms-flex-direction: column;
             flex-direction: column; }
   .photo-wrapper {
-    min-height: 269px;
+    max-height: 269px;
     max-width: 100%; }
   .photo-block--bright {
     -webkit-box-flex: 2;
@@ -1085,7 +1004,7 @@
     width: 100%;
     overflow-y: hidden; }
   .photo-wrapper--bright {
-    min-height: 402px; }
+    max-height: 400px; }
   .photo-block__additional {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1096,7 +1015,8 @@
             flex-direction: row;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between; }
+            justify-content: space-between;
+    background-color: #f2f2f2; }
   .additional__wrapper {
     margin: 0;
     margin-left: 21px;
@@ -1105,7 +1025,9 @@
     margin: 13px 30px 0 0; }
   .additional__photo-likes::before {
     left: -30px;
-    top: -8px; } }
+    top: -8px; }
+  .video__video {
+    max-height: 268px; } }
 
 @media (min-width: 1200px) {
   .photos-gallery {
@@ -1127,10 +1049,21 @@
     background-color: rgba(0, 0, 0, 0.5); } }
 
 .video {
-  min-height: 460px;
   margin: 0;
   padding: 32px 0 0 0;
-  margin-bottom: 43px; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .heading--video {
   margin: 0;
@@ -1147,11 +1080,13 @@
   font-size: 14px;
   line-height: 1.65; }
 
+.video__video {
+  min-height: 268px; }
+
 @media (min-width: 768px) {
   .video {
-    min-height: 746px;
     margin: 0;
-    padding: 71px 60px 0 60px; }
+    padding: 71px 0 0 60px; }
   .heading--video {
     margin: 0;
     margin-bottom: 27px;
