@@ -82,45 +82,45 @@
       <form class="form__review" action="/action_page.php" method="get">
         <div class="review review__name">
           <h3 class="review__heading">Представьтесь:</h3>
-          <label for="firstName" class="review__label">Имя*</label>
-          <input type="text" id="firstName" name="firstName">
-          <label for="secondName" class="review__label">Фамилия*</label>
-          <input type="text" id="secondName" name="secondName">
-          <label for="fathersName" class="review__label">Отчество</label>
-          <input type="text" id="fathersName" name="fathersName">
+          <label for="firstName" class="review__label label label--name">Имя*
+          <input type="text" id="firstName" name="firstName" placeholder="Петр"></label>
+          <label for="secondName" class="review__label label label--name">Фамилия*
+          <input type="text" id="secondName" name="secondName" placeholder="Иванов"></label>
+          <label for="fathersName" class="review__label label label--name">Отчество
+          <input type="text" id="fathersName" name="fathersName" placeholder="Александрович"></label>
         </div>
         <div class="review review__contact-ifo">
           <h3 class="review__heading">Контактная информация:</h3>
-          <label for="phoneNumber" class="review__label">Телефон*:</label>
+          <label for="phoneNumber" class="review__label label">Телефон*:</label>
           <input id="phoneNumber" name="phoneNumber" type="tel" placeholder="Введите телефон">
-          <label for="emailAddress" class="review__label">Электронная почта*:</label>
+          <label for="emailAddress" class="review__label label">Электронная почта*:</label>
           <input id="emailAddress" name="emailAddress" type="email" placeholder="Введите e-mail">
         </div>
         <div class="review review__impression">
           <h3 class="review__heading">Ваше общее впечатление:</h3>
           <input type="radio" id="goodImpression" name="impression" value="goodImpression">
-          <label for="goodImpression" class="review__label--bold">Скорее положительное</label>
+          <label for="goodImpression" class=" review__label label--bold">Скорее положительное</label>
 
           <input type="radio" id="badImpression" name="impression" value="badImpression">
-          <label for="badImpression" class="review__label--bold">Скорее отрицательное</label>
+          <label for="badImpression" class="review__label label label--bold">Скорее отрицательное</label>
 
           <input type="radio" id="uncertainImpression" name="impression" value="uncertainImpression">
-          <label for="uncertainImpression" class="review__label--bold">Затрудняюсь ответить</label>
+          <label for="uncertainImpression" class="review__label label label--bold">Затрудняюсь ответить</label>
         </div>
         <div class="review review__visitedPlaces">
           <h3 class="review__heading">Посещенные достопримечательности:</h3>
           <input type="checkbox" id="devilsBridge" name="devilsBridge" checked>
-          <label for="devilsBridge" class="review__label--bold">Мост дъявола</label>
+          <label for="devilsBridge" class="review__label label--bold">Мост дъявола</label>
           <input type="checkbox" id="bellRock" name="bellRock" checked>
-          <label for="bellRock" class="review__label--bold">Гора-Колокол</label>
+          <label for="bellRock" class="review__label label--bold">Гора-Колокол</label>
           <input type="checkbox" id="slidePark" name="slidePark" checked>
-          <label for="slidePark" class="review__label--bold">Слайд-парк</label>
+          <label for="slidePark" class="review__label label--bold">Слайд-парк</label>
           <input type="checkbox" id="redRock" name="redRock">
-          <label for="redRock" class="review__label--bold">Слайд-парк</label>
+          <label for="redRock" class="review__label label--bold">Слайд-парк</label>
         </div>
         <div class="review review__description">
           <h3 class="review__heading">Опишите свои эмоции</h3>
-          <textarea rows="10" cols="30" name="text" placeholder="Опишите подробно все свои восторги" class="review__label--bold"></textarea>
+          <textarea rows="10" cols="30" name="text" placeholder="Опишите подробно все свои восторги" class="review__label label--bold"></textarea>
           <button class="button modal-form-button" type="submit" value="Отправить">Отправить отзыв</button>
           <p class="review--label">* — обязательные поля</p>
         </div>
