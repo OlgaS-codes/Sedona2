@@ -1,72 +1,21 @@
 @import "../node_modules/normalize.css/normalize.css";
 @import "fonts.scss";
-@import "variables.scss";
-@import "mixins.scss";
-@import "header.scss";
-@import "main-navigation.scss";
-@import "page-main-img.scss";
-@import "intro.scss";
-@import "features-list.scss";
-@import "feature-picture.scss";
-@import "feature-icon.scss";
-@import "feature-numbers.scss";
-@import "page-main__hotel-search.scss";
-@import "footer.scss";
-@import "page-main.scss";
-@import "photos.scss";
-@import "form.scss";
+@import "common/variables.scss";
+@import "common/mixins.scss";
+@import "layout.scss";
+@import "blocks/header.scss";
+@import "blocks/main-navigation.scss";
+@import "blocks/page-main-img.scss";
+@import "blocks/intro.scss";
+@import "blocks/features-list.scss";
+@import "blocks/feature-picture.scss";
+@import "blocks/feature-icon.scss";
+@import "blocks/feature-numbers.scss";
+@import "blocks/page-main__hotel-search.scss";
+@import "blocks/footer.scss";
+@import "blocks/page-main.scss";
+@import "blocks/photos.scss";
+@import "blocks/video.scss";
+@import "blocks/form.scss";
+@import "blocks/review.scss";
 
-
-body {
-  min-width: 320px;
-  margin: 0 auto;
-  padding: 0;
-  background-color: $light-grey;
-  font-family: "PT Sans", "Arial", sans-serif;
-  text-transform: uppercase;
-  box-sizing: border-box;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  line-height: 0;
-}
-
-.main-wrapper {
-  min-width: 320px;
-  max-width: 1200px;
-  background-color: $white;
-  margin: 0 auto;
-  padding: 0;
-  box-shadow: 1px 0 18px 1px rgba(0, 0, 0, 0.75);
-}
-
-.visually-hidden:not(:focus):not(:active) {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-@media (min-width: $tablet-width) {
-  .main-wrapper {
-    min-width: $tablet-width;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .main-wrapper {
-    min-width: $desktop-width;
-  }
-}

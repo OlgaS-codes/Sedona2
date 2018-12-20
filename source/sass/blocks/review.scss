@@ -1,0 +1,48 @@
+.review {
+  border-bottom: 1px solid rgba(grey, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex-wrap: wrap;
+  padding: 25px 20px 24px 20px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .review__name {
+    order: 2;
+  }
+
+  .review__contact-ifo {
+    order: 3;
+  }
+
+  .review__impression {
+    order: 1;
+  }
+
+  .review__visitedPlaces {
+    order: 4;
+  }
+
+  .review__description {
+    order: 5;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review__contact-ifo {
+    flex-grow: 2;
+    width: 100%;
+  }
+
+  .review__visitedPlaces {
+    flex-grow: 2;
+    width: 100%;
+  }
+
+  .review__description {
+    flex-grow: 2;
+    width: 100%;
+  }
+}
