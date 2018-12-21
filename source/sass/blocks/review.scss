@@ -2,11 +2,129 @@
   border-bottom: 1px solid rgba(grey, 0.5);
   display: flex;
   flex-direction: column;
-  align-items: stretch;
   flex-wrap: wrap;
   padding: 25px 20px 24px 20px;
 }
 
+
+// .review__name input,
+// .review__name input::placeholder {
+//   font-family: "PT Sans", "Arial", sans-serif;
+//   color: #000000;
+//   text-transform: none;
+//   font-weight: 700;
+// }
+
+// .review__input {
+//   box-sizing: border-box;
+//   padding: 20px 10px 20px 20px;
+//   border: none;
+//   background-color: #f2f2f2;
+// }
+
+.review__input,
+.review__input::placeholder {
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: #000000;
+  text-transform: none;
+  font-weight: 700;
+}
+
+.review__input {
+  box-sizing: border-box;
+  padding: 20px 10px 20px 20px;
+  border: none;
+  background-color: #f2f2f2;
+}
+
+
+.name-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.name__row:not(:last-child),
+.contact-info__row:not(:last-child) {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.name-wrapper input {
+  width: 100%;
+  margin-left: 14px;
+}
+
+/* контактные данные */
+.contact-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact-info-wrapper .review__label {
+  margin-bottom: 14px;
+}
+
+.input-wrapper {
+  width: 100%;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.review__contact-info input,
+.review__contact-info input::placeholder {
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: #000000;
+  text-transform: none;
+  font-weight: 700;
+}
+
+.review__input-phone,
+.review__input-email {
+  width: 100%;
+  padding: 20px 70px 20px 20px;
+}
+
+.contact-info__icon {
+  box-sizing: border-box;
+  min-width: 58px;
+  min-height: 58px;
+  margin: 0;
+  // padding: 20px;
+  background-color: #e6e6e6;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  // white-space: nowrap;
+  // text-align: center;
+  // vertical-align: bottom;
+}
+
+.phone-icon {
+  background-image: url("../img/phone.svg");
+}
+
+.mail-icon {
+  background-image: url("../img/mail.svg");
+}
+
+// .phone-icon::before {
+//   content: " ";
+//   background-image: url("../img/phone.svg");
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   width: 18px;
+//   height: 18px;
+// }
+// .review__input-email {
+//   background-image: url("../img/mail.svg");
+//   background-position: 270px center;
+//   background-repeat: no-repeat;
+// }
 
 @media (min-width: $tablet-width) {
   .review__name {
@@ -45,36 +163,4 @@
     flex-grow: 2;
     width: 100%;
   }
-}
-
-
-.review__name input,
-.review__name input::placeholder {
-  font-family: "PT Sans", "Arial", sans-serif;
-  color: #000000;
-  text-transform: none;
-  font-weight: 700;
-}
-
-.review__name input {
-  box-sizing: border-box;
-  padding: 20px;
-  border: none;
-  background-color: #f2f2f2;
-}
-
-.label--name {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.label--name:not(:last-child) {
-  margin-bottom: 20px;
-}
-
-
-.label--name input {
-  margin-left: 12px;
-  flex-grow: 2;
 }

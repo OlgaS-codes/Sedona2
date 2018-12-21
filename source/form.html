@@ -78,23 +78,40 @@
         <p class="intro__content-text content-text content-text--form">Помогите нашим отелям стать лучше! Оставьте
           отзыв о них, а также о посящаемых вами достопримечательностях</p>
       </div>
-
       <form class="form__review" action="/action_page.php" method="get">
-        <div class="review review__name">
-          <h3 class="review__heading">Представьтесь:</h3>
-          <label for="firstName" class="review__label label label--name">Имя*
-          <input type="text" id="firstName" name="firstName" placeholder="Петр"></label>
-          <label for="secondName" class="review__label label label--name">Фамилия*
-          <input type="text" id="secondName" name="secondName" placeholder="Иванов"></label>
-          <label for="fathersName" class="review__label label label--name">Отчество
-          <input type="text" id="fathersName" name="fathersName" placeholder="Александрович"></label>
+        <div class="review review__name name">
+          <h3 class="review__heading name__row">Представьтесь:</h3>
+          <div class="name-wrapper name__row">
+            <label for="firstName" class="review__label label label--name">Имя*</label>
+            <input class="review__input" type="text" id="firstName" name="firstName" placeholder="Петр">
+          </div>
+          <div class="name-wrapper name__row">
+            <label for="secondName" class="review__label label label--name">Фамилия*</label>
+            <input class="review__input" type="text" id="secondName" name="secondName" placeholder="Иванов">
+          </div>
+          <div class="name-wrapper name__row">
+            <label for="fathersName" class="review__label label label--name">Отчество</label>
+            <input class="review__input" type="text" id="fathersName" name="fathersName" placeholder="Александрович">
+          </div>
         </div>
-        <div class="review review__contact-ifo">
-          <h3 class="review__heading">Контактная информация:</h3>
-          <label for="phoneNumber" class="review__label label">Телефон*:</label>
-          <input id="phoneNumber" name="phoneNumber" type="tel" placeholder="Введите телефон">
-          <label for="emailAddress" class="review__label label">Электронная почта*:</label>
-          <input id="emailAddress" name="emailAddress" type="email" placeholder="Введите e-mail">
+        <div class="review review__contact-info contact-info">
+          <h3 class="review__heading contact-info__row">Контактная информация:</h3>
+          <div class="contact-info-wrapper contact-info__row">
+            <label for="phoneNumber" class="review__label label--phone">Контактный телефон*:</label>
+            <div class="phone-wrapper input-wrapper">
+              <input class="review__input review__input-phone" id="phoneNumber" name="phoneNumber" type="tel"
+                placeholder="Введите телефон">
+              <i class="contact-info__icon icon phone-icon"></i>
+            </div>
+          </div>
+          <div class="contact-info-wrapper contact-info__row">
+            <label for="emailAddress" class="review__label label-email">Электронная почта*:</label>
+            <div class="mail-wrapper input-wrapper">
+              <input class="review__input review__input-email" id="emailAddress" name="emailAddress" type="email"
+                placeholder="Введите e-mail">
+              <i class="contact-info__icon icon mail-icon"></i>
+            </div>
+          </div>
         </div>
         <div class="review review__impression">
           <h3 class="review__heading">Ваше общее впечатление:</h3>
@@ -120,7 +137,8 @@
         </div>
         <div class="review review__description">
           <h3 class="review__heading">Опишите свои эмоции</h3>
-          <textarea rows="10" cols="30" name="text" placeholder="Опишите подробно все свои восторги" class="review__label label--bold"></textarea>
+          <textarea class="review__input" rows="10" cols="30" name="text" placeholder="Опишите подробно все свои восторги"
+            class="review__label label--bold"></textarea>
           <button class="button modal-form-button" type="submit" value="Отправить">Отправить отзыв</button>
           <p class="review--label">* — обязательные поля</p>
         </div>
