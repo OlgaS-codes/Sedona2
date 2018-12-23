@@ -6,21 +6,11 @@
   padding: 25px 20px 24px 20px;
 }
 
-
-// .review__name input,
-// .review__name input::placeholder {
-//   font-family: "PT Sans", "Arial", sans-serif;
-//   color: #000000;
-//   text-transform: none;
-//   font-weight: 700;
-// }
-
-// .review__input {
-//   box-sizing: border-box;
-//   padding: 20px 10px 20px 20px;
-//   border: none;
-//   background-color: #f2f2f2;
-// }
+.review__heading {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
 
 .review__input,
 .review__input::placeholder {
@@ -112,19 +102,80 @@
   background-image: url("../img/mail.svg");
 }
 
-// .phone-icon::before {
-//   content: " ";
-//   background-image: url("../img/phone.svg");
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   width: 18px;
-//   height: 18px;
-// }
-// .review__input-email {
-//   background-image: url("../img/mail.svg");
-//   background-position: 270px center;
-//   background-repeat: no-repeat;
-// }
+/* Ваше общее впечатление */
+.impression__row {
+  width: 100%;
+  margin-bottom: 13px;
+}
+
+.impression__heading {
+  margin-bottom: 24px;
+}
+
+.impression-input {
+  display: none;
+}
+
+/* стилизация радио баттон */
+.label--impression {
+  display: block;
+  // margin-bottom: 13px;
+  font-size: 18px;
+  line-height: 56px;
+  /* задает высоту строки где лежит кастомный радио-баттн*/
+  padding-left: 70px;
+  text-transform: none;
+  font-weight: 700;
+  /* место под псевдоэлемент */
+  position: relative;
+}
+
+.impression__row:last-child {
+  margin-bottom: 4px;
+}
+
+
+.label--impression::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  height: 56px;
+  width: 56px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+  /*плавная смена фон картинки*/
+}
+
+.impression-input:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: 17px;
+  display: block;
+  height: 22px;
+  width: 22px;
+  background-color: #333333;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+/* стилизация радио-баттон на ховере и нажатии */
+.label--impression:hover::before {
+  background-color: #e5e5e5;
+}
+
+.label--impression:active::before {
+  background-color: #d5d5d5;
+}
+
+.label--impression:active::after {
+  background-color: #a4a4a4;
+}
 
 @media (min-width: $tablet-width) {
   .review__name {

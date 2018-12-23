@@ -114,15 +114,19 @@
           </div>
         </div>
         <div class="review review__impression">
-          <h3 class="review__heading">Ваше общее впечатление:</h3>
-          <input type="radio" id="goodImpression" name="impression" value="goodImpression">
-          <label for="goodImpression" class=" review__label label--bold">Скорее положительное</label>
-
-          <input type="radio" id="badImpression" name="impression" value="badImpression">
-          <label for="badImpression" class="review__label label label--bold">Скорее отрицательное</label>
-
-          <input type="radio" id="uncertainImpression" name="impression" value="uncertainImpression">
-          <label for="uncertainImpression" class="review__label label label--bold">Затрудняюсь ответить</label>
+          <h3 class="review__heading impression__heading impression__row">Ваше общее впечатление:</h3>
+          <div class="impression__row">
+            <input class="impression-input" type="radio" id="goodImpression" name="impression" value="goodImpression">
+            <label for="goodImpression" class="review__label label--impression">Скорее положительное</label>
+          </div>
+          <div class="impression__row">
+            <input class="impression-input" type="radio" id="badImpression" name="impression" value="badImpression">
+            <label for="badImpression" class="review__label label label--impression">Скорее отрицательное</label>
+          </div>
+          <div class="impression__row">
+          <input class="impression-input" type="radio" id="uncertainImpression" name="impression" value="uncertainImpression">
+          <label for="uncertainImpression" class="review__label label label--impression">Затрудняюсь ответить</label>
+        </div>
         </div>
         <div class="review review__visitedPlaces">
           <h3 class="review__heading">Посещенные достопримечательности:</h3>
