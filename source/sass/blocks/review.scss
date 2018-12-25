@@ -162,7 +162,7 @@
   /*плавная смена фон картинки*/
 }
 
-.impression-input:checked + label::after {
+.impression-input:checked+label::after {
   content: "";
   position: absolute;
   top: 17px;
@@ -187,6 +187,93 @@
 
 .label--impression:active::after {
   background-color: #a4a4a4;
+}
+
+/* Посещенные достопримечательности:*/
+
+.visitedPlaces__heading {
+  margin-bottom: 21px;
+  text-align: center;
+}
+
+.visitedPlaces__input {
+  display: none;
+}
+
+.visitedPlaces__label {
+  display: block;
+  font-size: 18px;
+  line-height: 56px;
+  padding-left: 70px;
+  position: relative;
+  text-transform: none;
+  font-weight: 700;
+}
+
+.visitedPlaces__label:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.visitedPlaces__label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  height: 56px;
+  width: 56px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+  /*плавная смена фон картинки*/
+}
+
+.visitedPlaces__input:checked+label::before {
+  background-image: url("../img/checked.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* стилизация радио-баттон на ховере и нажатии */
+.visitedPlaces__label:hover::before {
+  background-color: #e5e5e5;
+}
+
+.visitedPlaces__label:active::before {
+  background-color: #d5d5d5;
+  background-image: url("../img/checked-active.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Опишите свои эмоции*/
+.description__heading {
+  margin-bottom: 23px;
+  text-align: center;
+}
+
+.description__textarea {
+  box-sizing: border-box;
+  max-width: 280px;
+  min-height: 160px;
+  margin-bottom: 52px;
+  padding: 20px;
+  resize: none;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.description__textarea:hover {
+  background-color: #e5e5e5;
+}
+
+.description__textarea:active {
+  background-color: #ffffff;
+  border: 4px solid #e5e5e5;
+  padding: 16px;
+  outline: none;
 }
 
 @media (min-width: $tablet-width) {

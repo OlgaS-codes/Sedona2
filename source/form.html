@@ -113,7 +113,7 @@
             </div>
           </div>
         </div>
-        <div class="review review__impression">
+        <div class="review review__impression impression">
           <h3 class="review__heading impression__heading impression__row">Ваше общее впечатление:</h3>
           <div class="impression__row">
             <input class="impression-input" type="radio" id="goodImpression" name="impression" value="goodImpression"
@@ -129,30 +129,27 @@
             <label for="uncertainImpression" class="review__label label label--impression">Затрудняюсь ответить</label>
           </div>
         </div>
-        <div class="review review__visitedPlaces">
-          <h3 class="review__heading visitedPlaces__row">Посещенные достопримечательности:</h3>
-          <div class="visitedPlaces__row">
-            <input class="visitedPlaces__input" type="checkbox" id="devilsBridge" name="devilsBridge" checked>
-            <label for="devilsBridge" class="review__label label--bold">Мост дъявола</label>
-          </div>
-          <div class="visitedPlaces__row">
-            <input class="visitedPlaces__input" type="checkbox" id="bellRock" name="bellRock" checked>
-            <label for="bellRock" class="review__label label--bold">Гора-Колокол</label>
-          </div>
-          <div class="visitedPlaces__row">
-            <input class="visitedPlaces__input" type="checkbox" id="slidePark" name="slidePark" checked>
-            <label for="slidePark" class="review__label label--bold">Слайд-парк</label>
-          </div>
-          <div class="visitedPlaces__row">
-            <input class="visitedPlaces__input" type="checkbox" id="redRock" name="redRock">
-            <label for="redRock" class="review__label label--bold">Слайд-парк</label>
-          </div>
+        <div class="review review__visitedPlaces visitedPlaces">
+          <h3 class="review__heading visitedPlaces__heading">Посещенные достопримечательности:</h3>
+
+          <input class="visitedPlaces__input" type="checkbox" id="devilsBridge" name="devilsBridge" checked>
+          <label for="devilsBridge" class="review__label visitedPlaces__label">Мост дъявола</label>
+
+
+          <input class="visitedPlaces__input" type="checkbox" id="bellRock" name="bellRock" checked>
+          <label for="bellRock" class="review__label visitedPlaces__label">Гора-Колокол</label>
+
+          <input class="visitedPlaces__input" type="checkbox" id="slidePark" name="slidePark" checked>
+          <label for="slidePark" class="review__label visitedPlaces__label">Слайд-парк</label>
+
+          <input class="visitedPlaces__input" type="checkbox" id="redRock" name="redRock">
+          <label for="redRock" class="review__label visitedPlaces__label">Слайд-парк</label>
+
         </div>
-        <div class="review review__description">
-          <h3 class="review__heading">Опишите свои эмоции</h3>
-          <textarea class="review__input" rows="10" cols="30" name="text" placeholder="Опишите подробно все свои восторги"
-            class="review__label label--bold"></textarea>
-          <button class="button modal-form-button" type="submit" value="Отправить">Отправить отзыв</button>
+        <div class="review review__description description">
+          <h3 class="review__heading description__heading">Опишите свои эмоции</h3>
+          <textarea class="review__input description__textarea" rows="4" cols="30" name="text" placeholder="Опишите подробно все свои восторги"></textarea>
+          <button class="button form-button" type="submit" value="Отправить">Отправить отзыв</button>
           <p class="review--label">* — обязательные поля</p>
         </div>
       </form>
