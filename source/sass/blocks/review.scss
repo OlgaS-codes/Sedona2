@@ -5,9 +5,12 @@
   padding: 25px 20px 24px 20px;
 }
 
-.review:not(:last-child) {
-  border-bottom: 1px solid rgba(grey, 0.5);
+@media (max-width: $mobile-width-only) {
+  .review:not(:last-child) {
+    border-bottom: 1px solid rgba(grey, 0.5);
+  }
 }
+
 
 .review__heading {
   margin: 0;
@@ -278,15 +281,19 @@
 
 @media (min-width: $tablet-width) {
   .review__name {
-    order: 2;
+    order: 1;
+    width: 50%;
   }
 
   .review__contact-ifo {
     order: 3;
+    width: 100%;
+    flex-grow: 2;
   }
 
   .review__impression {
-    order: 1;
+    order: -1;
+    width: 50%;
   }
 
   .review__visitedPlaces {

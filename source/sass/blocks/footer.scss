@@ -72,10 +72,25 @@
     display: flex;
   }
 
-  &__image {
+  &__link {
+    display: block;
+    width: 27px;
+    height: 34px;
     margin-left: 12px;
+    background-image: url("../img/htmlacademy.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &__link:hover {
+    background-image: url("../img/htmlacademy-hover.svg");
+  }
+
+  &__link:active {
+    background-image: url("../img/htmlacademy-active.svg");
   }
 }
+
 
 /*-------------------------------таблет  */
 @media (min-width: $tablet-width) {
