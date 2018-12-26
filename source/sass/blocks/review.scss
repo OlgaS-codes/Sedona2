@@ -1,9 +1,12 @@
 .review {
-  border-bottom: 1px solid rgba(grey, 0.5);
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   padding: 25px 20px 24px 20px;
+}
+
+.review:not(:last-child) {
+  border-bottom: 1px solid rgba(grey, 0.5);
 }
 
 .review__heading {
@@ -22,10 +25,11 @@
 }
 
 .review__input {
-  box-sizing: border-box;
+  // box-sizing: border-box;
   padding: 20px 10px 20px 20px;
   border: none;
   background-color: #f2f2f2;
+  resize: none;
 }
 
 .review__input:hover {
@@ -37,7 +41,7 @@
   background-color: white;
   border: 4px solid #e5e5e5;
   outline: none;
-  padding: 16px 6px 16px 6px;
+  padding: 16px 6px 16px 16px;
 }
 
 .name-wrapper {
@@ -98,7 +102,6 @@
   margin: 0;
   // padding: 20px;
   background-color: #e6e6e6;
-
   background-repeat: no-repeat;
   background-position: center;
   // white-space: nowrap;
@@ -134,11 +137,9 @@
   // margin-bottom: 13px;
   font-size: 18px;
   line-height: 56px;
-  /* задает высоту строки где лежит кастомный радио-баттн*/
   padding-left: 70px;
   text-transform: none;
   font-weight: 700;
-  /* место под псевдоэлемент */
   position: relative;
 }
 
@@ -162,7 +163,7 @@
   /*плавная смена фон картинки*/
 }
 
-.impression-input:checked+label::after {
+.impression-input:checked + label::after {
   content: "";
   position: absolute;
   top: 17px;
@@ -225,13 +226,12 @@
   background-color: #f2f2f2;
   border-radius: 5px;
   cursor: pointer;
-  transition: all 0.15s ease-in-out;
-  /*плавная смена фон картинки*/
+  transition: background-image 200ms ease-in;
 }
 
-.visitedPlaces__input:checked+label::before {
-  background-image: url("../img/checked.svg");
-  background-position: center;
+.visitedPlaces__input:checked + label::before {
+  background-image: url("../img/checked.png");
+  background-position: center center;
   background-repeat: no-repeat;
 }
 
@@ -242,8 +242,8 @@
 
 .visitedPlaces__label:active::before {
   background-color: #d5d5d5;
-  background-image: url("../img/checked-active.svg");
-  background-position: center;
+  background-image: url("../img/checked-active.png");
+  background-position: center center;
   background-repeat: no-repeat;
 }
 
