@@ -170,7 +170,7 @@
   /*плавная смена фон картинки*/
 }
 
-.impression-input:checked + label::after {
+.impression-input:checked+label::after {
   content: "";
   position: absolute;
   top: 17px;
@@ -236,7 +236,7 @@
   transition: background-image 200ms ease-in;
 }
 
-.visitedPlaces__input:checked + label::before {
+.visitedPlaces__input:checked+label::before {
   background-image: url("../img/checked.png");
   background-position: center center;
   background-repeat: no-repeat;
@@ -391,18 +391,84 @@
 }
 
 @media (min-width: $desktop-width) {
-  .review__contact-ifo {
+  .form__review {
+    padding: 0 120px;
+  }
+
+  .review__contact-info {
     flex-grow: 2;
     width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contact-info__heading {
+    width: 100%;
+  }
+
+  .contact-info-wrapper {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contact-info-wrapper:nth-child(even) {
+    box-sizing: border-box;
+    padding-right: 80px;
+  }
+
+  .contact-info__vh {
+    @include vh();
+  }
+
+  .label--email {
+    margin-right: 18px;
+  }
+
+  .label--phone {
+    margin-right: 16px;
   }
 
   .review__visitedPlaces {
     flex-grow: 2;
     width: 100%;
+    justify-content: space-between;
+  }
+
+  .visitedPlaces__heading {
+    padding: 0 280px;
+  }
+
+  .visitedPlaces__label {
+    box-sizing: border-box;
+    width: 25%;
   }
 
   .review__description {
     flex-grow: 2;
     width: 100%;
+  }
+
+  .review__name {
+    width: 50%;
+    padding-left: 80px;
+    box-sizing: border-box;
+  }
+
+  .review__impression {
+    position: relative;
+    width: 50%;
+  }
+
+  .review__impression::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 1px;
+    height: 100%;
+    box-sizing: border-box;
+    border-right: 1px solid #dbdbdb;
   }
 }

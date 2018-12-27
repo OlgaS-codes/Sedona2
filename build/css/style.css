@@ -369,7 +369,7 @@ img {
 
 @media (min-width: 1200px) {
   .intro--form {
-    padding: 111px 380px 37px 380px;
+    padding: 111px 360px 37px 370px;
     border: none; } }
 
 /* -------------------------------первый синий блок с картинкой*/
@@ -1605,18 +1605,86 @@ img {
             order: 7; } }
 
 @media (min-width: 1200px) {
-  .review__contact-ifo {
+  .form__review {
+    padding: 0 120px; }
+  .review__contact-info {
     -webkit-box-flex: 2;
         -ms-flex-positive: 2;
             flex-grow: 2;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+  .contact-info__heading {
     width: 100%; }
+  .contact-info-wrapper {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+  .contact-info-wrapper:nth-child(even) {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-right: 80px; }
+  .contact-info__vh {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+            clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden; }
+  .label--email {
+    margin-right: 18px; }
+  .label--phone {
+    margin-right: 16px; }
   .review__visitedPlaces {
     -webkit-box-flex: 2;
         -ms-flex-positive: 2;
             flex-grow: 2;
-    width: 100%; }
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .visitedPlaces__heading {
+    padding: 0 280px; }
+  .visitedPlaces__label {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 25%; }
   .review__description {
     -webkit-box-flex: 2;
         -ms-flex-positive: 2;
             flex-grow: 2;
-    width: 100%; } }
+    width: 100%; }
+  .review__name {
+    width: 50%;
+    padding-left: 80px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+  .review__impression {
+    position: relative;
+    width: 50%; }
+  .review__impression::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 1px;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-right: 1px solid #dbdbdb; } }
