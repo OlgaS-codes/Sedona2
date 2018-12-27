@@ -1189,13 +1189,18 @@ img {
         -ms-flex-direction: row;
             flex-direction: row;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; } }
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; } }
 
-.form-button {
-  border: none; }
+.review__button {
+  border: none;
+  padding: 20px 63px 20px 63px;
+  width: 50%; }
 
 @media (max-width: 767px) {
-  .review--label {
+  .review__additional {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -1297,6 +1302,9 @@ img {
   margin-left: 14px; }
 
 /* контактные данные */
+.contact-info__heading {
+  text-align: center; }
+
 .contact-info-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1508,32 +1516,93 @@ img {
   outline: none; }
 
 @media (min-width: 768px) {
+  .form__review {
+    padding: 0 60px; }
+  .review {
+    padding: 0; }
   .review__name {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-    width: 50%; }
-  .review__contact-ifo {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 50%;
+    margin-bottom: 68px; }
+  .review__contact-info {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
     width: 100%;
     -webkit-box-flex: 2;
         -ms-flex-positive: 2;
-            flex-grow: 2; }
+            flex-grow: 2;
+    margin-bottom: 57px; }
+  .contact-info__heading {
+    position: relative; }
+  .contact-info__heading::before {
+    left: 0; }
+  .contact-info__heading::after {
+    right: 0; }
   .review__impression {
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
-    width: 50%; }
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 50%;
+    margin-bottom: 68px; }
   .review__visitedPlaces {
     -webkit-box-ordinal-group: 5;
         -ms-flex-order: 4;
-            order: 4; }
+            order: 4;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .visitedPlaces__heading {
+    width: 100%;
+    padding: 0 170px;
+    position: relative; }
+  .review__heading--lines::before,
+  .review__heading--lines::after {
+    content: "";
+    position: absolute;
+    top: 26px;
+    display: block;
+    width: 16.4%;
+    height: 1px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-bottom: 1px solid #dbdbdb; }
+  .visitedPlaces__heading::before {
+    left: 0; }
+  .visitedPlaces__heading::after {
+    right: 0; }
+  .visitedPlaces__label {
+    width: 30%; }
   .review__description {
     -webkit-box-ordinal-group: 6;
         -ms-flex-order: 5;
-            order: 5; } }
+            order: 5;
+    width: 100%; }
+  .description__heading {
+    position: relative; }
+  .description__heading::before {
+    left: 0; }
+  .description__heading::after {
+    right: 0; }
+  .description__textarea {
+    max-width: 100%; }
+  .review__button {
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6; }
+  .review__additional {
+    -webkit-box-ordinal-group: 8;
+        -ms-flex-order: 7;
+            order: 7; } }
 
 @media (min-width: 1200px) {
   .review__contact-ifo {
