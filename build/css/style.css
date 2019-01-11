@@ -418,10 +418,15 @@ img {
     line-height: 1.6;
     text-align: center; }
   .feature-picture__wrapper {
+    width: 100%;
     min-height: 260px;
-    margin-bottom: 0; }
+    overflow: hidden; }
   .feature-picture__image {
-    display: block; }
+    width: 100%;
+    min-height: 260px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin: 0 0; }
 
 @media (min-width: 768px) {
   .feature-picture {
@@ -435,7 +440,7 @@ img {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap; }
   .feature-picture__content-text {
-    max-width: 257px;
+    width: 33.3%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     -webkit-box-pack: center;
@@ -461,20 +466,21 @@ img {
     padding: 0;
     margin: 0; }
   .feature-picture__wrapper {
-    position: relative;
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
-    overflow-y: hidden;
-    min-height: 257px; }
+    width: 66.6%;
+    min-height: 257px;
+    overflow: hidden; }
   .feature-picture__image {
-    position: absolute;
     width: 100%;
-    max-width: none; } }
+    min-height: 257px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin: 0 0; } }
 
 @media (min-width: 1200px) {
   .feature-picture__content-text {
-    max-width: 33.333%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     -webkit-box-pack: center;
@@ -483,7 +489,17 @@ img {
     padding: 53px 67px 57px 61px; }
   .feature-picture__heading {
     display: block;
-    margin: 0 28px 10px; } }
+    margin: 0 28px 10px; }
+  .feature-picture__wrapper {
+    position: relative; }
+  .feature-picture__image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 800px;
+    height: auto;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); } }
 
 /*---------------------------------------------------синий блок №2 */
 @media (min-width: 768px) {
