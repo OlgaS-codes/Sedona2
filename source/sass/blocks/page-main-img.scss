@@ -10,14 +10,17 @@
   align-items: center;
   background-image: url("../img/background-main.jpg");
   background-repeat: no-repeat;
+
+  @media #{$retina} {
+    background-image: url("../img/back@2x@mobile.jpg");
+    background-size: cover;
+  }
 }
 
-/*-------------------------------------Индекс-файл */
+
 .img-top--index {
   padding-top: 91px;
   padding-bottom: 86px;
-  background-position-x: -440px;
-  background-position-y: -35px;
 }
 
 .img-top--index__svg {
@@ -26,11 +29,18 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-main__img-top {
+    background-image: url("../img/back@1x@tablet.jpg");
+
+    @media #{$retina} {
+      background-image: url("../img/back@2x@tablet.jpg");
+      background-size: 768px auto;
+    }
+  }
+
   .img-top--index {
     padding-top: 77px;
     padding-bottom: 92px;
-    background-position-x: -222px;
-    background-position-y: -1px;
   }
 
   .img-top--index__svg {
@@ -40,6 +50,15 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-main__img-top {
+    background-image: url("../img/back@1x@tablet.jpg");
+
+    @media #{$retina} {
+      background-image: url("../img/back@2x@tablet.jpg");
+      background-size: 1200px auto;
+    }
+  }
+
   .img-top--index {
     padding-top: 80px;
     padding-bottom: 91px;

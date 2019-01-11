@@ -83,7 +83,7 @@
             <picture>
                 <source media="(min-width: 1200px)" srcset="img/feature-1@1x@desktop.jpg 1x, img/feature-1@2x@desktop.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/feature-1@1x@tablet.jpg 1x, img/feature-1@2x@tablet.jpg 2x">
-                <img class="feature-picture__image" src="img/feature-1.jpg" srcset="img/feature-1@2x.jpg 2x" alt="дом в цветущих кустах">
+                <img class="feature-picture__image" width="320" height="260" src="img/feature-1.jpg" srcset="img/feature-1@2x.jpg 2x" alt="дом в цветущих кустах">
             </picture>
           </div>
         </section>
@@ -108,7 +108,12 @@
             <p class="feature-picture__text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
           <div class="feature-picture__wrapper">
-            <img class="feature-picture__image" src="img/feature-2.jpg" alt="вид на мост дьявола" width="800" height="400">
+              <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-bridge@1x@desktop.jpg 1x, img/photo-bridge@2x@desktop.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-bridge@1x@tablet.jpg.jpg 1x, img/photo-bridge@2x@tablet.jpg 2x">
+                    <img class="feature-picture__image" width="320" height="260" src="img/photo-bridge@1x@mobile.jpg" srcset="img/photo-bridge@2x@mobile.jpg 2x" alt="вид на мост дьявола">
+              </picture>
+
           </div>
         </section>
         <section class="features-list__feature-numbers feature-numbers">
@@ -134,7 +139,11 @@
         <p class="page-main__content-text hotel-search__content-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
         <a class="button button-search">Найти гостиницу</a>
       </section>
-      <img src="img/map.jpg" class="page-main__map-image map-image" alt="карта Седоны" width="1200" height="350">
+      <picture>
+          <source media="(min-width: 1200px)" srcset="img/map@1x@desktop.jpg 1x, img/map@2x@desktop.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/map@1x@tablet.jpg 1x, img/map@2x@tablet.jpg 2x">
+      <img class="page-main__map-image map-image" src="img/map@1x@mobile.jpg" srcset="map@2x@mobile.jpg 2x" alt="карта Седоны" width="1200" height="350">
+    </picture>
     </main>
     <footer class="footer">
       <div class="footer__col footer__hash-tag hash-tag">
