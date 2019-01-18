@@ -51,8 +51,13 @@
           <li class="main-navigation__list__item"><a href="https://htmlacademy.ru/" class="site-list__link">HTML
               Academy</a></li>
           <li class="main-navigation__list__item main-navigation__list__item--main-link"><a href=href="index.html"
-              class="site-list__link site-list__link--main"><img class="main-link__logo" src="img/logotype-main.png"
-                alt="логотип сайта" width="188" height="96"></a></li>
+              class="site-list__link site-list__link--main">
+              <picture>
+                  <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+                  <img class="main-link__logo" src="img/logotyle-mobile.svg" alt="логотип сайта" width="102" height="83">
+                </picture>
+              </a></li>
         </ul>
         <button class="main-navigation__toggle" type="button"><span class="visually-hidden">открыть меню</span></button>
       </nav>

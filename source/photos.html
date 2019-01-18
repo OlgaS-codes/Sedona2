@@ -50,8 +50,13 @@
           <li class="main-navigation__list__item"><a href="https://htmlacademy.ru/" class="site-list__link">HTML
               Academy</a></li>
           <li class="main-navigation__list__item main-navigation__list__item--main-link"><a href=href="index.html"
-              class="site-list__link site-list__link--main"><img class="main-link__logo" src="img/logotype-main.png"
-                alt="логотип сайта" width="188" height="96"></a></li>
+              class="site-list__link site-list__link--main">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+                <img class="main-link__logo" src="img/logotyle-mobile.svg" alt="логотип сайта" width="102" height="83">
+              </picture>
+            </a></li>
         </ul>
         <button class="main-navigation__toggle" type="button"><span class="visually-hidden">открыть меню</span></button>
       </nav>
@@ -81,7 +86,12 @@
         <ul class="photos-gallery">
           <li class="photos-gallery__photo photo-block photo-block--bright">
             <div class="photo-wrapper photo-wrapper--bright">
-              <img class="photo-block__img img-photo" src="img/photo-1-mobile.jpg" width="280" height="280" alt="неродные просторы">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-1@1x@desktop.jpg 1x, img/photo-1@2x@desktop.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-1@1x@tablet.jpg 1x, img/photo-1@2x@tablet.jpg 2x">
+                <img class="photo-block__img img-photo" src="img/photo-1@1x@mobile.jpg" srcset="img/photo-1@2x@mobile.jpg 2x"
+                  width="280" height="280" alt="неродные просторы">
+              </picture>
             </div>
             <div class="photo-block__additional additional additional">
               <div class="additional__wrapper">
@@ -93,7 +103,12 @@
           </li>
           <li class="photos-gallery__photo photo-block">
             <div class="photo-wrapper">
-              <img class="photo-block__img img-photo" src="img/photo-2-mobile.jpg" width="280" height="280" alt="местная растительность">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-2@1x@desktop.jpg 1x, img/photo-2@2x@desktop.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-2@1x@tablet.jpg 1x, img/photo-2@2x@tablet.jpg 2x">
+                <img class="photo-block__img img-photo" src="img/photo-2@1x@mobile.jpg" srcset="img/photo-2@2x@mobile.jpg 2x"
+                  width="280" height="280" alt="местная растительность">
+              </picture>
             </div>
             <div class="photo-block__additional additional">
               <div class="additional__wrapper">
@@ -105,7 +120,12 @@
           </li>
           <li class="photos-gallery__photo photo-block">
             <div class="photo-wrapper">
-              <img class="photo-block__img img-photo" src="img/photo-3-mobile.jpg" width="280" height="280" alt="дорога на север">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-3@1x@desktop.jpg 1x, img/photo-3@2x@desktop.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-3@1x@tablet.jpg 1x, img/photo-3@2x@tablet.jpg 2x">
+                <img class="photo-block__img img-photo" src="img/photo-3@1x@mobile.jpg" srcset="img/photo-3@2x@mobile.jpg 2x"
+                  width="280" height="280" alt="дорога на север">
+              </picture>
             </div>
             <div class="photo-block__additional additional">
               <div class="additional__wrapper">
@@ -117,7 +137,12 @@
           </li>
           <li class="photos-gallery__photo photo-block">
             <div class="photo-wrapper">
-              <img class="photo-block__img img-photo" src="img/photo-4-mobile.jpg" width="280" height="280" alt="мост дьявола">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-4@1x@desktop.jpg 1x, img/photo-4@2x@desktop.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-4@1x@tablet.jpg 1x, img/photo-4@2x@tablet.jpg 2x">
+                <img class="photo-block__img img-photo" src="img/photo-4@1x@mobile.jpg" srcset="img/photo-4@2x@mobile.jpg 2x"
+                  width="280" height="280" alt="мост дьявола">
+              </picture>
             </div>
             <div class="photo-block__additional additional">
               <div class="additional__wrapper">
@@ -150,7 +175,8 @@
           </ul>
         </div>
         <div class="footer__col footer__developed developed">
-          <p class="developed__text">Разработано<a class="developed__link"href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"><span class="visually-hidden">htmlacademy.ru</span>
+          <p class="developed__text">Разработано<a class="developed__link" href="https://htmlacademy.ru/intensive/htmlcss"
+              target="_blank"><span class="visually-hidden">htmlacademy.ru</span>
             </a></p>
         </div>
       </footer>
