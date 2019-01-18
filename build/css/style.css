@@ -120,17 +120,14 @@ img {
 
 .site-list__link.site-list__link--main {
   border: none;
-  background-color: transparent; }
-
-@media (max-width: 767px) {
-  .site-list__link.site-list__link--main {
-    position: absolute;
-    bottom: -40px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    z-index: 5;
-    width: 188px; } }
+  background-color: transparent;
+  position: absolute;
+  bottom: -27px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 5;
+  width: 188px; }
 
 .main-navigation__toggle {
   position: absolute;
@@ -191,7 +188,9 @@ img {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
-            flex-direction: row; } }
+            flex-direction: row; }
+  .main-link__logo {
+    width: 188px; } }
 
 /*-------------------------------------Картинка с каньоном на главной странице */
 .page-main__img-top {
@@ -241,10 +240,10 @@ img {
 
 @media (min-width: 1200px) {
   .page-main__img-top {
-    background-image: url("../img/back@1x@tablet.jpg"); } }
+    background-image: url("../img/back@1x@desktop.jpg"); } }
   @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
     .page-main__img-top {
-      background-image: url("../img/back@2x@tablet.jpg");
+      background-image: url("../img/back@2x@desktop.jpg");
       background-size: 1200px auto; } }
 
 @media (min-width: 1200px) {

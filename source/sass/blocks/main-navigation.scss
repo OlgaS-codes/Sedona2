@@ -42,17 +42,12 @@
 .site-list__link.site-list__link--main {
   border: none;
   background-color: transparent;
-}
-
-@media (max-width: $mobile-width-only) {
-  .site-list__link.site-list__link--main {
-    position: absolute;
-    bottom: -40px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 5;
-    width: 188px;
-  }
+  position: absolute;
+  bottom: -27px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  width: 188px;
 }
 
 .main-navigation__toggle {
@@ -119,5 +114,9 @@
     min-height: 56px;
     display: flex;
     flex-direction: row;
+  }
+
+  .main-link__logo {
+    width: 188px;
   }
 }

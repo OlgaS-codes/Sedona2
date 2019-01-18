@@ -4,7 +4,6 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <title>Добро пожаловать в Седону!</title>
   <!-- Pixel Glass -->
@@ -49,8 +48,15 @@
 
           <li class="main-navigation__list__item"><a href="form.html" class="site-list__link">Форма отзыва</a></li>
           <li class="main-navigation__list__item"><a href="https://htmlacademy.ru/" class="site-list__link">HTML Academy</a></li>
-          <li class="main-navigation__list__item main-navigation__list__item--main-link"><a href="https://developer.mozilla.org/ru/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images" class="site-list__link site-list__link--main"><img class="main-link__logo" src="img/logotype-main.png" alt="логотип сайта"
-            width="188" height="96"></a></li>
+          <li class="main-navigation__list__item main-navigation__list__item--main-link">
+            <a href="#" class="site-list__link site-list__link--main">
+              <picture>
+              <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+              <img class="main-link__logo" src="img/logotyle-mobile.svg" alt="логотип сайта" width="102" height="83">
+            </picture>
+            </a>
+          </li>
         </ul>
         <button class="main-navigation__toggle" type="button"><span class="visually-hidden">открыть меню</span></button>
       </nav>
@@ -142,7 +148,7 @@
       <picture>
           <source media="(min-width: 1200px)" srcset="img/map@1x@desktop.jpg 1x, img/map@2x@desktop.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/map@1x@tablet.jpg 1x, img/map@2x@tablet.jpg 2x">
-      <img class="page-main__map-image map-image" src="img/map@1x@mobile.jpg" srcset="map@2x@mobile.jpg 2x" alt="карта Седоны" width="1200" height="350">
+          <img class="page-main__map-image map-image" src="img/map@1x@mobile.jpg 1x" srcset="img/map@2x@mobile.jpg 2x" alt="карта Седоны" width="1200" height="350">
     </picture>
     </main>
     <footer class="footer">
