@@ -8,21 +8,29 @@
   color: rgb(0, 0, 0);
 }
 
+.intro--index {
+  padding-top: 38px;
+  padding-bottom: 33px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .intro__heading {
   font-size: 18px;
-  line-height: 1.4;
+  line-height: 26px;
   font-weight: 700;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .intro__content-text {
   font-weight: 400;
   text-align: center;
-}
-
-/*-----------------------------------------------------Индекс-файл */
-.intro--index {
-  padding: 45px 33px 32px 33px;
+  font-size: 14px;
+  line-height: 26px;
+  margin: 0;
+  padding: 0;
 }
 
 @media (min-width: $tablet-width) {

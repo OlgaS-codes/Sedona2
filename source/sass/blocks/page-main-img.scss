@@ -3,6 +3,7 @@
 
 .page-main__img-top {
   width: 100%;
+  position: relative;
   box-sizing: border-box;
   margin: 0;
   display: flex;
@@ -17,10 +18,37 @@
   }
 }
 
+@media (max-width: $mobile-width-only) {
+  .page-main__img-top::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 0;
+    width: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 0 0 28px 160px;
+    border-bottom-color: white;
+  }
+
+  .page-main__img-top::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 28px 0 0 160px;
+    border-left-color: white;
+  }
+}
 
 .img-top--index {
   padding-top: 91px;
-  padding-bottom: 86px;
+  padding-bottom: 85px;
 }
 
 .img-top--index__svg {
