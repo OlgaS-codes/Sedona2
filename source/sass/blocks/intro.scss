@@ -10,21 +10,53 @@
 
 .intro--index {
   padding-top: 38px;
-  padding-bottom: 33px;
+  padding-bottom: 43px;
   padding-left: 20px;
   padding-right: 20px;
+  position: relative;
+}
+
+@media (max-width: $mobile-width-only) {
+  .intro--index::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 0;
+    width: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 0 0 17px 160px;
+    border-bottom-color: #81b3d2;
+  }
+
+  .intro--index::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 17px 0 0 160px;
+    border-bottom-color: #81b3d2;
+  }
 }
 
 .intro__heading {
+  width: 96%;
+  margin: 0;
+  margin-bottom: 28px;
+  padding: 0;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   text-align: center;
-  margin: 0;
-  padding: 0;
 }
 
 .intro__content-text {
+  width: 96%;
   font-weight: 400;
   text-align: center;
   font-size: 14px;
@@ -44,6 +76,7 @@
     padding: 134px 355px 56px 355px;
   }
 }
+
 /*-----------------------------------------------------фото-файл */
 .intro--photo {
   padding: 46px 24px 35px 28px;

@@ -14,14 +14,14 @@
   @include flex-center-center();
   text-decoration: none;
   color: $white;
-  font-size: 13px;
+  font-size: 18px;
+  line-height: 26px;
   font-weight: 700;
 }
 
 @media (max-width: $mobile-width-only) {
   .site-list__link {
     min-height: 55px;
-    font-size: 16px;
   }
 
   .main-navigation__list__item {
