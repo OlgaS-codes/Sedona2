@@ -103,7 +103,8 @@ img {
           align-items: center;
   text-decoration: none;
   color: #ffffff;
-  font-size: 16px; }
+  font-size: 13px;
+  font-weight: 700; }
 
 .main-navigation__list__item:nth-last-child(n+3) .site-list__link {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
@@ -138,7 +139,7 @@ img {
   width: 57px;
   height: 55px;
   background-color: white;
-  background-image: url("../img/icon-menu.svg");
+  background-image: url("../img/sprite/icon-menu.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 40%;
@@ -570,7 +571,7 @@ img {
   content: " ";
   width: 39px;
   height: 37px;
-  background-image: url("../img/icon-house.svg");
+  background-image: url("../img/sprite/icon-house.svg");
   background-size: contain;
   background-repeat: no-repeat;
   left: -44px;
@@ -581,7 +582,7 @@ img {
   content: " ";
   width: 39px;
   height: 38px;
-  background-image: url("../img/icon-burger.svg");
+  background-image: url("../img/sprite/icon-burger.svg");
   background-repeat: no-repeat;
   background-size: contain;
   left: -44px;
@@ -592,7 +593,7 @@ img {
   content: " ";
   width: 39px;
   height: 35px;
-  background-image: url("../img/icon-gift.svg");
+  background-image: url("../img/sprite/icon-gift.svg");
   background-repeat: no-repeat;
   background-size: contain;
   left: -44px;
@@ -899,11 +900,11 @@ img {
   background-repeat: no-repeat;
   background-origin: padding-box; }
   .social__link--tw {
-    background-image: url("../img/icon-twitter-mobile.svg"); }
+    background-image: url("../img/sprite/icon-twitter-mobile.svg"); }
   .social__link--fb {
-    background-image: url("../img/icon-facebook-mobile.svg"); }
+    background-image: url("../img/sprite/icon-facebook-mobile.svg"); }
   .social__link--yt {
-    background-image: url("../img/icon-youtube-mobile.svg"); }
+    background-image: url("../img/sprite/icon-youtube-mobile.svg"); }
 
 .developed {
   display: -webkit-box;
@@ -927,13 +928,13 @@ img {
     width: 27px;
     height: 34px;
     margin-left: 12px;
-    background-image: url("../img/htmlacademy.svg");
+    background-image: url("../img/sprite/htmlacademy.svg");
     background-position: center;
     background-repeat: no-repeat; }
   .developed__link:hover {
-    background-image: url("../img/htmlacademy-hover.svg"); }
+    background-image: url("../img/sprite/htmlacademy-hover.svg"); }
   .developed__link:active {
-    background-image: url("../img/htmlacademy-active.svg"); }
+    background-image: url("../img/sprite/htmlacademy-active.svg"); }
 
 /*-------------------------------таблет  */
 @media (min-width: 768px) {
@@ -1048,7 +1049,7 @@ img {
 .additional__photo-likes::before {
   position: absolute;
   content: " ";
-  background-image: url("../img/like-icon.svg");
+  background-image: url("../img/sprite/like-icon.svg");
   background-size: contain;
   background-repeat: no-repeat;
   width: 32px;
