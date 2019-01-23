@@ -11,26 +11,34 @@
   &__content-text {
     @include flex-center-center();
     flex-direction: column;
-    padding: 60px 28px 46px 28px;
+    padding: 39px 15px 40px;
   }
 
   &__heading {
-    @include heading_Text();
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 8px;
   }
 
   &__number {
-    margin-top: 0;
-    margin-bottom: 10px;
-
-    @include primary_Text();
+    margin: 0;
+    margin-bottom: 16px;
+    padding: 0;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
   }
 
   &__text {
-
-    margin-top: 0;
+    margin: 0;
     margin-bottom: 0;
-
-    @include primary_Text();
+    padding: 0;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
   }
 
   &__wrapper {

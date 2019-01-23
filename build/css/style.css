@@ -389,7 +389,7 @@ img {
     border-color: transparent;
     border-style: solid;
     border-width: 17px 0 0 160px;
-    border-bottom-color: #81b3d2; } }
+    border-left-color: #81b3d2; } }
 
 .intro__heading {
   width: 96%;
@@ -475,23 +475,27 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 60px 28px 46px 28px; }
+    padding: 39px 15px 40px; }
   .feature-picture__heading {
-    font-size: 17px;
-    line-height: 1.5;
-    font-weight: bolder;
-    text-align: center; }
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 8px; }
   .feature-picture__number {
-    margin-top: 0;
-    margin-bottom: 10px;
+    margin: 0;
+    margin-bottom: 16px;
+    padding: 0;
+    text-align: center;
     font-size: 14px;
-    line-height: 1.6;
-    text-align: center; }
+    line-height: 20px; }
   .feature-picture__text {
-    margin-top: 0;
+    margin: 0;
     margin-bottom: 0;
+    padding: 0;
     font-size: 14px;
-    line-height: 1.6;
+    line-height: 21px;
     text-align: center; }
   .feature-picture__wrapper {
     width: 100%;
@@ -603,7 +607,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 43px 41px 44px 70px; }
+  padding: 36px 41px 38px 70px; }
 
 .feature-icons__feature-icon {
   display: -webkit-box;
@@ -624,13 +628,15 @@ img {
 
 @media (max-width: 767px) {
   .feature-icons__feature-icon:not(:last-child) {
-    margin-bottom: 41px; } }
+    margin-bottom: 30px; } }
 
 .feature-icon__heading {
   position: relative;
   margin: 0;
-  margin-bottom: 11px;
+  margin-bottom: 15px;
   text-align: left;
+  font-size: 18px;
+  line-height: 26px;
   font-weight: 700; }
 
 .feature-icon__heading--house::before {
@@ -641,7 +647,7 @@ img {
   background-image: url("../img/sprite/icon-house.svg");
   background-size: contain;
   background-repeat: no-repeat;
-  left: -44px;
+  left: -49px;
   top: -10px; }
 
 .feature-icon__heading--food::before {
@@ -652,8 +658,8 @@ img {
   background-image: url("../img/sprite/icon-burger.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  left: -44px;
-  top: -10px; }
+  left: -50px;
+  top: -5px; }
 
 .feature-icon__heading--souvenirs::before {
   position: absolute;
@@ -669,7 +675,9 @@ img {
 .feature-icon__text {
   margin: 0;
   padding: 0;
-  font-weight: 400; }
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px; }
 
 /* ------------------------------------------таблет*/
 @media (min-width: 768px) {
