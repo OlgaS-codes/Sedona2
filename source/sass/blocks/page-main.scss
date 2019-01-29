@@ -1,10 +1,7 @@
 
 /* ---------------------------------рассмотрим 5 причин по которым Седона круче чем Гранд Каньон*/
 .page-main__content-text {
-  display: block;
   color: #333333;
-
-  @include content_Text();
 }
 
 .page-main__content-text-top {

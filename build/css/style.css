@@ -67,32 +67,21 @@ img {
   color: black;
   font-weight: bold; }
 
-.header__navigation {
-  position: relative; }
-
 @media (min-width: 768px) {
-  .header {
-    min-height: 53px;
-    font-size: 14px;
-    font-weight: bold; } }
-
-@media (min-width: 1200px) {
   .header {
     min-height: 53px; } }
 
-.main-navigation__list {
-  min-height: 223px;
+.header__nav {
   margin: 0;
   padding: 0;
-  list-style-type: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  position: relative; }
 
-.site-list__link {
-  display: block;
-  min-height: 53px;
-  background-color: #81b3d2;
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+.nav__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -102,61 +91,53 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700; }
+  text-decoration: none; }
 
 @media (max-width: 767px) {
-  .site-list__link {
-    min-height: 55px; }
-  .main-navigation__list__item {
-    min-height: 55px; } }
+  .nav__list {
+    min-height: 223px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .nav__item {
+    width: 100%;
+    margin: 0;
+    padding: 0; }
+  .nav__link {
+    min-height: 56px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background-color: #81b3d2;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700; }
+  /*тени и бордеры навигации */
+  /*тень у последнего пункта меню */
+  .nav__list :last-child .nav__link {
+    -webkit-box-shadow: inset 0 -7px 10px -9px black;
+            box-shadow: inset 0 -7px 10px -9px black; }
+  /*белый бордер сверху у всех пунктов, кроме первого */
+  .nav__list :not(:first-child) .nav__link {
+    border-top: 1px solid rgba(255, 255, 255, 0.2); }
+  /*серый бордер снизу у всех пунктов, кроме последнего */
+  .nav__list :not(:last-child) .nav__link {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.2); }
+  /*меню на ховере и активе */
+  .nav__link:hover {
+    background-color: #669ec0;
+    color: #8fb8d1; }
+  .nav__link:active {
+    background-color: #5496bd;
+    color: #7eb0cd; } }
 
-.main-navigation__list__item:nth-last-child(n+3) .site-list__link {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
-
-.main-navigation__list__item:nth-last-child(2) .site-list__link {
-  -webkit-box-shadow: inset 0 -7px 10px -9px #000000;
-          box-shadow: inset 0 -7px 10px -9px #000000; }
-
-.main-navigation__list__item--main-link {
-  position: relative;
-  margin: 0;
-  padding: 0; }
-
-.site-list__link.site-list__link--main {
-  border: none;
-  background-color: transparent;
-  position: absolute;
-  bottom: -27px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  z-index: 5;
-  width: 188px; }
-
-.main-navigation__toggle {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: 2;
-  display: block;
-  width: 57px;
-  height: 55px;
-  background-color: white;
-  background-image: url("../img/sprite/icon-menu.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 40%;
-  cursor: pointer;
-  border: none; }
-  .main-navigation__toggle:hover, .main-navigation__toggle:active {
-    outline: none; }
-
+/*---------------------------------------------------таблет */
 @media (min-width: 768px) {
-  .main-navigation__list {
+  .nav__list {
     min-height: 53px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -165,39 +146,82 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around; }
-  .site-list__link {
-    color: black;
-    background-color: #ffffff; }
-  .main-navigation__list__item:nth-last-child(n+3) .site-list__link,
-  .main-navigation__list__item:nth-last-child(2) .site-list__link {
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    border: none; }
-  .main-navigation__list__item--main-link {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2; }
-  .main-navigation__list__item:nth-child(3),
-  .main-navigation__list__item:nth-child(4) {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3; }
-  .main-navigation__toggle {
-    display: none; } }
-
-@media (min-width: 1200px) {
-  .main-navigation__list {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .nav__link {
+    min-height: 56px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row; }
-  .main-link__logo {
-    width: 188px; } }
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none;
+    color: black; }
+  .nav__item {
+    width: 166px; }
+  /* положение элементов навигации */
+  .nav__list li:nth-child(2) {
+    margin-right: 158px; } }
+
+@media (max-width: 767px) {
+  .logo {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    min-height: 57px; }
+  .logo__main-link {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    z-index: 5; } }
+
+@media (min-width: 768px) {
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    z-index: 4; } }
+
+@media (max-width: 767px) {
+  .toggle {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    z-index: 2;
+    display: block;
+    width: 57px;
+    height: 55px;
+    cursor: pointer;
+    border: none; }
+    .toggle:hover, .toggle:active {
+      outline: none; }
+  .toggle.open {
+    background-color: white;
+    background-image: url("../img/sprite/icon-menu.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 40%; }
+  .toggle.close {
+    background-color: white;
+    background-image: url("../img/sprite/menu-close.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 40%; } }
+
+@media (min-width: 768px) {
+  .toggle {
+    display: none; } }
 
 /*-------------------------------------Картинка с каньоном на главной странице */
 .page-main__img-top {
@@ -247,8 +271,8 @@ img {
     border-left-color: white; } }
 
 .img-top--index {
-  padding-top: 91px;
-  padding-bottom: 85px; }
+  padding-top: 88px;
+  padding-bottom: 87px; }
 
 .img-top--index__svg {
   width: 280px;
@@ -268,7 +292,30 @@ img {
     padding-bottom: 92px; }
   .img-top--index__svg {
     width: 460px;
-    height: 350px; } }
+    height: 350px;
+    position: relative; }
+  .page-main__img-top::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 33px;
+    height: 0;
+    width: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 0 0 59px 345px;
+    border-bottom-color: white; }
+  .page-main__img-top::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 33px;
+    height: 0;
+    width: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 59px 0 0 345px;
+    border-left-color: white; } }
 
 @media (min-width: 1200px) {
   .page-main__img-top {
@@ -412,7 +459,32 @@ img {
 
 @media (min-width: 768px) {
   .intro--index {
-    padding: 53px 139px 55px 139px; } }
+    padding: 53px 139px 55px 139px; }
+  .intro--index::after {
+    content: "";
+    position: absolute;
+    top: -38px;
+    right: 0;
+    height: 0;
+    width: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 0 0 37px 377px;
+    border-bottom-color: white; }
+  .intro--index::before {
+    content: "";
+    position: absolute;
+    top: -38px;
+    left: 0;
+    height: 0;
+    width: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 37px 0 0 377px;
+    border-left-color: white; }
+  .intro__heading {
+    font-size: 21px;
+    line-height: 26px; } }
 
 @media (min-width: 1200px) {
   .intro--index {
@@ -771,27 +843,28 @@ img {
 
 .feature-numbers__feature-number {
   margin: 0;
-  padding: 24px 35px 15px 30px; }
+  padding: 27px 35px 13px 30px; }
 
 .feature-number__heading {
   display: block;
   margin: 0;
-  margin-bottom: 8px;
-  padding: 1px;
-  font-size: 17px;
-  line-height: 1.5;
-  font-weight: bolder;
+  margin-bottom: 9px;
+  padding: 0;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
   text-align: center; }
 
 .feature-number__number {
   display: block;
   margin-top: 0;
-  margin-bottom: 8px;
+  margin-bottom: 15px;
   margin-right: auto;
   margin-left: auto;
   font-size: 14px;
-  line-height: 1.6;
-  text-align: center; }
+  line-height: 20px;
+  text-align: center;
+  font-weight: 400; }
 
 .feature-number__text {
   font-size: 14px;
@@ -854,7 +927,7 @@ img {
 /* -----------------------------заинтересовались и баттон найти гостинницу*/
 .page-main__hotel-search {
   margin: 0;
-  padding: 33px 15px 48px 14px;
+  padding: 27px 15px 48px 14px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -868,22 +941,28 @@ img {
 
 .page-main__heading--search {
   margin: 0;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
   padding: 0;
   text-align: center;
-  font-size: 20px; }
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px; }
 
 .hotel-search__content-text {
   margin: 0;
   padding: 0;
-  margin-bottom: 32px;
+  margin-bottom: 34px;
   font-size: 14px;
-  line-height: 1.8;
+  line-height: 24px;
   text-align: center; }
 
 .button {
-  display: block;
-  padding: 15px 44px 18px 38px;
+  width: 96%;
+  margin: 0;
+  padding: 0;
+  padding-top: 15px;
+  padding-bottom: 18px;
+  text-align: center;
   background-color: #81b3d2;
   font-size: 21px;
   line-height: 26px;
@@ -918,6 +997,51 @@ img {
   min-height: 350px;
   margin: 0; }
 
+.page-main__map {
+  height: 350px;
+  width: 100%;
+  background-image: url("../img/map@1x@mobile.jpg");
+  background-repeat: no-repeat; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .page-main__map {
+      background-image: url("../img/map@2x@mobile.jpg");
+      background-size: cover; } }
+
+.webp.page-main__map {
+  /* Webp background */
+  background-image: url("../img/webp/map@1x@mobile.webp"); }
+
+@media (min-width: 768px) {
+  .page-main__map {
+    background-image: url("../img/map@1x@tablet.jpg"); } }
+  @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
+    .page-main__map {
+      background-image: url("../img/map@2x@tablet.jpg");
+      background-size: 768px auto; } }
+
+@media (min-width: 768px) {
+  .webp.page-main__map {
+    /* Webp background */
+    background-image: url("../img/webp/map@1x@tablet.webp"); } }
+
+@media (min-width: 1200px) {
+  .page-main__map {
+    background-image: url("../img/map@1x@desktop.jpg"); } }
+  @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
+    .page-main__map {
+      background-image: url("../img/map@2x@desktop.jpg");
+      background-size: 1200px auto; } }
+
+@media (min-width: 1200px) {
+  .webp.page-main__map {
+    /* Webp background */
+    background-image: url("../img/webp/map@1x@desktop.webp"); } }
+
+.map__iframe {
+  width: 100%;
+  height: 100%;
+  border: none; }
+
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -933,14 +1057,17 @@ img {
       -ms-flex-align: center;
           align-items: center;
   margin: 0;
-  padding-top: 38px; }
+  padding-top: 36px; }
 
 .footer__col {
   margin: 0;
   padding: 0; }
 
-.footer__col:not(:last-child) {
-  margin-bottom: 40px; }
+.footer__col:first-child {
+  margin-bottom: 34px; }
+
+.footer__col:nth-child(2) {
+  margin-bottom: 21px; }
 
 .hash-tag__link {
   text-align: center;
@@ -948,7 +1075,7 @@ img {
   color: #333333;
   font-size: 21px;
   font-weight: 700;
-  line-height: 1.2; }
+  line-height: 25px; }
 
 .social__social__list {
   margin: 0;
@@ -993,7 +1120,7 @@ img {
   .developed__text {
     font-size: 14px;
     color: black;
-    line-height: 1.857;
+    line-height: 34px;
     text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1036,11 +1163,7 @@ img {
 
 /* ---------------------------------рассмотрим 5 причин по которым Седона круче чем Гранд Каньон*/
 .page-main__content-text {
-  display: block;
-  color: #333333;
-  font-size: 15px;
-  line-height: 1.6;
-  text-align: center; }
+  color: #333333; }
 
 .page-main__content-text-top {
   margin: 33px 26px 41px; }

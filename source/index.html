@@ -50,30 +50,31 @@
   </svg>
   <section class="main-wrapper">
     <header class="header">
-      <nav class="header__navigation main-navigation">
-        <ul class="main-navigation__list">
-          <li class="main-navigation__list__item"><a href="#" class="site-list__link">Главная</a></li>
-          <li class="main-navigation__list__item"><a href="photos.html" class="site-list__link">Фото и видео</a></li>
-
-          <li class="main-navigation__list__item"><a href="form.html" class="site-list__link">Форма отзыва</a></li>
-          <li class="main-navigation__list__item"><a href="https://htmlacademy.ru/" class="site-list__link">HTML
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
+          <li class="nav__item"><a href="photos.html" class="nav__link">Фото и видео</a></li>
+          <li class="nav__item"><a href="form.html" class="nav__link">Форма отзыва</a></li>
+          <li class="nav__item"><a href="https://htmlacademy.ru/" class="nav__link">HTML
               Academy</a></li>
-          <li class="main-navigation__list__item main-navigation__list__item--main-link">
-            <a href="#" class="site-list__link site-list__link--main">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/sprite/logotype-desktop.svg">
-                <source media="(min-width: 768px)" srcset="img/sprite/logotype-tablet.svg">
-                <img class="main-link__logo" src="img/sprite/logotyle-mobile.svg" alt="логотип сайта" width="102"
-                  height="83">
-              </picture>
-            </a>
-          </li>
         </ul>
-        <button class="main-navigation__toggle" type="button"><span class="visually-hidden">открыть меню</span></button>
+        <div class="header__logo logo">
+          <a href="#" class="logo__main-link main-link">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/sprite/logotype-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/sprite/logotype-tablet.svg">
+              <img class="main-link__logo" src="img/sprite/logotyle-mobile.svg" alt="логотип сайта" width="102"
+                height="83">
+            </picture>
+          </a>
+        </div>
+        <button class="nav__toggle toggle open" type="button"><span class="visually-hidden">открыть меню</span></button>
       </nav>
     </header>
     <main class="page-main">
       <div class="page-main__img-top img-top--index">
+        <h1 class="visually-hidden">Welcome to the gorgeous Sedona</h1>
+        <p class="visually-hidden">Because the Grand Canyon sucks</p>
         <svg class="img-top--index__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
           width="100%" viewBox="0 0 460 350">
           <use xlink:href="#welcome-sedona">
@@ -81,14 +82,14 @@
         </svg>
       </div>
       <div class="page-main__intro intro intro--index">
-        <h1 class="intro__heading heading heading--index">Седона – небольшой городок в Аризоне, заслуживающий большего!</h1>
+        <h2 class="intro__heading heading heading--index">Седона – небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p class="intro__content-text content-text content-text--index">Рассмотрим 5 причин, по которым Седона круче,
           чем Гранд каньон!</p>
       </div>
       <section class="features-list">
         <section class="features-list__feature-picture feature-picture">
           <div class="feature-picture__content-text">
-            <h2 class="feature-picture__heading">Настоящий городок</h2>
+            <h3 class="feature-picture__heading">Настоящий городок</h3>
             <span class="feature-picture__number"> — №1 — </span>
             <p class="feature-picture__text">Седона не аттракцион для туристов, там течет своя жизнь.</p>
           </div>
@@ -107,15 +108,15 @@
         </section>
         <section class="features-list__feature-icons feature-icons">
           <div class="feature-icons__feature-icon feature-icon--house">
-            <h2 class="feature-icon__heading feature-icon__heading--house">Жильё</h2>
+            <h3 class="feature-icon__heading feature-icon__heading--house">Жильё</h3>
             <p class="feature-icon__text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </div>
           <div class="feature-icons__feature-icon feature-icon--souvenirs">
-            <h2 class="feature-icon__heading feature-icon__heading--souvenirs">Сувениры </h2>
+            <h3 class="feature-icon__heading feature-icon__heading--souvenirs">Сувениры </h3>
             <p class="feature-icon__text">Не только китайского, но и местного производства!</p>
           </div>
           <div class="feature-icons__feature-icon feature-icon--food">
-            <h2 class="feature-icon__heading feature-icon__heading--food">Еда</h2>
+            <h3 class="feature-icon__heading feature-icon__heading--food">Еда</h3>
             <p class="feature-icon__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </div>
         </section>
@@ -123,7 +124,7 @@
           <div class="feature-picture__content-text">
             <h2 class="feature-picture__heading">Там есть Мост дьявола</h2>
             <span class="feature-picture__number"> — №2 — </span>
-            <p class="feature-picture__text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            <p class="feature-picture__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
           <div class="feature-picture__wrapper">
             <picture>
@@ -141,38 +142,33 @@
         </section>
         <section class="features-list__feature-numbers feature-numbers">
           <div class="feature-numbers__feature-number">
-            <h2 class="feature-number__heading">Небольшая площадь</h2>
+            <h3 class="feature-number__heading">Небольшая площадь</h3>
             <span class="feature-number__number"> — №3 — </span>
             <p class="feature-number__text">Все интересные места находятся очень близко</p>
           </div>
           <div class="feature-numbers__feature-number">
-            <h2 class="feature-number__heading">Красивая дорога</h2>
+            <h3 class="feature-number__heading">Красивая дорога</h3>
             <span class="feature-number__number"> — №4 — </span>
             <p class="feature-number__text">Ехать в Седону из Лас&#8209;Вегаса совсем не скучно!</p>
           </div>
           <div class="feature-numbers__feature-number">
-            <h2 class="feature-number__heading">Мало туристов</h2>
+            <h3 class="feature-number__heading">Мало туристов</h3>
             <span class="feature-number__number"> — №5 — </span>
             <p class="feature-number__text">Большинство едет в гранд каньон и толпится там</p>
           </div>
         </section>
       </section>
       <section class="page-main__hotel-search hotel-search">
-        <h2 class="page-main__heading page-main__heading--search">Заинтересовались?</h2>
+        <h3 class="page-main__heading page-main__heading--search">Заинтересовались?</h3>
         <p class="page-main__content-text hotel-search__content-text">Укажите предполагаемые даты поездки, и мы покажем
           вам лучшие предложения гостиниц в Cедоне</p>
         <a class="button button-search">Найти гостиницу</a>
       </section>
-      <picture>
-        <source type="image/webp" media="(min-width: 1200px)" srcset="img/webp/map@1x@desktop.webp 1x, img/webp/map@2x@desktop.webp 2x">
-        <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/map@1x@tablet.webp 1x, img/webp/map@2x@tablet.webp 2x">
-        <source type="image/webp" srcset="img/webp/map@1x@mobile.webp 1x, img/webp/map@2x@mobile.webp 2x">
+      <section class="page-main__map map">
+        <iframe class="map__iframe" title="Город Седона, Штат Аризона 86336, США" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1154888.7252207922!2d-112.15221201303811!3d34.6185093420716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C+AZ+86336%2C+USA!5e0!3m2!1sen!2sru!4v1506242355254">
+        </iframe>
+      </section>
 
-        <source media="(min-width: 1200px)" srcset="img/map@1x@desktop.jpg 1x, img/map@2x@desktop.jpg 2x">
-        <source media="(min-width: 768px)" srcset="img/map@1x@tablet.jpg 1x, img/map@2x@tablet.jpg 2x">
-        <img class="page-main__map-image map-image" src="img/map@1x@mobile.jpg 1x" srcset="img/map@2x@mobile.jpg 2x"
-          alt="карта Седоны" width="1200" height="350">
-      </picture>
     </main>
     <footer class="footer">
       <div class="footer__col footer__hash-tag hash-tag">
@@ -197,6 +193,7 @@
   </section>
   <script src="js/jquery-3.1.1.min.js"></script>
   <script src="js/script.js"></script>
+  <!-- <script src="modernizr-custom.js"></script> -->
 </body>
 
 </html>

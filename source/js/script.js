@@ -1,6 +1,5 @@
 
-$(".main-navigation__toggle").on('click', function() {
-  $(".main-navigation__list").addClass("colorful");
-
-});
-
+$("#target").on("click", function(){
+  $("#box").slideToggle(1000);
+  // дописать смену значка баттона
+} );

@@ -7,20 +7,7 @@
   font-weight: bold;
 }
 
-.header__navigation {
-  position: relative;
-}
-
 @media (min-width: $tablet-width) {
-  .header {
-    min-height: 53px;
-    font-size: 14px;
-    font-weight: bold;
-  }
-}
-
-
-@media (min-width: $desktop-width) {
   .header {
     min-height: 53px;
   }

@@ -1,0 +1,30 @@
+@media (max-width: $mobile-width-only) {
+  .logo {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    min-height: 57px;
+  }
+
+  .logo__main-link {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 4;
+  }
+}
+

@@ -1,0 +1,43 @@
+@media (max-width: $mobile-width-only) {
+  .toggle {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    z-index: 2;
+
+    display: block;
+    width: 57px;
+    height: 55px;
+
+    cursor: pointer;
+    border: none;
+
+    &:hover,
+    &:active {
+      outline: none;
+    }
+  }
+
+  .toggle.open {
+    background-color: white;
+    background-image: url("../img/sprite/icon-menu.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 40%;
+  }
+
+  .toggle.close {
+    background-color: white;
+    background-image: url("../img/sprite/menu-close.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 40%;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .toggle {
+    display: none;
+  }
+}

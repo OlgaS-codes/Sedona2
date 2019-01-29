@@ -1,0 +1,102 @@
+.header__nav {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+@media (max-width: $mobile-width-only) {
+  .nav__list {
+    min-height: 223px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav__item {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav__link {
+    min-height: 56px;
+    box-sizing: border-box;
+    background-color: #81b3d2;
+
+    color: $white;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+  }
+
+  /*тени и бордеры навигации */
+
+  /*тень у последнего пункта меню */
+  .nav__list :last-child .nav__link {
+    box-shadow: inset 0 -7px 10px -9px black;
+  }
+
+  /*белый бордер сверху у всех пунктов, кроме первого */
+  .nav__list :not(:first-child) .nav__link {
+    border-top: 1px solid rgba(white, 0.2);
+  }
+
+  /*серый бордер снизу у всех пунктов, кроме последнего */
+  .nav__list :not(:last-child) .nav__link {
+    border-bottom: 1px solid rgba(grey, 0.2);
+  }
+
+  /*меню на ховере и активе */
+  .nav__link:hover {
+    background-color: #669ec0;
+    color: #8fb8d1;
+  }
+
+  .nav__link:active {
+    background-color: #5496bd;
+    color: #7eb0cd;
+  }
+}
+
+/*---------------------------------------------------таблет */
+
+@media (min-width: $tablet-width) {
+  .nav__list {
+    min-height: 53px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; //space-around
+  }
+
+  .nav__link {
+    min-height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+
+  .nav__item {
+    width: 166px;
+  }
+
+  /* положение элементов навигации */
+
+  .nav__list li:nth-child(2) {
+    margin-right: 158px;
+  }
+}
+

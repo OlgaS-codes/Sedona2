@@ -5,26 +5,30 @@
 
 .feature-numbers__feature-number {
   margin: 0;
-  padding: 24px 35px 15px 30px;
+  padding: 27px 35px 13px 30px;
 }
 
 .feature-number__heading {
   display: block;
   margin: 0;
-  margin-bottom: 8px;
-  padding: 1px;
-
-  @include heading_Text();
+  margin-bottom: 9px;
+  padding: 0;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
 }
 
 .feature-number__number {
   display: block;
   margin-top: 0;
-  margin-bottom: 8px;
+  margin-bottom: 15px;
   margin-right: auto;
   margin-left: auto;
-
-  @include primary_Text();
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  font-weight: 400;
 }
 
 .feature-number__text {
