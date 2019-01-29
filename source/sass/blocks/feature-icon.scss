@@ -15,6 +15,7 @@
   align-items: left;
   margin: 0;
   font-size: 15px;
+  line-height: 21px;
 }
 
 @media (max-width: $mobile-width-only) {
@@ -86,8 +87,16 @@
     display: flex;
     flex-direction: row;
     align-items: start;
-    padding: 165px 0 43px 0;
+    padding: 158px 0 43px 0;
     margin: 0;
+  }
+
+  .feature-icons__feature-icon {
+    width: 33.3%;
+    margin: 0;
+    padding: 0 46px 0 46px;
+    display: flex;
+    flex-direction: column;
   }
 
   .feature-icon--house {
@@ -96,50 +105,49 @@
 
   .feature-icon--food {
     order: 2;
+    padding: 0 45px 0 45px;
   }
 
   .feature-icon--souvenirs {
     order: 3;
   }
 
-  .feature-icons__feature-icon {
-    margin: 0;
-    padding: 0 46px 0 46px;
-    display: flex;
-    flex-direction: column;
-  }
-
   .feature-icon__heading {
+    width: 97%;
     margin-bottom: 21px;
     padding: 0;
     text-align: center;
+    font-size: 20px;
   }
 
   .feature-icon__heading--house::before {
-    width: 75px;
-    height: 62px;
-    left: 57px;
-    top: -79px;
+    width: 74px;
+    height: 72px;
+    left: 45px;
+    top: -98px;
+    background-size: 100%;
   }
 
   .feature-icon__heading--food::before {
     width: 77px;
     height: 68px;
-    left: 57px;
-    top: -79px;
+    left: 43px;
+    top: -95px;
   }
 
   .feature-icon__heading--souvenirs::before {
     width: 64px;
     height: 75px;
-    left: 57px;
-    top: -79px;
+    left: 51px;
+    top: -102px;
   }
 
   .feature-icon__text {
-    padding: 0;
+    width: 100%;
     margin: 0;
+    padding: 0;
     text-align: center;
+    line-height: 21px;
   }
 }
 

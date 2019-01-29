@@ -67,7 +67,7 @@
 
 @media (min-width: $tablet-width) {
   .intro--index {
-    padding: 53px 139px 55px 139px;
+    padding: 49px 143px 50px 138px;
   }
 
   .intro--index::after {
@@ -99,6 +99,10 @@
   .intro__heading {
     font-size: 21px;
     line-height: 26px;
+  }
+
+  .intro__content-text {
+    width: 100%;
   }
 }
 
