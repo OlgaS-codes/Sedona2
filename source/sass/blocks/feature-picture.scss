@@ -48,6 +48,7 @@
   }
 
   &__image {
+    display: block;
     width: 100%;
     min-height: 260px;
     object-fit: cover;
@@ -66,7 +67,7 @@
     width: 33.3%;
     box-sizing: border-box;
     justify-content: center;
-    padding: 38px 46px 40px 44px;
+    padding: 32px 46px 40px 44px;
   }
 
   .feature-picture__heading {
@@ -113,7 +114,7 @@
   .feature-picture__content-text {
     box-sizing: border-box;
     justify-content: center;
-    padding: 53px 67px 57px 61px;
+    padding: 51px 67px 57px 66px;
   }
 
   .feature-picture__heading {

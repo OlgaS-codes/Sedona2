@@ -10,8 +10,8 @@
 
 @media (min-width: $tablet-width) {
   .page-main__content-text {
-    display: block;
-    min-width: 490px;
+    // display: block;
+    // min-width: 490px;
   }
 
   .page-main__content-text-top {
@@ -19,12 +19,12 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .page-main__content-text {
-    min-width: 490px;
-    margin-right: auto;
-    margin-left: auto;
-    display: block;
-    color: rgb(0, 0, 0);
-  }
-}
+// @media (min-width: $desktop-width) {
+//   .page-main__content-text {
+//     // min-width: 490px;
+//     // margin-right: auto;
+//     // margin-left: auto;
+//     // display: block;
+//     // color: rgb(0, 0, 0);
+//   }
+// }

@@ -42,10 +42,13 @@
     border-width: 17px 0 0 160px;
     border-left-color: #81b3d2;
   }
+
+  .intro__heading {
+    width: 96%;
+  }
 }
 
 .intro__heading {
-  width: 96%;
   margin: 0;
   margin-bottom: 28px;
   padding: 0;
@@ -108,7 +111,23 @@
 
 @media (min-width: $desktop-width) {
   .intro--index {
-    padding: 134px 355px 56px 355px;
+    padding: 49px 355px 50px 355px;
+  }
+
+  .intro--index::after {
+    top: -58px;
+    right: 0;
+    border-width: 0 0 63px 609px;
+  }
+
+  .intro--index::before {
+    top: -58px;
+    border-width: 63px 0 0 609px;
+  }
+
+  .intro__heading {
+    font-size: 22px;
+    line-height: 26px;
   }
 }
 

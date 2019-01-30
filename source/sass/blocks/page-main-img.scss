@@ -114,6 +114,16 @@
     }
   }
 
+  .page-main__img-top::before {
+    left: 249px;
+    border-width: 57px 0 0 344px;
+  }
+
+  .page-main__img-top::after {
+    right: 249px;
+    border-width: 0 0 57px 344px;
+  }
+
   .img-top--index {
     padding-top: 80px;
     padding-bottom: 91px;

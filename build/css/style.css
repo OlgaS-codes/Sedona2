@@ -9,6 +9,18 @@
   font-weight: 400;
   src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff"); }
 
+.text-break--tablet,
+.text-break--desktop {
+  display: none; }
+
+@media (min-width: 768px) {
+  .text-break--tablet {
+    display: block; } }
+
+@media (min-width: 1200px) {
+  .text-break--desktop {
+    display: block; } }
+
 body {
   margin: 0 auto;
   padding: 0;
@@ -19,10 +31,8 @@ body {
           box-sizing: border-box; }
 
 img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  line-height: 0; }
+  width: 100%;
+  height: auto; }
 
 .main-wrapper {
   min-width: 320px;
@@ -95,7 +105,6 @@ img {
 
 @media (max-width: 767px) {
   .nav__list {
-    min-height: 223px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -138,7 +147,7 @@ img {
 /*---------------------------------------------------таблет */
 @media (min-width: 768px) {
   .nav__list {
-    min-height: 53px;
+    min-height: none;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -168,6 +177,15 @@ img {
   .nav__list li:nth-child(2) {
     margin-right: 158px; } }
 
+/*---------------------------------------------------десктоп */
+@media (min-width: 1200px) {
+  .nav__link {
+    min-height: 53px; }
+  .nav__item {
+    width: 254px; }
+  .nav__list li:nth-child(2) {
+    margin-right: 246px; } }
+
 @media (max-width: 767px) {
   .logo {
     position: relative;
@@ -178,7 +196,7 @@ img {
     border: none;
     background-color: transparent;
     position: absolute;
-    top: 0;
+    top: -1px;
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
@@ -326,6 +344,12 @@ img {
       background-size: 1200px auto; } }
 
 @media (min-width: 1200px) {
+  .page-main__img-top::before {
+    left: 249px;
+    border-width: 57px 0 0 344px; }
+  .page-main__img-top::after {
+    right: 249px;
+    border-width: 0 0 57px 344px; }
   .img-top--index {
     padding-top: 80px;
     padding-bottom: 91px;
@@ -436,10 +460,11 @@ img {
     border-color: transparent;
     border-style: solid;
     border-width: 17px 0 0 160px;
-    border-left-color: #81b3d2; } }
+    border-left-color: #81b3d2; }
+  .intro__heading {
+    width: 96%; } }
 
 .intro__heading {
-  width: 96%;
   margin: 0;
   margin-bottom: 28px;
   padding: 0;
@@ -490,7 +515,17 @@ img {
 
 @media (min-width: 1200px) {
   .intro--index {
-    padding: 134px 355px 56px 355px; } }
+    padding: 49px 355px 50px 355px; }
+  .intro--index::after {
+    top: -58px;
+    right: 0;
+    border-width: 0 0 63px 609px; }
+  .intro--index::before {
+    top: -58px;
+    border-width: 63px 0 0 609px; }
+  .intro__heading {
+    font-size: 22px;
+    line-height: 26px; } }
 
 /*-----------------------------------------------------фото-файл */
 .intro--photo {
@@ -576,6 +611,7 @@ img {
     min-height: 260px;
     overflow: hidden; }
   .feature-picture__image {
+    display: block;
     width: 100%;
     min-height: 260px;
     -o-object-fit: cover;
@@ -600,7 +636,7 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding: 38px 46px 40px 44px; }
+    padding: 32px 46px 40px 44px; }
   .feature-picture__heading {
     display: block;
     margin: 0 0 10px 0;
@@ -640,7 +676,7 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding: 53px 67px 57px 61px; }
+    padding: 51px 67px 57px 66px; }
   .feature-picture__heading {
     display: block;
     margin: 0 28px 10px; }
@@ -681,7 +717,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 36px 41px 38px 70px; }
+  padding: 36px 41px 40px 70px; }
 
 .feature-icons__feature-icon {
   display: -webkit-box;
@@ -708,7 +744,7 @@ img {
 .feature-icon__heading {
   position: relative;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   text-align: left;
   font-size: 18px;
   line-height: 26px;
@@ -767,7 +803,7 @@ img {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
-    padding: 158px 0 43px 0;
+    padding: 157px 0 61px 0;
     margin: 0; }
   .feature-icons__feature-icon {
     width: 33.3%;
@@ -795,7 +831,7 @@ img {
             order: 3; }
   .feature-icon__heading {
     width: 97%;
-    margin-bottom: 21px;
+    margin-bottom: 22px;
     padding: 0;
     text-align: center;
     font-size: 20px; }
@@ -825,23 +861,24 @@ img {
 /* ------------------------------------------десктоп*/
 @media (min-width: 1200px) {
   .features-list__feature-icons {
-    padding-top: 163px;
-    padding-bottom: 88px; }
+    padding-top: 159px;
+    padding-bottom: 80px; }
   .feature-icons__feature-icon {
-    padding: 0 60px 0 60px; }
+    padding: 0 60px 0 56px; }
   .feature-icon__heading {
+    width: 100%;
     margin-bottom: 22px; }
   .feature-icon__heading--house::before {
     width: 75px;
     height: 72px;
-    left: 110px;
-    top: -116px; }
+    left: 105px;
+    top: -99px; }
   .feature-icon__heading--food::before {
-    left: 110px;
-    top: -116px; }
+    left: 105px;
+    top: -95px; }
   .feature-icon__heading--souvenirs::before {
-    left: 110px;
-    top: -116px; }
+    left: 111px;
+    top: -101px; }
   .feature-icon__text {
     padding: 0;
     margin: 0;
@@ -897,24 +934,28 @@ img {
     margin: 0;
     padding: 0; }
   .feature-numbers__feature-number {
+    width: 33.33%;
     margin: 0;
-    padding: 42px 46px 46px 46px; }
+    padding: 44px 46px 46px 46px; }
   .feature-number__heading {
     margin: 0;
-    margin-bottom: 13px;
+    margin-bottom: 10px;
     padding: 0 10px 0 10px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     font-size: 21px;
     font-weight: bold;
-    line-height: 1.238; }
+    line-height: 26px; }
   .feature-number__number {
-    margin-bottom: 19px; }
+    margin-bottom: 22px;
+    padding: 0;
+    font-size: 14px;
+    line-height: 20px; }
   .feature-number__text {
     margin: 0 auto;
     padding: 0;
     font-size: 14px;
-    line-height: 1.5; } }
+    line-height: 21px; } }
 
 @media (min-width: 1200px) {
   .features-list__feature-numbers {
@@ -930,9 +971,14 @@ img {
     padding: 0; }
   .feature-numbers__feature-number {
     margin: 0;
-    padding: 42px 80px 46px 80px; }
+    padding: 46px 50px 46px 50px; }
   .feature-number__heading {
-    margin: 0 50px 13px 50px; } }
+    padding: 0;
+    width: 127px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 9px;
+    white-space: pre-line; } }
 
 /* -----------------------------заинтересовались и баттон найти гостинницу*/
 .page-main__hotel-search {
@@ -949,7 +995,7 @@ img {
       -ms-flex-align: center;
           align-items: center; }
 
-.page-main__heading--search {
+.hotel-search__heading {
   margin: 0;
   margin-bottom: 20px;
   padding: 0;
@@ -964,7 +1010,8 @@ img {
   margin-bottom: 34px;
   font-size: 14px;
   line-height: 24px;
-  text-align: center; }
+  text-align: center;
+  color: #333333; }
 
 .button {
   width: 96%;
@@ -982,23 +1029,30 @@ img {
 
 @media (min-width: 768px) {
   .page-main__hotel-search {
-    padding: 57px 155px 57px 155px; }
-  .page-main__heading--search {
-    margin-bottom: 29px;
-    font-size: 30px; }
+    padding: 49px 155px 57px 155px; }
+  .hotel-search__heading {
+    margin-bottom: 26px;
+    font-size: 30px;
+    line-height: 36px; }
   .hotel-search__content-text {
+    min-width: 490px;
     font-size: 14px;
-    line-height: 1.5;
-    margin-bottom: 46px; }
+    line-height: 23px;
+    margin-bottom: 43px;
+    margin-right: auto;
+    margin-left: auto; }
   .button {
-    padding: 15px 115px 18px 115px;
-    line-height: 1.2; } }
+    width: 49.89%;
+    padding: 16px 117px 15px 115px; } }
 
 @media (min-width: 1200px) {
   .page-main__hotel-search {
-    padding: 48px 374px 67px 374px; }
+    padding: 53px 374px 67px 374px; }
   .hotel-search__content-text {
-    margin-bottom: 50px; }
+    margin-right: auto;
+    margin-left: auto;
+    min-width: 450px;
+    margin-bottom: 48px; }
   .button {
     padding: 15px 115px 18px 115px; } }
 
@@ -1167,9 +1221,26 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+  .footer__col:first-child {
+    margin-bottom: 25px; }
   .developed {
-    -ms-flex-item-align: baseline;
-        align-self: baseline; } }
+    margin-bottom: 22px; }
+  .developed__text {
+    margin: 0;
+    padding-left: 5px; }
+  .developed__link {
+    margin-left: 13px; } }
+
+/*-------------------------------desktop */
+@media (min-width: 1200px) {
+  .footer {
+    padding-top: 30px; }
+  .footer__col:first-child {
+    margin-bottom: 26px; }
+  .hash-tag__link {
+    padding-right: 23px; }
+  .developed__text {
+    padding-left: 27px; } }
 
 /* ---------------------------------рассмотрим 5 причин по которым Седона круче чем Гранд Каньон*/
 .page-main__content-text {
@@ -1179,19 +1250,8 @@ img {
   margin: 33px 26px 41px; }
 
 @media (min-width: 768px) {
-  .page-main__content-text {
-    display: block;
-    min-width: 490px; }
   .page-main__content-text-top {
     margin: 0 120px 50px 120px; } }
-
-@media (min-width: 1200px) {
-  .page-main__content-text {
-    min-width: 490px;
-    margin-right: auto;
-    margin-left: auto;
-    display: block;
-    color: black; } }
 
 .photos-gallery {
   list-style: none;
@@ -1369,7 +1429,7 @@ img {
           box-sizing: border-box;
   padding: 0 34px 0 34px;
   font-size: 14px;
-  line-height: 1.65; }
+  line-height: 21px; }
 
 .video__video {
   min-height: 268px; }
@@ -1388,7 +1448,7 @@ img {
     margin: 0 0 26px 0;
     padding: 0 109px 0 107px;
     font-size: 14px;
-    line-height: 1.65; }
+    line-height: 21px; }
   .video__video {
     width: 647px;
     min-height: 500px; } }

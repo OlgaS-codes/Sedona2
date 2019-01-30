@@ -19,7 +19,7 @@
 
 @media (max-width: $mobile-width-only) {
   .nav__list {
-    min-height: 223px;
+    // min-height: 223px;
     display: flex;
     flex-direction: column;
   }
@@ -74,7 +74,7 @@
 
 @media (min-width: $tablet-width) {
   .nav__list {
-    min-height: 53px;
+    min-height: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between; //space-around
@@ -100,3 +100,18 @@
   }
 }
 
+/*---------------------------------------------------десктоп */
+
+@media (min-width: $desktop-width) {
+  .nav__link {
+    min-height: 53px;
+  }
+
+  .nav__item {
+    width: 254px;
+  }
+
+  .nav__list li:nth-child(2) {
+    margin-right: 246px;
+  }
+}

@@ -1,0 +1,16 @@
+.text-break--tablet,
+.text-break--desktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .text-break--tablet {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .text-break--desktop {
+    display: block;
+  }
+}

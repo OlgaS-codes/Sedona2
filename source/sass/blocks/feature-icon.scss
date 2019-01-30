@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 36px 41px 38px 70px;
+  padding: 36px 41px 40px 70px;
 }
 
 .feature-icons__feature-icon {
@@ -29,7 +29,7 @@
   &__heading {
     position: relative;
     margin: 0;
-    margin-bottom: 15px;
+    margin-bottom: 14px;
     text-align: left;
     font-size: 18px;
     line-height: 26px;
@@ -87,7 +87,7 @@
     display: flex;
     flex-direction: row;
     align-items: start;
-    padding: 158px 0 43px 0;
+    padding: 157px 0 61px 0;
     margin: 0;
   }
 
@@ -114,7 +114,7 @@
 
   .feature-icon__heading {
     width: 97%;
-    margin-bottom: 21px;
+    margin-bottom: 22px;
     padding: 0;
     text-align: center;
     font-size: 20px;
@@ -154,33 +154,34 @@
 /* ------------------------------------------десктоп*/
 @media (min-width: $desktop-width) {
   .features-list__feature-icons {
-    padding-top: 163px;
-    padding-bottom: 88px;
+    padding-top: 159px;
+    padding-bottom: 80px;
   }
 
   .feature-icons__feature-icon {
-    padding: 0 60px 0 60px;
+    padding: 0 60px 0 56px;
   }
 
   .feature-icon__heading {
+    width: 100%;
     margin-bottom: 22px;
   }
 
   .feature-icon__heading--house::before {
     width: 75px;
     height: 72px;
-    left: 110px;
-    top: -116px;
+    left: 105px;
+    top: -99px;
   }
 
   .feature-icon__heading--food::before {
-    left: 110px;
-    top: -116px;
+    left: 105px;
+    top: -95px;
   }
 
   .feature-icon__heading--souvenirs::before {
-    left: 110px;
-    top: -116px;
+    left: 111px;
+    top: -101px;
   }
 
   .feature-icon__text {
