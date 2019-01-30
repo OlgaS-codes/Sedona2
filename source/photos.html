@@ -47,25 +47,25 @@
   </svg>
   <section class="main-wrapper">
     <header class="header">
-      <nav class="header__navigation main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__list__item"><a href="index.html" class="site-list__link">Главная</a></li>
-          <li class="main-nav__list__item"><a href="#" class="site-list__link">Фото и видео</a></li>
-
-          <li class="main-nav__list__item"><a href="form.html" class="site-list__link">Форма отзыва</a></li>
-          <li class="main-nav__list__item"><a href="https://htmlacademy.ru/" class="site-list__link">HTML
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Фото и видео</a></li>
+          <li class="nav__item"><a href="form.html" class="nav__link">Форма отзыва</a></li>
+          <li class="nav__item"><a href="https://htmlacademy.ru/" class="nav__link">HTML
               Academy</a></li>
-          <li class="main-nav__list__item main-nav__list__item--main-link"><a href=href="index.html"
-              class="site-list__link site-list__link--main">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/sprite/logotype-desktop.svg">
-                <source media="(min-width: 768px)" srcset="img/sprite/logotype-tablet.svg">
-                <img class="main-link__logo" src="img/sprite/logotyle-mobile.svg" alt="логотип сайта" width="102"
-                  height="83">
-              </picture>
-            </a></li>
         </ul>
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">открыть меню</span></button>
+        <div class="header__logo logo">
+          <a href="#" class="logo__main-link main-link">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/sprite/logotype-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/sprite/logotype-tablet.svg">
+              <img class="main-link__logo" src="img/sprite/logotyle-mobile.svg" alt="логотип Седона" width="102"
+                height="83">
+            </picture>
+          </a>
+        </div>
+        <button class="nav__toggle toggle open" type="button"><span class="visually-hidden">открыть меню</span></button>
       </nav>
     </header>
     <main class="page-main">
