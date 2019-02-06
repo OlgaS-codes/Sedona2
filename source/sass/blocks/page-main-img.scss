@@ -3,7 +3,6 @@
 
 .page-main__img-top {
   width: 100%;
-  position: relative;
   box-sizing: border-box;
   margin: 0;
   display: flex;
@@ -18,32 +17,9 @@
   }
 }
 
-@media (max-width: $mobile-width-only) {
-  .page-main__img-top::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    height: 0;
-    width: 0;
-    border-color: transparent;
-    border-style: solid;
-    border-width: 0 0 28px 160px;
-    border-bottom-color: white;
-  }
-
-  .page-main__img-top::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 0;
-    width: 0;
-    border-color: transparent;
-    border-style: solid;
-    border-width: 28px 0 0 160px;
-    border-left-color: white;
-  }
+.img-top--index,
+.img-top--photo {
+  position: relative;
 }
 
 .img-top--index {
@@ -76,32 +52,6 @@
     height: 350px;
     position: relative;
   }
-
-  .page-main__img-top::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 33px;
-    height: 0;
-    width: 0;
-    border-color: transparent;
-    border-style: solid;
-    border-width: 0 0 59px 345px;
-    border-bottom-color: white;
-  }
-
-  .page-main__img-top::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 33px;
-    height: 0;
-    width: 0;
-    border-color: transparent;
-    border-style: solid;
-    border-width: 59px 0 0 345px;
-    border-left-color: white;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -114,16 +64,6 @@
     }
   }
 
-  .page-main__img-top::before {
-    left: 249px;
-    border-width: 57px 0 0 344px;
-  }
-
-  .page-main__img-top::after {
-    right: 249px;
-    border-width: 0 0 57px 344px;
-  }
-
   .img-top--index {
     padding-top: 80px;
     padding-bottom: 91px;
@@ -134,7 +74,7 @@
 
 /*-------------------------------------Фото-файл */
 .img-top--photo {
-  padding-top: 53px;
+  padding-top: 49px;
   padding-bottom: 67px;
   background-position-y: -231px;
 }
@@ -207,3 +147,87 @@
     height: 80px;
   }
 }
+
+/*псевдоэлемент уголок под картинкой */
+
+.img-top--index::after,
+.img-top--photo::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 0;
+  width: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+
+.img-top--index::before,
+.img-top--photo::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0;
+  width: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+
+@media (max-width: $mobile-width-only) {
+
+  /* общие стили псевдоэлементов*/
+  .img-top--index::after,
+  .img-top--photo::after {
+    border-bottom-color: white;
+  }
+
+  .img-top--index::before,
+  .img-top--photo::before {
+    border-left-color: white;
+  }
+
+  .img-top--index::after {
+    border-width: 0 0 28px 160px;
+  }
+
+  .img-top--index::before {
+    border-width: 28px 0 0 160px;
+  }
+
+  .img-top--photo::after {
+    border-width: 0 0 25px 160px;
+  }
+
+  .img-top--photo::before {
+    border-width: 25px 0 0 160px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .img-top--index::after {
+    right: 33px;
+    border-width: 0 0 59px 345px;
+    border-bottom-color: white;
+  }
+
+  .img-top--index::before {
+    left: 33px;
+    border-width: 59px 0 0 345px;
+    border-left-color: white;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .img-top--index::before {
+    left: 249px;
+    border-width: 57px 0 0 344px;
+  }
+
+  .img-top--index::after {
+    right: 249px;
+    border-width: 0 0 57px 344px;
+  }
+}
+
+

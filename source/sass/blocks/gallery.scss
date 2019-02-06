@@ -1,0 +1,21 @@
+.photos-gallery {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+@media (min-width: $tablet-width) {
+  .photos-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 60px 0 60px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .photos-gallery {
+    padding: 0;
+  }
+}

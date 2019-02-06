@@ -91,6 +91,11 @@ gulp.task("html", function () {
     .pipe(gulp.dest("build/"));
 });
 
+gulp.task("video", function () {
+  return gulp.src("source/video/*.mp4")
+    .pipe(gulp.dest("build/video"));
+});
+
 gulp.task("server", function () {
   server.init({
     server: "build/",
@@ -105,6 +110,6 @@ gulp.task("server", function () {
   gulp.watch("source/js/**/*.js", gulp.series("script")).on("change", server.reload);
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "script", "img", "webp", "sprite", "html"));
+gulp.task("build", gulp.series("clean", "copy", "css", "script", "img", "video", "webp", "sprite", "html"));
 
 

@@ -1,0 +1,128 @@
+.controls {
+  margin: 0 auto;
+  position: absolute;
+  top: 193px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 87.5%;
+}
+
+.progress-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  min-height: 43px;
+}
+
+.progress-bar {
+  position: absolute;
+  top: 21px;
+  left: 22px;
+  height: 4px;
+  width: 84%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.watched-Line {
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 8px; // сюда передавать данные
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.watched-indicator {
+  position: absolute;
+  left: 0;// сюда передавать данные
+  top: -3px;
+  width: 8px;
+  height: 9px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+
+.down-buttons {
+  width: 100%;
+  height: 66px;
+  background-color: white;
+}
+
+
+.controls button {
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+#play-pause {
+  position: absolute;
+  top: -123px;
+  left: 0;
+  content: " ";
+  width: 100%;
+  height: 121px;
+  background-repeat: no-repeat;
+  background-size: 23%;
+  background-position: center;
+  transition: opacity 0.2s ease-in-out;
+}
+
+#play-pause.play:active {
+  background-image: url("../img/sprite/play-button.svg");
+  opacity: 0.5;
+}
+
+#play-pause.pause:active {
+  background-image: url("../img/sprite/pause-button.svg");
+  opacity: 0.5;
+}
+
+#repeat {
+  position: absolute;
+  top: 61px;
+    left: 21px;
+  content: " ";
+  width: 25px;
+  height: 30px;
+  background-image: url("../img/sprite/replay.svg");
+  background-size: 67%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: opacity 0.2s ease-in-out;
+
+}
+
+#full-screen {
+  position: absolute;
+  top: 60px;
+  right: 15px;
+  content: " ";
+  width: 35px;
+  height: 35px;
+  background-image: url("../img/sprite/fullscreen.svg");
+  background-repeat: no-repeat;
+  background-size: 59%;
+  background-position: center;
+  transition: opacity 0.2s ease-in-out;
+
+}
+
+#cc {
+  position: absolute;
+  top: 59px;
+  right: 73px;
+  content: " ";
+  width: 35px;
+  height: 35px;
+  background-image: url("../img/sprite/subtitles.svg");
+  background-repeat: no-repeat;
+  background-size: 91%;
+  background-position: center;
+  transition: opacity 0.2s ease-in-out;
+
+}
+/* olalala*/

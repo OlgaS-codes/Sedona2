@@ -63,6 +63,9 @@
     <circle id="Shape_2_copy_17" data-name="Shape 2 copy 17" class="cls-1" cx="11.438" cy="11.435" r="7.594" style="stroke: inherit; filter: none; fill: inherit"/>
   </g>
   <use xlink:href="#Shape_2_copy_17" style="stroke: #333; filter: none; fill: none"/>
+</symbol><symbol id="fullscreen" viewBox="0 0 20 20">
+
+<image id="fullscreen.svg" width="20" height="20" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUBAMAAAB/pwA+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAD1BMVEVcaHD///9caHBcaHAAAACORv/AAAAAA3RSTlMAAECMqoVOAAAAAWJLR0QEj2jZUQAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+MCBhUQJRiEaL0AAAAwSURBVAjXYzA2NmYAAhCFg2mkBGIyCAOZBgxYmDAgKEgFppIChCmkhMM2ZCYBpwMAbtUMq+lww0YAAAAASUVORK5CYII="/>
 </symbol><symbol id="heading-text-in-index" viewBox="0 0 460 350">
   <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
 <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
@@ -213,6 +216,15 @@
 </symbol><symbol id="menu-close" viewBox="0 0 23 22">
 
 <image id="icon-cross" width="23" height="22" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAWCAQAAACBf8+OAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjARwRKyLFX3fRAAAAl0lEQVQ4y53TURGFIBCF4TMm2ChEIopNyGACIxDFCL8P6r2AqzPr8oTzHRFkhTAqBb2OQsXQgYHXQAGgYjrxOXWotWLSoquSVpn6Mq1Kv9kiRIaHFdo3Q0bHYz9wwxf3Ag7+8zGQPdzyPoCHey4S20A3UivGU+4DA0aTYvX9Y0JbDR1k6DeFLkHois2P+B6Yg+0Rbr5Qa+9M85osQCcRIAAAAABJRU5ErkJggg=="/>
+</symbol><symbol id="pause-button" viewBox="0 0 512 512">
+<rect x="172.394" y="149.216" width="66.771" height="213.32"/>
+<rect x="272.955" y="149.216" width="66.771" height="213.32"/>
+
+<path d="M256.021,495.357c-132.053,0-239.484-107.414-239.484-239.442
+	c0-132.07,107.432-239.52,239.484-239.52c132.092,0,239.555,107.449,239.555,239.52
+	C495.576,387.943,388.113,495.357,256.021,495.357z M256.021,37.944c-120.17,0-217.936,97.779-217.936,217.971
+	c0,120.146,97.766,217.894,217.936,217.894c120.209,0,218.006-97.748,218.006-217.894C474.027,135.724,376.23,37.944,256.021,37.944
+	z"/>
 </symbol><symbol id="phone" viewBox="0 0 18 18">
   <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
 <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
@@ -222,4 +234,15 @@
 </x:xmpmeta>
 <?xpacket end="w"?></metadata>
 <image id="phone.svg" width="18" height="18" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAQAAAD8x0bcAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiDBURNDJbdjG1AAAAnklEQVQoz43RQRHCMBCF4f+hIBIqIQ5AQqWAA5wUlFRC6qCDgsbBcihk0tKdsLns4Zu3yQYtss+541UhptEzJ/6pKmnx0Vix6I2bSp/JXlL/HeblrGxukRPwBELrfUGzTKnF1nsNLTbsmTp1pS9NIgIPbpZBkZHAxMSrWoyCkkympKhYfbvJjobaluwQqNe8BQcIFHT9gd5SOBO5AJDf4CleqqhfV/UAAAAASUVORK5CYII="/>
+</symbol><symbol id="play-button" viewBox="0 0 32 32">
+<path id="_x31_067-play" d="M16.053,0.823c-8.27,0-14.998,6.729-14.998,15
+	c0,8.271,6.728,14.995,14.998,14.995c8.271,0,15.002-6.724,15.002-14.995C31.055,7.552,24.324,0.823,16.053,0.823z M16.053,28.601
+	c-7.057,0-12.777-5.719-12.777-12.775c0-7.059,5.722-12.779,12.777-12.779c7.057,0,12.777,5.721,12.777,12.779
+	C28.83,22.882,23.109,28.601,16.053,28.601z M12.732,23.21l9.287-7.387l-9.287-7.387V23.21z"/>
+</symbol><symbol id="replay" viewBox="0 0 16 20">
+
+<image id="replay.svg" width="16" height="20" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAUBAMAAAB2TKBEAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAIVBMVEVcaHBcaHBcaHBcaHBcaHBcaHBcaHBcaHBcaHBcaHAAAADCaybdAAAACXRSTlMAn79gzyBA7zAf34+UAAAAAWJLR0QKaND0VgAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+MCBhUJBbjq4W0AAABgSURBVAjXY2BgYGBkgAJJKM04EyYwEyYwc6YyjDHTFSKVrDk9AKKYeaYDVLvlZAaIgUyToEYww8xim8kwMwHGMIBKaSqAGEDFEI1AkgUkBzKQtXKSWTPYihC4pUZgZwAAn6MayDSFYhcAAAAASUVORK5CYII="/>
+</symbol><symbol id="subtitles" viewBox="0 0 32 20">
+
+<image id="subtitles.svg" width="32" height="20" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAUBAMAAAAevyJ8AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAMFBMVEVcaHBcaHBcaHBcaHBcaHBcaHBcaHBcaHBcaHBcaHBcaHBcaHBcaHBcaHBcaHAAAABghkN7AAAADnRSTlMAEL+fUCAwQM/vgGDfcBFIAP0AAAABYktHRA8YugDZAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4wIGFSEcgdznBwAAAHpJREFUGNNjEHqHAhQZ9FAFHjG8QwM4BEzCKt7NKqyGC7xmYOB4E8DAChdYkPHu3XPueQgtAkCrGiIRZrxgBKnahxB4xA4SWIdPgAFNC8RQSSSBBULvZj5jO/cGLvCMgZH5hQAjwzy4083DPN7NLaxGCOD1LUYAoQchAGHzAu8jwPAnAAAAAElFTkSuQmCC"/>
 </symbol></svg>
