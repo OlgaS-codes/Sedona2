@@ -86,7 +86,7 @@
 
 @media (min-width: $tablet-width) {
   .img-top--photo {
-    padding-top: 104px;
+    padding-top: 94px;
     padding-bottom: 117px;
   }
 
@@ -98,7 +98,7 @@
 
 @media (min-width: $desktop-width) {
   .img-top--photo {
-    padding-top: 103px;
+    padding-top: 95px;
     padding-bottom: 120px;
     background-position-x: 0;
     background-position-y: -207px;
@@ -187,6 +187,7 @@
     border-left-color: white;
   }
 
+  /* стили только для индекса */
   .img-top--index::after {
     border-width: 0 0 28px 160px;
   }
@@ -195,6 +196,7 @@
     border-width: 28px 0 0 160px;
   }
 
+  /* стили только для фото-страницы */
   .img-top--photo::after {
     border-width: 0 0 25px 160px;
   }
@@ -205,16 +207,37 @@
 }
 
 @media (min-width: $tablet-width) {
-  .img-top--index::after {
+
+  /*общие стили псевдоэлементов */
+  .img-top--index::after,
+  .img-top--photo::after {
     right: 33px;
-    border-width: 0 0 59px 345px;
     border-bottom-color: white;
   }
 
-  .img-top--index::before {
+  .img-top--index::before,
+  .img-top--photo::before {
     left: 33px;
-    border-width: 59px 0 0 345px;
     border-left-color: white;
+  }
+
+  /* стили только для индекса */
+  .img-top--index::after {
+    border-width: 0 0 59px 345px;
+  }
+
+  .img-top--index::before {
+    border-width: 59px 0 0 345px;
+  }
+
+  /* стили только для фото-страницы */
+  .img-top--photo::after {
+    border-width: 0 0 56px 345px;
+  }
+
+
+  .img-top--photo::before {
+    border-width: 56px 0 0 345px;
   }
 }
 
@@ -229,5 +252,3 @@
     border-width: 0 0 57px 344px;
   }
 }
-
-

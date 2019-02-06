@@ -6,6 +6,7 @@
   @include flex-center-center();
   flex-direction: column;
   color: rgb(0, 0, 0);
+  position: relative;
 }
 
 .intro--index {
@@ -13,32 +14,33 @@
   padding-bottom: 43px;
   padding-left: 20px;
   padding-right: 20px;
-  position: relative;
+
 }
 
 @media (max-width: $mobile-width-only) {
-  .intro--index::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    height: 0;
-    width: 0;
-    border-color: transparent;
-    border-style: solid;
-    border-width: 0 0 17px 160px;
-    border-bottom-color: #81b3d2;
-  }
 
+  /*синие углы общий стиль */
+  .intro--index::after,
   .intro--index::before {
     content: "";
     position: absolute;
     bottom: 0;
-    left: 0;
     height: 0;
     width: 0;
     border-color: transparent;
     border-style: solid;
+  }
+
+  /* правый синий угол */
+  .intro--index::after {
+    right: 0;
+    border-width: 0 0 17px 160px;
+    border-bottom-color: #81b3d2;
+  }
+
+  /* левый синий угол */
+  .intro--index::before {
+    left: 0;
     border-width: 17px 0 0 160px;
     border-left-color: #81b3d2;
   }
@@ -76,28 +78,28 @@
     padding: 49px 143px 50px 138px;
   }
 
-  .intro--index::after {
-    content: "";
-    position: absolute;
-    top: -38px;
-    right: 0;
-    height: 0;
-    width: 0;
-    border-color: transparent;
-    border-style: solid;
-    border-width: 0 0 37px 377px;
-    border-bottom-color: white;
-  }
-
+  /*белый угол общий стиль */
+  .intro--index::after,
   .intro--index::before {
     content: "";
     position: absolute;
     top: -38px;
-    left: 0;
     height: 0;
     width: 0;
     border-color: transparent;
     border-style: solid;
+  }
+
+  /* правый белый угол стиль */
+  .intro--index::after {
+    right: 0;
+    border-width: 0 0 37px 377px;
+    border-bottom-color: white;
+  }
+
+  /* левый белый угол стиль */
+  .intro--index::before {
+    left: 0;
     border-width: 37px 0 0 377px;
     border-left-color: white;
   }
@@ -119,7 +121,6 @@
 
   .intro--index::after {
     top: -58px;
-    right: 0;
     border-width: 0 0 63px 609px;
   }
 
@@ -152,6 +153,32 @@
   .intro--photo {
     padding: 77px 171px 78px 171px;
     border: none;
+  }
+
+  /*белый угол общий стиль */
+  .intro--photo::after,
+  .intro--photo::before {
+    content: "";
+    position: absolute;
+    top: -36px;
+    height: 0;
+    width: 0;
+    border-color: transparent;
+    border-style: solid;
+  }
+
+  /* правый белый угол стиль */
+  .intro--photo::after {
+    right: 0;
+    border-width: 0 0 37px 377px;
+    border-bottom-color: white;
+  }
+
+  /* левый белый угол стиль */
+  .intro--photo::before {
+    left: 0;
+    border-width: 37px 0 0 377px;
+    border-left-color: white;
   }
 }
 

@@ -322,7 +322,7 @@ img {
 
 @media (min-width: 768px) {
   .img-top--photo {
-    padding-top: 104px;
+    padding-top: 94px;
     padding-bottom: 117px; }
   .img-top--photo__svg {
     width: 458px;
@@ -330,7 +330,7 @@ img {
 
 @media (min-width: 1200px) {
   .img-top--photo {
-    padding-top: 103px;
+    padding-top: 95px;
     padding-bottom: 120px;
     background-position-x: 0;
     background-position-y: -207px; }
@@ -397,24 +397,37 @@ img {
   .img-top--index::before,
   .img-top--photo::before {
     border-left-color: white; }
+  /* стили только для индекса */
   .img-top--index::after {
     border-width: 0 0 28px 160px; }
   .img-top--index::before {
     border-width: 28px 0 0 160px; }
+  /* стили только для фото-страницы */
   .img-top--photo::after {
     border-width: 0 0 25px 160px; }
   .img-top--photo::before {
     border-width: 25px 0 0 160px; } }
 
 @media (min-width: 768px) {
-  .img-top--index::after {
+  /*общие стили псевдоэлементов */
+  .img-top--index::after,
+  .img-top--photo::after {
     right: 33px;
-    border-width: 0 0 59px 345px;
     border-bottom-color: white; }
-  .img-top--index::before {
+  .img-top--index::before,
+  .img-top--photo::before {
     left: 33px;
-    border-width: 59px 0 0 345px;
-    border-left-color: white; } }
+    border-left-color: white; }
+  /* стили только для индекса */
+  .img-top--index::after {
+    border-width: 0 0 59px 345px; }
+  .img-top--index::before {
+    border-width: 59px 0 0 345px; }
+  /* стили только для фото-страницы */
+  .img-top--photo::after {
+    border-width: 0 0 56px 345px; }
+  .img-top--photo::before {
+    border-width: 56px 0 0 345px; } }
 
 @media (min-width: 1200px) {
   .img-top--index::before {
@@ -441,36 +454,34 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  color: black; }
+  color: black;
+  position: relative; }
 
 .intro--index {
   padding-top: 38px;
   padding-bottom: 43px;
   padding-left: 20px;
-  padding-right: 20px;
-  position: relative; }
+  padding-right: 20px; }
 
 @media (max-width: 767px) {
-  .intro--index::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    height: 0;
-    width: 0;
-    border-color: transparent;
-    border-style: solid;
-    border-width: 0 0 17px 160px;
-    border-bottom-color: #81b3d2; }
+  /*синие углы общий стиль */
+  .intro--index::after,
   .intro--index::before {
     content: "";
     position: absolute;
     bottom: 0;
-    left: 0;
     height: 0;
     width: 0;
     border-color: transparent;
-    border-style: solid;
+    border-style: solid; }
+  /* правый синий угол */
+  .intro--index::after {
+    right: 0;
+    border-width: 0 0 17px 160px;
+    border-bottom-color: #81b3d2; }
+  /* левый синий угол */
+  .intro--index::before {
+    left: 0;
     border-width: 17px 0 0 160px;
     border-left-color: #81b3d2; }
   .intro__heading {
@@ -499,26 +510,24 @@ img {
 @media (min-width: 768px) {
   .intro--index {
     padding: 49px 143px 50px 138px; }
-  .intro--index::after {
-    content: "";
-    position: absolute;
-    top: -38px;
-    right: 0;
-    height: 0;
-    width: 0;
-    border-color: transparent;
-    border-style: solid;
-    border-width: 0 0 37px 377px;
-    border-bottom-color: white; }
+  /*белый угол общий стиль */
+  .intro--index::after,
   .intro--index::before {
     content: "";
     position: absolute;
     top: -38px;
-    left: 0;
     height: 0;
     width: 0;
     border-color: transparent;
-    border-style: solid;
+    border-style: solid; }
+  /* правый белый угол стиль */
+  .intro--index::after {
+    right: 0;
+    border-width: 0 0 37px 377px;
+    border-bottom-color: white; }
+  /* левый белый угол стиль */
+  .intro--index::before {
+    left: 0;
     border-width: 37px 0 0 377px;
     border-left-color: white; }
   .intro__heading {
@@ -532,7 +541,6 @@ img {
     padding: 49px 355px 50px 355px; }
   .intro--index::after {
     top: -58px;
-    right: 0;
     border-width: 0 0 63px 609px; }
   .intro--index::before {
     top: -58px;
@@ -555,7 +563,27 @@ img {
 @media (min-width: 768px) {
   .intro--photo {
     padding: 77px 171px 78px 171px;
-    border: none; } }
+    border: none; }
+  /*белый угол общий стиль */
+  .intro--photo::after,
+  .intro--photo::before {
+    content: "";
+    position: absolute;
+    top: -36px;
+    height: 0;
+    width: 0;
+    border-color: transparent;
+    border-style: solid; }
+  /* правый белый угол стиль */
+  .intro--photo::after {
+    right: 0;
+    border-width: 0 0 37px 377px;
+    border-bottom-color: white; }
+  /* левый белый угол стиль */
+  .intro--photo::before {
+    left: 0;
+    border-width: 37px 0 0 377px;
+    border-left-color: white; } }
 
 @media (min-width: 1200px) {
   .intro--photo {
