@@ -1,4 +1,3 @@
-
 .photo-block {
   box-sizing: border-box;
   width: 100%;
@@ -89,6 +88,7 @@
 
   .photo-wrapper {
     max-height: 269px;
+    min-height: 269px;
     max-width: 100%;
   }
 
@@ -108,6 +108,7 @@
     flex-direction: row;
     justify-content: space-between;
     background-color: #f2f2f2;
+    padding-top: 17px;
   }
 
   .additional__wrapper {
@@ -116,17 +117,39 @@
     padding: 0;
   }
 
+  .additional__photo-author {
+    margin-bottom: 20px;
+  }
+
   .additional__photo-likes {
-    margin: 13px 30px 0 0; // спросить у Ксении, как выровнять его по другому, тк через align-self ничего не выравнивается
+    margin: 13px 21px 0 0; // спросить у Ксении, как выровнять его по другому, тк через align-self ничего не выравнивается
   }
 
   .additional__photo-likes::before {
     left: -30px;
-    top: -8px;
+    top: -2px;
   }
 
   .video__video {
     max-height: 268px;
+  }
+
+  /* выравние лайков, не знаю как сделать это правильно*/
+  .photo-block:nth-child(2) .photo-block__additional .additional__photo-likes {
+    margin-right: 30px;
+  }
+
+  .photo-block:nth-child(3) .photo-block__additional .additional__photo-likes {
+    margin-right: 37px;
+  }
+
+  /* выравние "Мост дьявола"по макету, тк походу оно расходится со стандартом*/
+  .photo-block:nth-child(4) .photo-block__additional {
+    padding-top: 15px;
+  }
+
+  .photo-block:nth-child(4) .photo-block__additional .additional__photo-likes {
+    margin-right: 30px;
   }
 }
 

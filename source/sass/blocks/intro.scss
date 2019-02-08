@@ -151,7 +151,7 @@
 
 @media (min-width: $tablet-width) {
   .intro--photo {
-    padding: 77px 171px 78px 171px;
+    padding: 73px 171px 69px 171px;
     border: none;
   }
 
@@ -179,6 +179,11 @@
     left: 0;
     border-width: 37px 0 0 377px;
     border-left-color: white;
+  }
+
+  .heading--photo {
+    font-size: 30px;
+    line-height: 34px;
   }
 }
 

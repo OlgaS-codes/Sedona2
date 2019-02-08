@@ -33,7 +33,7 @@
 
 .watched-indicator {
   position: absolute;
-  left: 0;// сюда передавать данные
+  left: 0; // сюда передавать данные
   top: -3px;
   width: 8px;
   height: 9px;
@@ -84,7 +84,7 @@
 #repeat {
   position: absolute;
   top: 61px;
-    left: 21px;
+  left: 21px;
   content: " ";
   width: 25px;
   height: 30px;
@@ -93,7 +93,6 @@
   background-position: center;
   background-repeat: no-repeat;
   transition: opacity 0.2s ease-in-out;
-
 }
 
 #full-screen {
@@ -108,7 +107,6 @@
   background-size: 59%;
   background-position: center;
   transition: opacity 0.2s ease-in-out;
-
 }
 
 #cc {
@@ -123,6 +121,38 @@
   background-size: 91%;
   background-position: center;
   transition: opacity 0.2s ease-in-out;
-
 }
+
+@media (min-width: $tablet-width) {
+  .controls {
+    top: 453px;
+    left: 0;
+    width: 100%;
+  }
+
+  #play-pause {
+    top: -405px;
+    height: 405px;
+  }
+
+  .progress-container {
+    width: 100%;
+    min-height: 94px;
+    position: absolute;
+  }
+
+  .progress-bar {
+    top: 45px;
+    left: 94px;
+    height: 3px;
+    width: 60%;
+  }
+
+  .down-buttons {
+    width: 100%;
+    height: 90px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
 /* olalala*/
