@@ -153,6 +153,43 @@
     height: 90px;
     background-color: rgba(255, 255, 255, 0.5);
   }
+
+  #repeat {
+    background-image: url("../img/sprite/replay-white.svg");
+    top: 31px;
+    left: 29px;
+  }
+
+  #full-screen {
+    background-image: url("../img/sprite/fullscreen-white.svg");
+    top: 31px;
+    right: 33px;
+  }
+
+  #cc {
+    background-image: url("../img/sprite/subtitles-white.svg");
+    top: 30px;
+    right: 91px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .controls {
+    top: 407px;
+  }
+  #repeat {
+    top: 30px;
+  }
+
+  #full-screen {
+    top: 29px;
+    right: 36px;
+  }
+
+  #cc {
+    top: 29px;
+    right: 94px;
+  }
 }
 
 /* olalala*/

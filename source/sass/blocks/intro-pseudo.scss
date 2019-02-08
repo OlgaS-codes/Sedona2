@@ -1,0 +1,82 @@
+/* -------------------------------------------синие и белые углы псевдоэлементы от интро*/
+
+@media (max-width: $mobile-width-only) {
+
+  /*синие углы общий стиль */
+  .intro--index::after,
+  .intro--index::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 0;
+    width: 0;
+    border-color: transparent;
+    border-style: solid;
+  }
+
+  /* правый синий угол */
+  .intro--index::after {
+    right: 0;
+    border-width: 0 0 17px 160px;
+    border-bottom-color: #81b3d2;
+  }
+
+  /* левый синий угол */
+  .intro--index::before {
+    left: 0;
+    border-width: 17px 0 0 160px;
+    border-left-color: #81b3d2;
+  }
+}
+
+@media (min-width: $tablet-width) {
+
+  /*белый угол общий стиль */
+  .intro--index::after,
+  .intro--index::before,
+  .intro--photo::after,
+  .intro--photo::before {
+    content: "";
+    position: absolute;
+    top: -38px;
+    height: 0;
+    width: 0;
+    border-color: transparent;
+    border-style: solid;
+  }
+
+  .intro--photo::after,
+  .intro--photo::before {
+    top: -36px;
+  }
+
+  /* правый белый угол стиль */
+  .intro--index::after,
+  .intro--photo::after {
+    right: 0;
+    border-width: 0 0 37px 377px;
+    border-bottom-color: white;
+  }
+
+  /* левый белый угол стиль */
+  .intro--index::before,
+  .intro--photo::before {
+    left: 0;
+    border-width: 37px 0 0 377px;
+    border-left-color: white;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro--index::after,
+  .intro--photo::after {
+    top: -58px;
+    border-width: 0 0 63px 609px;
+  }
+
+  .intro--index::before,
+  .intro--photo::before {
+    top: -58px;
+    border-width: 63px 0 0 609px;
+  }
+}

@@ -98,15 +98,20 @@
 
 @media (min-width: $desktop-width) {
   .img-top--photo {
-    padding-top: 95px;
+    padding-top: 101px;
     padding-bottom: 120px;
     background-position-x: 0;
-    background-position-y: -207px;
+    background-position-y: -217px;
   }
 
   .img-top--photo__svg {
     width: 461px;
     height: 80px;
+  }
+
+  .img-top--photo::before {
+    left: 250px;
+    border-left-color: white;
   }
 }
 
@@ -241,13 +246,16 @@
   }
 }
 
+/* стили для десктопа: индекс и фото */
 @media (min-width: $desktop-width) {
-  .img-top--index::before {
+  .img-top--index::before,
+  .img-top--photo::before {
     left: 249px;
     border-width: 57px 0 0 344px;
   }
 
-  .img-top--index::after {
+  .img-top--index::after,
+  .img-top--photo::after {
     right: 249px;
     border-width: 0 0 57px 344px;
   }

@@ -184,7 +184,9 @@ img {
   .nav__item {
     width: 254px; }
   .nav__list li:nth-child(2) {
-    margin-right: 246px; } }
+    margin-right: 246px; }
+  .nav__link--photos {
+    min-height: 56px; } }
 
 @media (max-width: 767px) {
   .logo {
@@ -330,13 +332,16 @@ img {
 
 @media (min-width: 1200px) {
   .img-top--photo {
-    padding-top: 95px;
+    padding-top: 101px;
     padding-bottom: 120px;
     background-position-x: 0;
-    background-position-y: -207px; }
+    background-position-y: -217px; }
   .img-top--photo__svg {
     width: 461px;
-    height: 80px; } }
+    height: 80px; }
+  .img-top--photo::before {
+    left: 250px;
+    border-left-color: white; } }
 
 /*-------------------------------------Форма-файл */
 .img-top--form {
@@ -429,11 +434,14 @@ img {
   .img-top--photo::before {
     border-width: 56px 0 0 345px; } }
 
+/* стили для десктопа: индекс и фото */
 @media (min-width: 1200px) {
-  .img-top--index::before {
+  .img-top--index::before,
+  .img-top--photo::before {
     left: 249px;
     border-width: 57px 0 0 344px; }
-  .img-top--index::after {
+  .img-top--index::after,
+  .img-top--photo::after {
     right: 249px;
     border-width: 0 0 57px 344px; } }
 
@@ -464,26 +472,6 @@ img {
   padding-right: 20px; }
 
 @media (max-width: 767px) {
-  /*синие углы общий стиль */
-  .intro--index::after,
-  .intro--index::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    height: 0;
-    width: 0;
-    border-color: transparent;
-    border-style: solid; }
-  /* правый синий угол */
-  .intro--index::after {
-    right: 0;
-    border-width: 0 0 17px 160px;
-    border-bottom-color: #81b3d2; }
-  /* левый синий угол */
-  .intro--index::before {
-    left: 0;
-    border-width: 17px 0 0 160px;
-    border-left-color: #81b3d2; }
   .intro__heading {
     width: 96%; } }
 
@@ -510,26 +498,6 @@ img {
 @media (min-width: 768px) {
   .intro--index {
     padding: 49px 143px 50px 138px; }
-  /*белый угол общий стиль */
-  .intro--index::after,
-  .intro--index::before {
-    content: "";
-    position: absolute;
-    top: -38px;
-    height: 0;
-    width: 0;
-    border-color: transparent;
-    border-style: solid; }
-  /* правый белый угол стиль */
-  .intro--index::after {
-    right: 0;
-    border-width: 0 0 37px 377px;
-    border-bottom-color: white; }
-  /* левый белый угол стиль */
-  .intro--index::before {
-    left: 0;
-    border-width: 37px 0 0 377px;
-    border-left-color: white; }
   .intro__heading {
     font-size: 21px;
     line-height: 26px; }
@@ -539,12 +507,6 @@ img {
 @media (min-width: 1200px) {
   .intro--index {
     padding: 49px 355px 50px 355px; }
-  .intro--index::after {
-    top: -58px;
-    border-width: 0 0 63px 609px; }
-  .intro--index::before {
-    top: -58px;
-    border-width: 63px 0 0 609px; }
   .intro__heading {
     font-size: 22px;
     line-height: 26px; } }
@@ -564,34 +526,13 @@ img {
   .intro--photo {
     padding: 73px 171px 69px 171px;
     border: none; }
-  /*белый угол общий стиль */
-  .intro--photo::after,
-  .intro--photo::before {
-    content: "";
-    position: absolute;
-    top: -36px;
-    height: 0;
-    width: 0;
-    border-color: transparent;
-    border-style: solid; }
-  /* правый белый угол стиль */
-  .intro--photo::after {
-    right: 0;
-    border-width: 0 0 37px 377px;
-    border-bottom-color: white; }
-  /* левый белый угол стиль */
-  .intro--photo::before {
-    left: 0;
-    border-width: 37px 0 0 377px;
-    border-left-color: white; }
   .heading--photo {
     font-size: 30px;
     line-height: 34px; } }
 
 @media (min-width: 1200px) {
   .intro--photo {
-    padding: 111px 388px 79px 388px;
-    border: none; } }
+    padding: 108px 388px 72px 384px; } }
 
 /*-----------------------------------------------------форма-файл */
 .intro--form {
@@ -607,6 +548,69 @@ img {
   .intro--form {
     padding: 111px 360px 37px 370px;
     border: none; } }
+
+/**/
+/* -------------------------------------------синие и белые углы псевдоэлементы от интро*/
+@media (max-width: 767px) {
+  /*синие углы общий стиль */
+  .intro--index::after,
+  .intro--index::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 0;
+    width: 0;
+    border-color: transparent;
+    border-style: solid; }
+  /* правый синий угол */
+  .intro--index::after {
+    right: 0;
+    border-width: 0 0 17px 160px;
+    border-bottom-color: #81b3d2; }
+  /* левый синий угол */
+  .intro--index::before {
+    left: 0;
+    border-width: 17px 0 0 160px;
+    border-left-color: #81b3d2; } }
+
+@media (min-width: 768px) {
+  /*белый угол общий стиль */
+  .intro--index::after,
+  .intro--index::before,
+  .intro--photo::after,
+  .intro--photo::before {
+    content: "";
+    position: absolute;
+    top: -38px;
+    height: 0;
+    width: 0;
+    border-color: transparent;
+    border-style: solid; }
+  .intro--photo::after,
+  .intro--photo::before {
+    top: -36px; }
+  /* правый белый угол стиль */
+  .intro--index::after,
+  .intro--photo::after {
+    right: 0;
+    border-width: 0 0 37px 377px;
+    border-bottom-color: white; }
+  /* левый белый угол стиль */
+  .intro--index::before,
+  .intro--photo::before {
+    left: 0;
+    border-width: 37px 0 0 377px;
+    border-left-color: white; } }
+
+@media (min-width: 1200px) {
+  .intro--index::after,
+  .intro--photo::after {
+    top: -58px;
+    border-width: 0 0 63px 609px; }
+  .intro--index::before,
+  .intro--photo::before {
+    top: -58px;
+    border-width: 63px 0 0 609px; } }
 
 /* -------------------------------первый синий блок с картинкой*/
 .features-list__feature-picture {
@@ -1460,15 +1464,29 @@ img {
     width: 33.3333%; }
   .photo-block--bright {
     width: 100%;
-    min-height: 402px; }
+    min-height: 400px; }
+  .photo-wrapper {
+    max-height: 267px;
+    min-height: 267px; }
   .photo-block__additional {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     width: 100%;
     position: absolute;
     bottom: 0;
     left: 0;
-    min-height: 79px;
+    min-height: 80px;
     color: white;
-    background-color: rgba(0, 0, 0, 0.5); } }
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 18px; }
+  .photo-block:nth-child(4) .photo-block__additional {
+    padding-top: 18px; }
+  .additional__photo-likes {
+    margin-top: 14px;
+    margin-right: 22px;
+    line-height: 16px; }
+  .additional__photo-author {
+    margin-bottom: 0; } }
 
 .video {
   margin: 0;
@@ -1534,14 +1552,18 @@ img {
 @media (min-width: 1200px) {
   .video {
     min-height: 748px;
-    padding: 61px 200px 0 200px; }
+    padding: 70px 200px 0 200px; }
   .content-text--video {
     min-width: 455px;
     padding: 0 184px 0 184px;
-    margin-bottom: 71px; }
+    margin-bottom: 69px; }
   .video__video {
     width: 800px;
-    height: 500px; } }
+    height: 500px;
+    margin-bottom: 84px; }
+  .heading--video {
+    margin-bottom: 30px;
+    padding: 0; } }
 
 .controls {
   margin: 0 auto;
@@ -1682,7 +1704,31 @@ img {
   .down-buttons {
     width: 100%;
     height: 90px;
-    background-color: rgba(255, 255, 255, 0.5); } }
+    background-color: rgba(255, 255, 255, 0.5); }
+  #repeat {
+    background-image: url("../img/sprite/replay-white.svg");
+    top: 31px;
+    left: 29px; }
+  #full-screen {
+    background-image: url("../img/sprite/fullscreen-white.svg");
+    top: 31px;
+    right: 33px; }
+  #cc {
+    background-image: url("../img/sprite/subtitles-white.svg");
+    top: 30px;
+    right: 91px; } }
+
+@media (min-width: 1200px) {
+  .controls {
+    top: 407px; }
+  #repeat {
+    top: 30px; }
+  #full-screen {
+    top: 29px;
+    right: 36px; }
+  #cc {
+    top: 29px;
+    right: 94px; } }
 
 /* olalala*/
 .page-main__img-wrapper--form {

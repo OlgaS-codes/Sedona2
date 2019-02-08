@@ -49,7 +49,6 @@
     font-size: 30px;
   }
 
-
   .content-text--video {
     display: block;
     min-width: 437px;
@@ -69,17 +68,24 @@
 @media (min-width: $desktop-width) {
   .video {
     min-height: 748px;
-    padding: 61px 200px 0 200px;
+    padding: 70px 200px 0 200px;
   }
 
   .content-text--video {
     min-width: 455px;
     padding: 0 184px 0 184px;
-    margin-bottom: 71px;
+    margin-bottom: 69px;
+
   }
 
   .video__video {
     width: 800px;
     height: 500px;
+    margin-bottom: 84px;
+  }
+
+  .heading--video {
+    margin-bottom: 30px;
+    padding: 0;
   }
 }
