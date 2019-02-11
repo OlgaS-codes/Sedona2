@@ -17,11 +17,6 @@
   }
 }
 
-.img-top--index,
-.img-top--photo {
-  position: relative;
-}
-
 .img-top--index {
   padding-top: 88px;
   padding-bottom: 87px;
@@ -155,8 +150,15 @@
 
 /*псевдоэлемент уголок под картинкой */
 
+.img-top--index,
+.img-top--photo,
+.img-top--form {
+  position: relative;
+}
+
 .img-top--index::after,
-.img-top--photo::after {
+.img-top--photo::after,
+.img-top--form::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -168,7 +170,8 @@
 }
 
 .img-top--index::before,
-.img-top--photo::before {
+.img-top--photo::before,
+.img-top--form::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -183,22 +186,24 @@
 
   /* общие стили псевдоэлементов*/
   .img-top--index::after,
-  .img-top--photo::after {
+  .img-top--photo::after,
+  .img-top--form::after {
     border-bottom-color: white;
   }
 
   .img-top--index::before,
-  .img-top--photo::before {
+  .img-top--photo::before,
+  .img-top--form::before {
     border-left-color: white;
   }
 
   /* стили только для индекса */
   .img-top--index::after {
-    border-width: 0 0 28px 160px;
+    border-width: 0 0 28px 171px;
   }
 
   .img-top--index::before {
-    border-width: 28px 0 0 160px;
+    border-width: 28px 0 0 171px;
   }
 
   /* стили только для фото-страницы */
@@ -208,6 +213,15 @@
 
   .img-top--photo::before {
     border-width: 25px 0 0 160px;
+  }
+
+  /* стили только для форма-страницы */
+  .img-top--form::after {
+    border-width: 0 0 28px 171px;
+  }
+
+  .img-top--form::before {
+    border-width: 28px 0 0 171px;
   }
 }
 

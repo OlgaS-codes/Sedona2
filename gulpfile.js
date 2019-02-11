@@ -2,16 +2,16 @@
 
 var gulp = require("gulp");
 var sass = require("gulp-sass");
-var plumber = require("gulp-plumber");
+var plumber = require("gulp-plumber"); // скрывает ошибки во время server
 var postcss = require("gulp-postcss");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var autoprefixer = require("autoprefixer");
 var htmlmin = require("gulp-htmlmin");
-var minify = require("gulp-csso");
+var minify = require("gulp-csso"); // минифицирует  css
 var uglify = require("gulp-uglify");
 var imagemin = require("gulp-imagemin");
-var webp = require("gulp-webp");
+var webp = require("gulp-webp"); // делает из картинок формат webp
 var svgstore = require("gulp-svgstore");
 var cheerio = require("gulp-cheerio");
 var rename = require("gulp-rename");

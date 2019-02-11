@@ -213,7 +213,8 @@ img {
             transform: translateX(-50%);
     z-index: 4; } }
 
-.logo--photos {
+.logo--photos,
+.logo--form {
   min-height: 56px; }
 
 @media (max-width: 767px) {
@@ -267,10 +268,6 @@ img {
     .page-main__img-top {
       background-image: url("../img/back@2x@mobile.jpg");
       background-size: cover; } }
-
-.img-top--index,
-.img-top--photo {
-  position: relative; }
 
 .img-top--index {
   padding-top: 88px;
@@ -372,8 +369,14 @@ img {
     height: 80px; } }
 
 /*псевдоэлемент уголок под картинкой */
+.img-top--index,
+.img-top--photo,
+.img-top--form {
+  position: relative; }
+
 .img-top--index::after,
-.img-top--photo::after {
+.img-top--photo::after,
+.img-top--form::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -384,7 +387,8 @@ img {
   border-style: solid; }
 
 .img-top--index::before,
-.img-top--photo::before {
+.img-top--photo::before,
+.img-top--form::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -397,21 +401,28 @@ img {
 @media (max-width: 767px) {
   /* общие стили псевдоэлементов*/
   .img-top--index::after,
-  .img-top--photo::after {
+  .img-top--photo::after,
+  .img-top--form::after {
     border-bottom-color: white; }
   .img-top--index::before,
-  .img-top--photo::before {
+  .img-top--photo::before,
+  .img-top--form::before {
     border-left-color: white; }
   /* стили только для индекса */
   .img-top--index::after {
-    border-width: 0 0 28px 160px; }
+    border-width: 0 0 28px 171px; }
   .img-top--index::before {
-    border-width: 28px 0 0 160px; }
+    border-width: 28px 0 0 171px; }
   /* стили только для фото-страницы */
   .img-top--photo::after {
     border-width: 0 0 25px 160px; }
   .img-top--photo::before {
-    border-width: 25px 0 0 160px; } }
+    border-width: 25px 0 0 160px; }
+  /* стили только для форма-страницы */
+  .img-top--form::after {
+    border-width: 0 0 28px 171px; }
+  .img-top--form::before {
+    border-width: 28px 0 0 171px; } }
 
 @media (min-width: 768px) {
   /*общие стили псевдоэлементов */
@@ -536,8 +547,15 @@ img {
 
 /*-----------------------------------------------------форма-файл */
 .intro--form {
-  padding: 41px 21px 21px 24px;
+  padding: 36px 21px 18px 21px;
   border-bottom: 1px solid gray; }
+
+.heading--form {
+  margin-bottom: 25px; }
+
+.content-text--form {
+  line-height: 24px;
+  width: 100%; }
 
 @media (min-width: 768px) {
   .intro--form {
@@ -1782,7 +1800,7 @@ img {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 25px 20px 24px 20px; }
+  padding: 18px 20px 24px 20px; }
 
 @media (max-width: 767px) {
   .review:not(:last-child) {
@@ -1792,13 +1810,20 @@ img {
   margin: 0;
   padding: 0;
   font-size: 18px;
-  line-height: 26px; }
+  line-height: 26px;
+  text-align: center;
+  margin-bottom: 20px; }
+
+.review__label {
+  font-size: 14px;
+  line-height: 20px; }
 
 .review__input,
 .review__input::-webkit-input-placeholder {
   font-family: "PT Sans", "Arial", sans-serif;
   color: #000000;
   text-transform: none;
+  font-size: 18px;
   font-weight: 700; }
 
 .review__input,
@@ -1806,6 +1831,7 @@ img {
   font-family: "PT Sans", "Arial", sans-serif;
   color: #000000;
   text-transform: none;
+  font-size: 18px;
   font-weight: 700; }
 
 .review__input,
@@ -1813,6 +1839,7 @@ img {
   font-family: "PT Sans", "Arial", sans-serif;
   color: #000000;
   text-transform: none;
+  font-size: 18px;
   font-weight: 700; }
 
 .review__input,
@@ -1820,10 +1847,11 @@ img {
   font-family: "PT Sans", "Arial", sans-serif;
   color: #000000;
   text-transform: none;
+  font-size: 18px;
   font-weight: 700; }
 
 .review__input {
-  padding: 20px 10px 20px 20px;
+  padding: 20px 18px 21px 21px;
   border: none;
   background-color: #f2f2f2;
   resize: none; }
@@ -1858,7 +1886,16 @@ img {
 
 .name-wrapper input {
   width: 100%;
+  height: 60px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin-left: 14px; }
+
+.name__row:nth-child(3) input {
+  padding: 17px 18px 22px 21px; }
+
+.name__row:nth-child(4) input {
+  padding: 13px 18px 22px 24px; }
 
 /* контактные данные */
 .contact-info__heading {

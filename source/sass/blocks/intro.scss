@@ -101,16 +101,24 @@
   .intro--photo {
     padding: 108px 388px 72px 384px;
   }
-
 }
 
 /*-----------------------------------------------------форма-файл */
 
 .intro--form {
-  padding: 41px 21px 21px 24px;
+  padding: 36px 21px 18px 21px;
   border-bottom: 1px solid gray;
 }
 
+.heading--form {
+  margin-bottom: 25px;
+}
+
+
+.content-text--form {
+  line-height: 24px;
+  width: 100%;
+}
 @media (min-width: $tablet-width) {
   .intro--form {
     padding: 76px 165px 48px 165px;
