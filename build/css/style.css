@@ -1800,7 +1800,7 @@ img {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 18px 20px 24px 20px; }
+  padding: 18px 20px 20px 20px; }
 
 @media (max-width: 767px) {
   .review:not(:last-child) {
@@ -1853,7 +1853,7 @@ img {
 .review__input {
   padding: 20px 18px 21px 21px;
   border: none;
-  background-color: #f2f2f2;
+  background-color: pink;
   resize: none; }
 
 .review__input:hover {
@@ -1878,8 +1878,7 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
-.name__row:not(:last-child),
-.contact-info__row:not(:last-child) {
+.name__row:not(:last-child) {
   margin: 0;
   padding: 0;
   margin-bottom: 20px; }
@@ -1894,10 +1893,21 @@ img {
 .name__row:nth-child(3) input {
   padding: 17px 18px 22px 21px; }
 
+.name__row:nth-child(4) label {
+  margin-bottom: 6px; }
+
 .name__row:nth-child(4) input {
   padding: 13px 18px 22px 24px; }
 
 /* контактные данные */
+.review__contact-info {
+  padding: 18px 20px 28px 20px; }
+
+.contact-info__row:not(:last-child) {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 12px; }
+
 .contact-info__heading {
   text-align: center; }
 
@@ -1914,7 +1924,9 @@ img {
           align-items: flex-start; }
 
 .contact-info-wrapper .review__label {
-  margin-bottom: 14px; }
+  margin-top: 3px;
+  margin-left: 22px;
+  margin-bottom: 10px; }
 
 .input-wrapper {
   width: 100%;
@@ -1929,33 +1941,43 @@ img {
   font-family: "PT Sans", "Arial", sans-serif;
   color: #000000;
   text-transform: none;
-  font-weight: 700; }
+  font-weight: 700;
+  height: 58px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 .review__contact-info input,
 .review__contact-info input:-ms-input-placeholder {
   font-family: "PT Sans", "Arial", sans-serif;
   color: #000000;
   text-transform: none;
-  font-weight: 700; }
+  font-weight: 700;
+  height: 58px;
+  box-sizing: border-box; }
 
 .review__contact-info input,
 .review__contact-info input::-ms-input-placeholder {
   font-family: "PT Sans", "Arial", sans-serif;
   color: #000000;
   text-transform: none;
-  font-weight: 700; }
+  font-weight: 700;
+  height: 58px;
+  box-sizing: border-box; }
 
 .review__contact-info input,
 .review__contact-info input::placeholder {
   font-family: "PT Sans", "Arial", sans-serif;
   color: #000000;
   text-transform: none;
-  font-weight: 700; }
+  font-weight: 700;
+  height: 58px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 .review__input-phone,
 .review__input-email {
   width: 100%;
-  padding: 20px 70px 20px 20px; }
+  padding: 18px 18px 21px 22px; }
 
 .contact-info__icon {
   -webkit-box-sizing: border-box;

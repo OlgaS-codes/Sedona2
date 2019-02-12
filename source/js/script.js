@@ -4,8 +4,12 @@
 (function () {
   window.script = {};
 
+  var LEFT_X = 0;
+  var RIGHT_X = 227;
+
+
   var video = document.querySelector(".video__video");
-  var progressBar = document.querySelector("progress-bar");
+  var progressBar = document.querySelector(".progress-bar");
   var watched = document.querySelector(".watched-Line");
   var watchedPoint = document.querySelector(".watched-indicator");
   var btnPlayPause = document.querySelector("#play-pause");
@@ -30,16 +34,37 @@
     }
   }
 
-  /* функция, показывает текущее время просмотра видео*/
+  /* функция, показывает текущее время просмотра видео и перематывает его*/
   var showWatched = function () {
     var watchPostition = video.currentTime / video.duration;
     watched.style.width = watchPostition * 100 + "%";
     watchedPoint.style.left = watchPostition * 100 + "%";
-    // console.log("current time is " + video.currentTime + "s.");
-    // console.log("video duration is " + video.duration + "s.");
-
   }
-/* обновить все */
+
+
+  watchedPoint.addEventListener('touchmove', function (event) {
+
+    if (event.targetTouches.length == 1) {
+      var touch = event.targetTouches[0];
+
+/*не работает на айпаде, скорее всего проблема в ограничителях */
+      if (LEFT_X > touch.pageX || touch.pageX > RIGHT_X) {
+        watchedPoint.style.left = - touch.pageX;
+      } else {
+        watchedPoint.style.left = touch.pageX + 'px';
+        console.log(touch.pageX);
+        watched.style.width = touch.pageX * 100 / 227 + "%";
+        video.currentTime = (video.duration * parseInt(watched.style.width) / 100);
+
+
+      }
+
+    }
+
+  }, false);
+
+
+  /* обновить все */
   var refreshVideo = function () {
 
     watched.style.width = "0%";
@@ -59,5 +84,6 @@
   btnRepeat.addEventListener("click", refreshVideo);
   btnFullscreen.addEventListener("click", fullscreenOnClick);
 })();
+
 
 /* */
