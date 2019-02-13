@@ -1,16 +1,40 @@
+.page-main__img-wrapper--form {
+  min-height: 158px;
+  max-height: 158px;
+}
+
+.main-img--form {
+  max-width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .form__review {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .review__additional {
+    @include vh();
+  }
+}
+
+
 .review {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding: 18px 20px 20px 20px;
+  padding: 18px 20px 26px 20px;
 }
 
 @media (max-width: $mobile-width-only) {
-  .review:not(:last-child) {
+  .review:not(:last-child):not(:nth-last-child(2)) {
     border-bottom: 1px solid rgba(grey, 0.5);
   }
 }
-
 
 .review__heading {
   margin: 0;
@@ -36,9 +60,9 @@
 }
 
 .review__input {
-  padding: 20px 18px 21px 21px;
+  padding: 17px 18px 17px 21px;
   border: none;
-  background-color: pink;
+  background-color: #f2f2f2;
   resize: none;
 }
 
@@ -54,6 +78,8 @@
   padding: 16px 6px 16px 16px;
 }
 
+/* ПРЕДСТАВЬТЕСЬ*/
+
 .name-wrapper {
   width: 100%;
   display: flex;
@@ -67,28 +93,23 @@
   margin-bottom: 20px;
 }
 
+.label--name {
+  margin-top: 5px;
+}
+
 .name-wrapper input {
   width: 100%;
-  height: 60px;
+  height: 58px;
   box-sizing: border-box;
   margin-left: 14px;
 }
 
-.name__row:nth-child(3) input {
-  padding: 17px 18px 22px 21px;
-}
-
-.name__row:nth-child(4) label {
-  margin-bottom: 6px;
-}
-
 .name__row:nth-child(4) input {
-  padding: 13px 18px 22px 24px;
+  margin-left: 17px;
 }
 
-/* контактные данные */
+/* КОНТАКТНАЯ ИНФОРМАЦИЯ */
 .review__contact-info {
-
   padding: 18px 20px 28px 20px;
 }
 
@@ -142,13 +163,9 @@
   min-width: 58px;
   min-height: 58px;
   margin: 0;
-  // padding: 20px;
   background-color: #e6e6e6;
   background-repeat: no-repeat;
   background-position: center;
-  // white-space: nowrap;
-  // text-align: center;
-  // vertical-align: bottom;
 }
 
 .phone-icon {
@@ -162,6 +179,9 @@
 /* Ваше общее впечатление */
 .impression__row {
   width: 100%;
+}
+
+.impression__row:not(:last-child) {
   margin-bottom: 13px;
 }
 
@@ -176,17 +196,14 @@
 /* стилизация радио баттон */
 .label--impression {
   display: block;
-  // margin-bottom: 13px;
   font-size: 18px;
-  line-height: 56px;
-  padding-left: 70px;
+  box-sizing: border-box;
+  height: 56px;
+  padding-top: 16px;
+  padding-left: 79px;
   text-transform: none;
   font-weight: 700;
   position: relative;
-}
-
-.impression__row:last-child {
-  margin-bottom: 4px;
 }
 
 
@@ -208,7 +225,7 @@
 .impression-input:checked+label::after {
   content: "";
   position: absolute;
-  top: 17px;
+  top: 16px;
   left: 17px;
   display: block;
   height: 22px;
@@ -235,7 +252,7 @@
 /* Посещенные достопримечательности:*/
 
 .visitedPlaces__heading {
-  margin-bottom: 21px;
+  margin-bottom: 17px;
   text-align: center;
 }
 
@@ -246,8 +263,10 @@
 .visitedPlaces__label {
   display: block;
   font-size: 18px;
-  line-height: 56px;
-  padding-left: 70px;
+  height: 56px;
+  box-sizing: border-box;
+  padding-left: 79px;
+  padding-top: 17px;
   position: relative;
   text-transform: none;
   font-weight: 700;
@@ -290,8 +309,9 @@
 }
 
 /* Опишите свои эмоции*/
+
 .description__heading {
-  margin-bottom: 23px;
+  margin-bottom: 16px;
   text-align: center;
 }
 
@@ -299,8 +319,8 @@
   box-sizing: border-box;
   max-width: 280px;
   min-height: 160px;
-  margin-bottom: 52px;
-  padding: 20px;
+  // margin-bottom: 52px;
+  padding: 16px 20px 16px 20px;
   resize: none;
   font-size: 18px;
   line-height: 26px;
@@ -316,6 +336,20 @@
   border: 4px solid #e5e5e5;
   padding: 16px;
   outline: none;
+}
+
+.rewiew__button-container {
+  padding-top: 25px;
+}
+
+.review__button {
+  border: none;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 16px 20px 16px 20px;
+  text-transform: uppercase;
+  font-size: 19px;
+  margin-bottom: 11px;
 }
 
 @media (min-width: $tablet-width) {

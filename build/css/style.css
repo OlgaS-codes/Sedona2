@@ -567,7 +567,7 @@ img {
     padding: 111px 360px 37px 370px;
     border: none; } }
 
-/**/
+/*h*/
 /* -------------------------------------------синие и белые углы псевдоэлементы от интро*/
 @media (max-width: 767px) {
   /*синие углы общий стиль */
@@ -1771,11 +1771,6 @@ img {
         -ms-flex-pack: justify;
             justify-content: space-between; } }
 
-.review__button {
-  border: none;
-  padding: 20px 63px 20px 63px;
-  width: 50%; }
-
 @media (max-width: 767px) {
   .review__additional {
     position: absolute;
@@ -1800,10 +1795,10 @@ img {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 18px 20px 20px 20px; }
+  padding: 18px 20px 26px 20px; }
 
 @media (max-width: 767px) {
-  .review:not(:last-child) {
+  .review:not(:last-child):not(:nth-last-child(2)) {
     border-bottom: 1px solid rgba(128, 128, 128, 0.5); } }
 
 .review__heading {
@@ -1851,9 +1846,9 @@ img {
   font-weight: 700; }
 
 .review__input {
-  padding: 20px 18px 21px 21px;
+  padding: 17px 18px 17px 21px;
   border: none;
-  background-color: pink;
+  background-color: #f2f2f2;
   resize: none; }
 
 .review__input:hover {
@@ -1866,6 +1861,7 @@ img {
   outline: none;
   padding: 16px 6px 16px 16px; }
 
+/* ПРЕДСТАВЬТЕСЬ*/
 .name-wrapper {
   width: 100%;
   display: -webkit-box;
@@ -1883,23 +1879,20 @@ img {
   padding: 0;
   margin-bottom: 20px; }
 
+.label--name {
+  margin-top: 5px; }
+
 .name-wrapper input {
   width: 100%;
-  height: 60px;
+  height: 58px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin-left: 14px; }
 
-.name__row:nth-child(3) input {
-  padding: 17px 18px 22px 21px; }
-
-.name__row:nth-child(4) label {
-  margin-bottom: 6px; }
-
 .name__row:nth-child(4) input {
-  padding: 13px 18px 22px 24px; }
+  margin-left: 17px; }
 
-/* контактные данные */
+/* КОНТАКТНАЯ ИНФОРМАЦИЯ */
 .review__contact-info {
   padding: 18px 20px 28px 20px; }
 
@@ -1997,7 +1990,9 @@ img {
 
 /* Ваше общее впечатление */
 .impression__row {
-  width: 100%;
+  width: 100%; }
+
+.impression__row:not(:last-child) {
   margin-bottom: 13px; }
 
 .impression__heading {
@@ -2010,14 +2005,14 @@ img {
 .label--impression {
   display: block;
   font-size: 18px;
-  line-height: 56px;
-  padding-left: 70px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 56px;
+  padding-top: 16px;
+  padding-left: 79px;
   text-transform: none;
   font-weight: 700;
   position: relative; }
-
-.impression__row:last-child {
-  margin-bottom: 4px; }
 
 .label--impression::before {
   content: "";
@@ -2037,7 +2032,7 @@ img {
 .impression-input:checked + label::after {
   content: "";
   position: absolute;
-  top: 17px;
+  top: 16px;
   left: 17px;
   display: block;
   height: 22px;
@@ -2060,7 +2055,7 @@ img {
 
 /* Посещенные достопримечательности:*/
 .visitedPlaces__heading {
-  margin-bottom: 21px;
+  margin-bottom: 17px;
   text-align: center; }
 
 .visitedPlaces__input {
@@ -2069,8 +2064,11 @@ img {
 .visitedPlaces__label {
   display: block;
   font-size: 18px;
-  line-height: 56px;
-  padding-left: 70px;
+  height: 56px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 79px;
+  padding-top: 17px;
   position: relative;
   text-transform: none;
   font-weight: 700; }
@@ -2109,7 +2107,7 @@ img {
 
 /* Опишите свои эмоции*/
 .description__heading {
-  margin-bottom: 23px;
+  margin-bottom: 16px;
   text-align: center; }
 
 .description__textarea {
@@ -2117,8 +2115,7 @@ img {
           box-sizing: border-box;
   max-width: 280px;
   min-height: 160px;
-  margin-bottom: 52px;
-  padding: 20px;
+  padding: 16px 20px 16px 20px;
   resize: none;
   font-size: 18px;
   line-height: 26px;
@@ -2132,6 +2129,19 @@ img {
   border: 4px solid #e5e5e5;
   padding: 16px;
   outline: none; }
+
+.rewiew__button-container {
+  padding-top: 25px; }
+
+.review__button {
+  border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  padding: 16px 20px 16px 20px;
+  text-transform: uppercase;
+  font-size: 19px;
+  margin-bottom: 11px; }
 
 @media (min-width: 768px) {
   .form__review {
