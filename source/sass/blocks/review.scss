@@ -481,17 +481,9 @@
     right: 0;
   }
 
-  // .visitedPlaces__label {
-  //   width: 50%;
-  // }
-
   .visitedPlaces__label:not(:last-child) {
     margin-bottom: 32px;
   }
-
-  //   .visitedPlaces__label:nth-child(odd) {
-  //     margin-right: 10px;
-  //   }
 
   .review__description {
     order: 5;
@@ -545,22 +537,58 @@
     padding: 0 120px;
   }
 
+  .review {
+    padding-top: 22px;
+  }
+
+  .review__name {
+    width: 50%;
+    padding-left: 22px;
+    box-sizing: border-box;
+    margin-bottom: 45px;
+  }
+
+  .name__heading {
+    text-align: left;
+    padding-left: 58px;
+  }
+
   .review__contact-info {
     flex-grow: 2;
     width: 100%;
     display: flex;
     flex-direction: row;
+    margin-bottom: 30px;
     // padding: 18px 20px 24px 20px;
   }
 
   .contact-info__heading {
     width: 100%;
+    margin-bottom: 75px;
+  }
+
+  .contact-info__heading::before {
+    left: 0;
+  }
+
+  .contact-info__heading::after {
+    right: 0;
+  }
+
+  .review__heading--lines::before,
+  .review__heading--lines::after {
+    width: 29%;
   }
 
   .contact-info-wrapper {
     width: 50%;
     display: flex;
     flex-direction: row;
+    align-items: center;
+  }
+
+  .contact-info__row:not(:last-child) {
+    margin-bottom: 0;
   }
 
   .contact-info-wrapper:nth-child(even) {
@@ -572,27 +600,58 @@
     @include vh();
   }
 
+  .contact-info-wrapper .review__label {
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
   .label--email {
-    margin-right: 18px;
+    margin-right: 16px;
+    min-width: 147px;
   }
 
   .label--phone {
     margin-right: 16px;
   }
 
+  .review__input-phone,
+  .review__input-email {
+    padding-top: 17px;
+  }
+
   .review__visitedPlaces {
     flex-grow: 2;
     width: 100%;
     justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .visitedPlaces__heading {
     padding: 0 280px;
   }
 
+  .visitedPlaces__heading.review__heading--lines::before,
+  .visitedPlaces__heading.review__heading--lines::after {
+    top: 26px;
+    width: 30%;
+  }
+
+  .visitedPlaces__heading::before {
+    left: -7px;
+  }
+
+  .visitedPlaces__heading.review__heading--lines::after {
+    right: -3px;
+  }
+
   .visitedPlaces__label {
     box-sizing: border-box;
-    width: 25%;
+  }
+
+  .visitedPlaces__label:not(:last-child) {
+    margin-bottom: 44px;
   }
 
   .review__description {
@@ -600,26 +659,63 @@
     width: 100%;
   }
 
-  .review__name {
-    width: 50%;
-    padding-left: 80px;
-    box-sizing: border-box;
-  }
 
   .review__impression {
     position: relative;
     width: 50%;
+    margin-bottom: 45px;
+  }
+
+  .impression__heading {
+    padding-left: 80px;
+    text-align: left;
+  }
+
+  .label--impression {
+    padding-left: 79px;
   }
 
   .review__impression::after {
     content: "";
     position: absolute;
-    top: 0;
+    top: 27px;
     right: 0;
     display: block;
     width: 1px;
-    height: 100%;
+    height: 91%;
     box-sizing: border-box;
     border-right: 1px solid #dbdbdb;
+  }
+
+  .label--impression::before {
+    left: 3px;
+  }
+
+  .impression-input:checked+label::after {
+    left: 21px;
+  }
+
+  .description__heading.review__heading--lines::before,
+  .description__heading.review__heading--lines::after {
+    top: 12px;
+    width: 34.5%;
+  }
+
+  .description__heading.review__heading--lines::before {
+    left: -76px;
+  }
+
+  .description__heading.review__heading--lines::after {
+    right: -71px;
+  }
+
+  .rewiew__button-container {
+    padding-top: 61px;
+    padding-bottom: 57px;
+  }
+
+  .review__button {
+    width: 50%;
+    padding-right: 58px;
   }
 }
