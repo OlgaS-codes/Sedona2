@@ -354,11 +354,21 @@
 
 @media (min-width: $tablet-width) {
   .form__review {
-    padding: 0 60px;
+    padding: 27px 60px 0 60px;
   }
 
   .review {
     padding: 0;
+  }
+
+  .review__heading {
+    width: 85%;
+    font-size: 21px;
+    margin-bottom: 55px;
+  }
+
+  .label--name {
+    margin-left: 58px;
   }
 
   .review__name {
@@ -367,23 +377,42 @@
     margin-bottom: 68px;
   }
 
+  .name-wrapper input {
+    padding: 20px 18px 17px 21px;
+  }
+
   .review__contact-info {
     order: 3;
     width: 100%;
     flex-grow: 2;
-    margin-bottom: 57px;
+    margin-bottom: 53px;
+    align-items: center;
+  }
+
+  .contact-info-wrapper {
+    width: 100%;
+  }
+
+  .contact-info__row:not(:last-child) {
+    margin-bottom: 23px;
   }
 
   .contact-info__heading {
     position: relative;
+    margin-bottom: 25px;
   }
 
   .contact-info__heading::before {
-    left: 0;
+    left: -49px;
   }
 
   .contact-info__heading::after {
-    right: 0;
+    right: -51px;
+  }
+
+  .review__input-phone,
+  .review__input-email {
+    padding-top: 19px;
   }
 
   .review__impression {
@@ -392,16 +421,33 @@
     margin-bottom: 68px;
   }
 
+  .impression__row:not(:last-child) {
+    margin-bottom: 22px;
+  }
+
+  .impression__heading {
+    margin-bottom: 60px;
+  }
+
+  .label--impression {
+    padding-left: 76px;
+  }
+
   .review__visitedPlaces {
     order: 4;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 93px;
+    padding-right: 94px;
   }
 
   .visitedPlaces__heading {
     width: 100%;
-    padding: 0 170px;
+    margin-bottom: 42px;
+    padding: 0 36px;
     position: relative;
   }
 
@@ -409,29 +455,49 @@
   .review__heading--lines::after {
     content: "";
     position: absolute;
-    top: 26px;
+    top: 13px;
     display: block;
-    width: 16.4%;
+    width: 22.515%;
     height: 1px;
     box-sizing: border-box;
     border-bottom: 1px solid #dbdbdb;
   }
 
+  .visitedPlaces__heading.review__heading--lines::before,
+  .visitedPlaces__heading.review__heading--lines::after {
+    top: 24px;
+    width: 19.2%;
+  }
+
   .visitedPlaces__heading::before {
-    left: 0;
+    left: -49px;
   }
 
   .visitedPlaces__heading::after {
+    right: -51px;
+  }
+
+  .visitedPlaces__heading.review__heading--lines::after {
     right: 0;
   }
 
-  .visitedPlaces__label {
-    width: 30%;
+  // .visitedPlaces__label {
+  //   width: 50%;
+  // }
+
+  .visitedPlaces__label:not(:last-child) {
+    margin-bottom: 32px;
   }
+
+  //   .visitedPlaces__label:nth-child(odd) {
+  //     margin-right: 10px;
+  //   }
 
   .review__description {
     order: 5;
     width: 100%;
+    align-items: center;
+    padding-top: 36px;
   }
 
   .description__heading {
@@ -447,15 +513,30 @@
   }
 
   .description__textarea {
-    max-width: 100%;
+    min-width: 100%;
+    padding: 18px 20px 16px 21px;
+  }
+
+  .rewiew__button-container {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 51px;
+    order: 6;
   }
 
   .review__button {
-    order: 6;
+    width: 50%;
+    padding: 16px 68px 15px 63px;
   }
 
   .review__additional {
     order: 7;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    margin-top: 21px;
   }
 }
 

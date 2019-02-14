@@ -35,7 +35,9 @@
   .intro--index::after,
   .intro--index::before,
   .intro--photo::after,
-  .intro--photo::before {
+  .intro--photo::before,
+  .intro--form::after,
+  .intro--form::before {
     content: "";
     position: absolute;
     top: -38px;
@@ -46,13 +48,16 @@
   }
 
   .intro--photo::after,
-  .intro--photo::before {
+  .intro--photo::before,
+  .intro--form::after,
+  .intro--form::before {
     top: -36px;
   }
 
   /* правый белый угол стиль */
   .intro--index::after,
-  .intro--photo::after {
+  .intro--photo::after,
+  .intro--form::after {
     right: 0;
     border-width: 0 0 37px 377px;
     border-bottom-color: white;
@@ -60,7 +65,8 @@
 
   /* левый белый угол стиль */
   .intro--index::before,
-  .intro--photo::before {
+  .intro--photo::before,
+  .intro--form::before {
     left: 0;
     border-width: 37px 0 0 377px;
     border-left-color: white;
@@ -69,13 +75,15 @@
 
 @media (min-width: $desktop-width) {
   .intro--index::after,
-  .intro--photo::after {
+  .intro--photo::after,
+  .intro--form::after {
     top: -58px;
     border-width: 0 0 63px 609px;
   }
 
   .intro--index::before,
-  .intro--photo::before {
+  .intro--photo::before,
+  .intro--form::before {
     top: -58px;
     border-width: 63px 0 0 609px;
   }

@@ -181,6 +181,8 @@ img {
 @media (min-width: 1200px) {
   .nav__link {
     min-height: 53px; }
+  .nav__link--form {
+    min-height: 56px; }
   .nav__item {
     width: 254px; }
   .nav__list li:nth-child(2) {
@@ -342,9 +344,9 @@ img {
 
 /*-------------------------------------Форма-файл */
 .img-top--form {
-  padding-top: 51px;
-  padding-bottom: 69px;
-  background-position-y: -231px; }
+  padding-top: 50px;
+  padding-bottom: 70px;
+  background-position-y: -232px; }
 
 .img-top--form__svg {
   width: 229px;
@@ -352,8 +354,9 @@ img {
 
 @media (min-width: 768px) {
   .img-top--form {
-    padding-top: 97px;
-    padding-bottom: 117px; }
+    padding-top: 94px;
+    padding-bottom: 117px;
+    background-position-y: -228px; }
   .img-top--form__svg {
     width: 458px;
     height: 78px; } }
@@ -363,7 +366,7 @@ img {
     padding-top: 101px;
     padding-bottom: 119px;
     background-position-x: 0;
-    background-position-y: -207px; }
+    background-position-y: -218px; }
   .img-top--form__svg {
     width: 461px;
     height: 80px; } }
@@ -427,32 +430,41 @@ img {
 @media (min-width: 768px) {
   /*общие стили псевдоэлементов */
   .img-top--index::after,
-  .img-top--photo::after {
+  .img-top--photo::after,
+  .img-top--form::after {
     right: 33px;
     border-bottom-color: white; }
   .img-top--index::before,
-  .img-top--photo::before {
+  .img-top--photo::before,
+  .img-top--form::before {
     left: 33px;
     border-left-color: white; }
-  /* стили только для индекса */
+  /* стили для индекса */
   .img-top--index::after {
     border-width: 0 0 59px 345px; }
   .img-top--index::before {
     border-width: 59px 0 0 345px; }
-  /* стили только для фото-страницы */
+  /* стили для фото-страницы */
   .img-top--photo::after {
     border-width: 0 0 56px 345px; }
   .img-top--photo::before {
+    border-width: 56px 0 0 345px; }
+  /* стили для форма */
+  .img-top--form::after {
+    border-width: 0 0 56px 345px; }
+  .img-top--form::before {
     border-width: 56px 0 0 345px; } }
 
 /* стили для десктопа: индекс и фото */
 @media (min-width: 1200px) {
   .img-top--index::before,
-  .img-top--photo::before {
+  .img-top--photo::before,
+  .img-top--form::before {
     left: 249px;
     border-width: 57px 0 0 344px; }
   .img-top--index::after,
-  .img-top--photo::after {
+  .img-top--photo::after,
+  .img-top--form::after {
     right: 249px;
     border-width: 0 0 57px 344px; } }
 
@@ -559,8 +571,11 @@ img {
 
 @media (min-width: 768px) {
   .intro--form {
-    padding: 76px 165px 48px 165px;
-    border: none; } }
+    padding: 70px 154px 48px 154px;
+    border: none; }
+  .heading--form {
+    font-size: 31px;
+    line-height: 36px; } }
 
 @media (min-width: 1200px) {
   .intro--form {
@@ -596,7 +611,9 @@ img {
   .intro--index::after,
   .intro--index::before,
   .intro--photo::after,
-  .intro--photo::before {
+  .intro--photo::before,
+  .intro--form::after,
+  .intro--form::before {
     content: "";
     position: absolute;
     top: -38px;
@@ -605,28 +622,34 @@ img {
     border-color: transparent;
     border-style: solid; }
   .intro--photo::after,
-  .intro--photo::before {
+  .intro--photo::before,
+  .intro--form::after,
+  .intro--form::before {
     top: -36px; }
   /* правый белый угол стиль */
   .intro--index::after,
-  .intro--photo::after {
+  .intro--photo::after,
+  .intro--form::after {
     right: 0;
     border-width: 0 0 37px 377px;
     border-bottom-color: white; }
   /* левый белый угол стиль */
   .intro--index::before,
-  .intro--photo::before {
+  .intro--photo::before,
+  .intro--form::before {
     left: 0;
     border-width: 37px 0 0 377px;
     border-left-color: white; } }
 
 @media (min-width: 1200px) {
   .intro--index::after,
-  .intro--photo::after {
+  .intro--photo::after,
+  .intro--form::after {
     top: -58px;
     border-width: 0 0 63px 609px; }
   .intro--index::before,
-  .intro--photo::before {
+  .intro--photo::before,
+  .intro--form::before {
     top: -58px;
     border-width: 63px 0 0 609px; } }
 
@@ -2145,15 +2168,23 @@ img {
 
 @media (min-width: 768px) {
   .form__review {
-    padding: 0 60px; }
+    padding: 27px 60px 0 60px; }
   .review {
     padding: 0; }
+  .review__heading {
+    width: 85%;
+    font-size: 21px;
+    margin-bottom: 55px; }
+  .label--name {
+    margin-left: 58px; }
   .review__name {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
     width: 50%;
     margin-bottom: 68px; }
+  .name-wrapper input {
+    padding: 20px 18px 17px 21px; }
   .review__contact-info {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
@@ -2162,19 +2193,36 @@ img {
     -webkit-box-flex: 2;
         -ms-flex-positive: 2;
             flex-grow: 2;
-    margin-bottom: 57px; }
+    margin-bottom: 53px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .contact-info-wrapper {
+    width: 100%; }
+  .contact-info__row:not(:last-child) {
+    margin-bottom: 23px; }
   .contact-info__heading {
-    position: relative; }
+    position: relative;
+    margin-bottom: 25px; }
   .contact-info__heading::before {
-    left: 0; }
+    left: -49px; }
   .contact-info__heading::after {
-    right: 0; }
+    right: -51px; }
+  .review__input-phone,
+  .review__input-email {
+    padding-top: 19px; }
   .review__impression {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
     width: 50%;
     margin-bottom: 68px; }
+  .impression__row:not(:last-child) {
+    margin-bottom: 22px; }
+  .impression__heading {
+    margin-bottom: 60px; }
+  .label--impression {
+    padding-left: 76px; }
   .review__visitedPlaces {
     -webkit-box-ordinal-group: 5;
         -ms-flex-order: 4;
@@ -2186,35 +2234,51 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    padding-left: 93px;
+    padding-right: 94px; }
   .visitedPlaces__heading {
     width: 100%;
-    padding: 0 170px;
+    margin-bottom: 42px;
+    padding: 0 36px;
     position: relative; }
   .review__heading--lines::before,
   .review__heading--lines::after {
     content: "";
     position: absolute;
-    top: 26px;
+    top: 13px;
     display: block;
-    width: 16.4%;
+    width: 22.515%;
     height: 1px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     border-bottom: 1px solid #dbdbdb; }
+  .visitedPlaces__heading.review__heading--lines::before,
+  .visitedPlaces__heading.review__heading--lines::after {
+    top: 24px;
+    width: 19.2%; }
   .visitedPlaces__heading::before {
-    left: 0; }
+    left: -49px; }
   .visitedPlaces__heading::after {
+    right: -51px; }
+  .visitedPlaces__heading.review__heading--lines::after {
     right: 0; }
-  .visitedPlaces__label {
-    width: 30%; }
+  .visitedPlaces__label:not(:last-child) {
+    margin-bottom: 32px; }
   .review__description {
     -webkit-box-ordinal-group: 6;
         -ms-flex-order: 5;
             order: 5;
-    width: 100%; }
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 36px; }
   .description__heading {
     position: relative; }
   .description__heading::before {
@@ -2222,15 +2286,33 @@ img {
   .description__heading::after {
     right: 0; }
   .description__textarea {
-    max-width: 100%; }
-  .review__button {
+    min-width: 100%;
+    padding: 18px 20px 16px 21px; }
+  .rewiew__button-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 51px;
     -webkit-box-ordinal-group: 7;
         -ms-flex-order: 6;
             order: 6; }
+  .review__button {
+    width: 50%;
+    padding: 16px 68px 15px 63px; }
   .review__additional {
     -webkit-box-ordinal-group: 8;
         -ms-flex-order: 7;
-            order: 7; } }
+            order: 7;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    margin-top: 21px; } }
 
 @media (min-width: 1200px) {
   .form__review {

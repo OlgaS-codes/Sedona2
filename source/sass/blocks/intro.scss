@@ -122,8 +122,13 @@
 
 @media (min-width: $tablet-width) {
   .intro--form {
-    padding: 76px 165px 48px 165px;
+    padding: 70px 154px 48px 154px;
     border: none;
+  }
+
+  .heading--form {
+    font-size: 31px;
+    line-height: 36px;
   }
 }
 
