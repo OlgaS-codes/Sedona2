@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 36px 41px 40px 70px;
+  padding: 35px 41px 40px 70px;
 }
 
 .feature-icons__feature-icon {
@@ -56,20 +56,20 @@
     background-image: url("../img/sprite/icon-burger.svg");
     background-repeat: no-repeat;
     background-size: contain;
-    left: -50px;
-    top: -5px;
+    left: -51px;
+    top: -3px;
   }
 
   &__heading--souvenirs::before {
     position: absolute;
     content: " ";
     width: 39px;
-    height: 35px;
+    height: 40px;
     background-image: url("../img/sprite/icon-gift.svg");
     background-repeat: no-repeat;
     background-size: contain;
-    left: -44px;
-    top: -10px;
+    left: -46px;
+    top: -11px;
   }
 
   &__text {
