@@ -61,6 +61,26 @@
   &--yt {
     background-image: url("../img/sprite/icon-youtube-mobile.svg");
   }
+
+  &--tw:active {
+    background-image: url("../img/sprite/twitter-active.svg");
+  }
+
+  &--fb:active {
+    background-image: url("../img/sprite/facebook-active.svg");
+  }
+
+  &--yt:active {
+    background-image: url("../img/sprite/y-tube-active.svg.svg");
+  }
+}
+
+.social__link:hover {
+  background-color: #669ec0;
+}
+
+.social__link:active {
+  background-color: #5496bd;
 }
 
 .developed {

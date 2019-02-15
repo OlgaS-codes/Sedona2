@@ -61,12 +61,12 @@
   /*меню на ховере и активе */
   .nav__link:hover {
     background-color: #669ec0;
-    color: #8fb8d1;
+    color: #f7fafc;
   }
 
   .nav__link:active {
     background-color: #5496bd;
-    color: #7eb0cd;
+    color: #88b6d1;
   }
 }
 
@@ -89,12 +89,31 @@
     color: rgb(0, 0, 0);
   }
 
+  .nav__link:hover {
+    color: #81b3d2;
+  }
+
+  .nav__link:active {
+    color: #c7c7c7;
+  }
+
+  .nav__link.current-page {
+    color: #766357;
+  }
+
+  .nav__link.current-page:hover {
+    color: #604e43;
+  }
+
+  .nav__link.current-page:active {
+    color: #d6d0cc;
+  }
+
   .nav__item {
     width: 166px;
   }
 
   /* положение элементов навигации */
-
   .nav__list li:nth-child(2) {
     margin-right: 158px;
   }

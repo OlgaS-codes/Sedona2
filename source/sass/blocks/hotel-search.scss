@@ -27,22 +27,6 @@
   color: #333333;
 }
 
-.button {
-  width: 96%;
-  margin: 0;
-  // padding: 15px 44px 18px 38px;
-  padding: 0;
-  padding-top: 15px;
-  padding-bottom: 18px;
-  text-align: center;
-  background-color: #81b3d2;
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: 700;
-  color: #ffffff;
-  text-decoration: none;
-}
-
 @media (min-width: $tablet-width) {
   .page-main__hotel-search {
     padding: 49px 155px 57px 155px;
@@ -63,7 +47,7 @@
     margin-left: auto;
   }
 
-  .button {
+  .button__search {
     width: 49.89%;
     padding: 16px 117px 15px 115px;
   }
@@ -82,7 +66,7 @@
     margin-bottom: 48px;
   }
 
-  .button {
+  .button--search {
     padding: 15px 115px 18px 115px;
   }
 }

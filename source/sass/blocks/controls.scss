@@ -95,6 +95,14 @@
   transition: opacity 0.2s ease-in-out;
 }
 
+#repeat:hover {
+  background-image: url("../img/sprite/replay-mobile-hover.svg");
+}
+
+#repeat:active {
+  background-image: url("../img/sprite/replay-mobile-active.svg");
+}
+
 #full-screen {
   position: absolute;
   top: 60px;
@@ -109,6 +117,14 @@
   transition: opacity 0.2s ease-in-out;
 }
 
+#full-screen:hover {
+  background-image: url("../img/sprite/fullscreen-mobile-hover.svg");
+}
+
+#full-screen:active {
+  background-image: url("../img/sprite/fullscreen-mobile-active.svg");
+}
+
 #cc {
   position: absolute;
   top: 59px;
@@ -121,6 +137,14 @@
   background-size: 91%;
   background-position: center;
   transition: opacity 0.2s ease-in-out;
+}
+
+#cc:hover {
+  background-image: url("../img/sprite/subtitles-mobile-hover.svg");
+}
+
+#cc:active {
+  background-image: url("../img/sprite/subtitles-mobile-active.svg");
 }
 
 @media (min-width: $tablet-width) {
@@ -160,10 +184,27 @@
     left: 29px;
   }
 
+
+  #repeat:hover {
+    background-image: url("../img/sprite/replay-hover.svg");
+  }
+
+  #repeat:active {
+    background-image: url("../img/sprite/replay-active.svg");
+  }
+
   #full-screen {
     background-image: url("../img/sprite/fullscreen-white.svg");
     top: 31px;
     right: 33px;
+  }
+
+  #full-screen:hover {
+    background-image: url("../img/sprite/fullscreen-hover.svg");
+  }
+
+  #full-screen:active {
+    background-image: url("../img/sprite/fullscreen-active.svg");
   }
 
   #cc {
@@ -171,12 +212,21 @@
     top: 30px;
     right: 91px;
   }
+
+  #cc:hover {
+    background-image: url("../img/sprite/subtitles-hover.svg");
+  }
+
+  #cc:active {
+    background-image: url("../img/sprite/subtitles-active.svg");
+  }
 }
 
 @media (min-width: $desktop-width) {
   .controls {
     top: 407px;
   }
+
   #repeat {
     top: 30px;
   }

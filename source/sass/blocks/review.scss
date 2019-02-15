@@ -71,7 +71,7 @@
   outline: none;
 }
 
-.review__input:active {
+.review__input:focus {
   background-color: white;
   border: 4px solid #e5e5e5;
   outline: none;
@@ -245,7 +245,7 @@
   background-color: #d5d5d5;
 }
 
-.label--impression:active::after {
+.impression-input:checked+label:active::after {
   background-color: #a4a4a4;
 }
 
