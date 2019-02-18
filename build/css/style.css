@@ -509,8 +509,9 @@ img {
     background-repeat: no-repeat;
     background-position: 0% 50%; } }
 
-.features-list :first-child .feature-picture__content-text {
-  padding-top: 78px; }
+@media (max-width: 767px) {
+  .features-list :first-child .feature-picture__content-text {
+    padding-top: 78px; } }
 
 /* -------------------------------первый синий блок с картинкой*/
 .features-list__feature-picture {
@@ -672,7 +673,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 35px 41px 40px 70px; }
+  padding: 35px 41px 39px 70px; }
 
 .feature-icons__feature-icon {
   display: -webkit-box;
@@ -694,7 +695,7 @@ img {
 
 @media (max-width: 767px) {
   .feature-icons__feature-icon:not(:last-child) {
-    margin-bottom: 30px; } }
+    margin-bottom: 31px; } }
 
 .feature-icon__heading {
   position: relative;
@@ -845,7 +846,7 @@ img {
 
 .feature-numbers__feature-number {
   margin: 0;
-  padding: 27px 35px 13px 33px; }
+  padding: 26px 35px 13px 33px; }
 
 .feature-number__heading {
   display: block;
@@ -938,7 +939,7 @@ img {
 /* -----------------------------заинтересовались и баттон найти гостинницу*/
 .page-main__hotel-search {
   margin: 0;
-  padding: 27px 15px 48px 14px;
+  padding: 30px 15px 48px 14px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -952,7 +953,7 @@ img {
 
 .hotel-search__heading {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   padding: 0;
   text-align: center;
   font-size: 21px;
@@ -1088,7 +1089,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   margin: 0;
-  padding-top: 36px; }
+  padding-top: 38px; }
 
 .footer__col {
   margin: 0;
@@ -1414,7 +1415,7 @@ img {
 
 .video {
   margin: 0;
-  padding: 32px 0 70px 0;
+  padding: 32px 0 65px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1431,7 +1432,7 @@ img {
 
 .heading--video {
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 28px;
   padding: 0 45px 0 50px;
   font-size: 18px;
   line-height: 26px;
@@ -1445,7 +1446,8 @@ img {
   padding: 0 40px 0 41px;
   font-size: 14px;
   line-height: 23px;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 3px; }
 
 .video__video {
   min-height: 268px; }
@@ -1492,7 +1494,7 @@ img {
 .controls {
   margin: 0 auto;
   position: absolute;
-  top: 193px;
+  top: 191px;
   left: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1505,7 +1507,7 @@ img {
 
 .progress-container {
   background-color: rgba(0, 0, 0, 0.6);
-  width: 100%;
+  width: 280px;
   min-height: 43px; }
 
 .progress-bar {
@@ -2077,7 +2079,7 @@ img {
   padding: 16px 20px 16px 20px;
   text-transform: uppercase;
   font-size: 19px;
-  margin-bottom: 11px; }
+  margin-bottom: 9px; }
 
 @media (min-width: 768px) {
   .form__review {

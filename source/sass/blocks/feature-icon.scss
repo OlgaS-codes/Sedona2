@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 35px 41px 40px 70px;
+  padding: 35px 41px 39px 70px;
 }
 
 .feature-icons__feature-icon {
@@ -20,7 +20,7 @@
 
 @media (max-width: $mobile-width-only) {
   .feature-icons__feature-icon:not(:last-child) {
-    margin-bottom: 30px;
+    margin-bottom: 31px;
   }
 }
 
