@@ -10,7 +10,8 @@
   }
 }
 
-.webp.page-main__map {/* Webp background */
+.webp.page-main__map {
+  /* Webp background */
   background-image: url("../img/webp/map@1x@mobile.webp");
 }
 
@@ -24,7 +25,8 @@
     }
   }
 
-  .webp.page-main__map {/* Webp background */
+  .webp.page-main__map {
+    /* Webp background */
     background-image: url("../img/webp/map@1x@tablet.webp");
   }
 }
@@ -32,6 +34,7 @@
 @media (min-width: $desktop-width) {
   .page-main__map {
     background-image: url("../img/map@1x@desktop.jpg");
+    margin-bottom: 2px;
 
     @media #{$retina} {
       background-image: url("../img/map@2x@desktop.jpg");
@@ -39,7 +42,8 @@
     }
   }
 
-  .webp.page-main__map {/* Webp background */
+  .webp.page-main__map {
+    /* Webp background */
     background-image: url("../img/webp/map@1x@desktop.webp");
   }
 }

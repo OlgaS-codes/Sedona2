@@ -5,7 +5,7 @@
   left: 20px;
   display: flex;
   flex-direction: column;
-  width: 87.5%;
+  width: 280px;
 }
 
 .progress-container {
@@ -151,7 +151,7 @@
   .controls {
     top: 453px;
     left: 0;
-    width: 100%;
+    width: 648px;
   }
 
   #play-pause {
@@ -224,7 +224,13 @@
 
 @media (min-width: $desktop-width) {
   .controls {
-    top: 407px;
+    top: 411px;
+    width: 800px;
+  }
+
+
+  .progress-container {
+    min-height: 90px;
   }
 
   #repeat {

@@ -72,7 +72,6 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-height: 279px;
   font-size: 14px;
   color: black;
   font-weight: bold; }
@@ -101,7 +100,10 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-decoration: none; }
+  text-decoration: none;
+  padding: 15px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 @media (max-width: 767px) {
   .nav__list {
@@ -121,6 +123,7 @@ img {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     background-color: #81b3d2;
+    padding: 0;
     color: #ffffff;
     font-size: 18px;
     line-height: 26px;
@@ -190,15 +193,11 @@ img {
 /*---------------------------------------------------десктоп */
 @media (min-width: 1200px) {
   .nav__link {
-    min-height: 53px; }
-  .nav__link--form {
     min-height: 56px; }
   .nav__item {
     width: 254px; }
   .nav__list li:nth-child(2) {
-    margin-right: 246px; }
-  .nav__link--photos {
-    min-height: 56px; } }
+    margin-right: 246px; } }
 
 @media (max-width: 767px) {
   .logo {
@@ -232,7 +231,6 @@ img {
 @media (max-width: 767px) {
   .toggle {
     position: absolute;
-    bottom: 2px;
     right: 2px;
     z-index: 2;
     display: block;
@@ -243,35 +241,25 @@ img {
     .toggle:hover, .toggle:active {
       outline: none; }
   .toggle.open {
-    background-color: white;
-    background-image: url("../img/sprite/icon-menu.svg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 40%; }
-  .toggle.close {
-    background-color: white;
+    background-color: transparent;
     background-image: url("../img/sprite/menu-close.svg");
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 40%; } }
+    background-size: 40%;
+    top: 2px; }
+  .toggle.close {
+    background-color: transparent;
+    background-image: url("../img/sprite/icon-menu.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 40%;
+    bottom: 2px; } }
 
 @media (min-width: 768px) {
   .toggle {
     display: none; } }
 
 /* Надпись Седона SVG*/
-.img-top--index__svg {
-  width: 280px;
-  height: 214px; }
-
-.img-top--photo__svg {
-  width: 229px;
-  height: 39px; }
-
-.img-top--form__svg {
-  width: 229px;
-  height: 39px; }
-
 /*-------------------------------------Картинка с каньоном МОБИЛКА */
 .page-main__img-top {
   width: 100%;
@@ -288,7 +276,9 @@ img {
       -ms-flex-align: center;
           align-items: center;
   background-image: url("../img/sprite/1200-triangle.svg"), url("../img/background-main.jpg");
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-size: auto, cover; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .page-main__img-top {
       background: url("../img/sprite/320-triangle.svg"), url("../img/back@2x@mobile.jpg");
@@ -297,6 +287,8 @@ img {
 .img-top--index {
   padding-top: 88px;
   padding-bottom: 87px;
+  padding-left: 19px;
+  padding-right: 19px;
   background-position: 50% 100%, -413px -40px; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .img-top--index {
@@ -306,6 +298,8 @@ img {
 .img-top--photo {
   padding-top: 49px;
   padding-bottom: 67px;
+  padding-left: 45px;
+  padding-right: 45px;
   background-position: 50% 100%, -440px -309px; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .img-top--photo {
@@ -315,6 +309,8 @@ img {
 .img-top--form {
   padding-top: 50px;
   padding-bottom: 70px;
+  padding-left: 45px;
+  padding-right: 45px;
   background-position: 50% 100%, -440px -309px; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .img-top--form {
@@ -334,24 +330,20 @@ img {
 @media (min-width: 768px) {
   .img-top--index {
     padding-top: 77px;
-    padding-bottom: 92px; }
+    padding-bottom: 92px;
+    padding-left: 154px;
+    padding-right: 154px; }
   .img-top--photo {
     padding-top: 94px;
-    padding-bottom: 117px; }
+    padding-bottom: 117px;
+    padding-left: 155px;
+    padding-right: 155px; }
   .img-top--form {
     padding-top: 94px;
     padding-bottom: 117px;
-    background-position: 50% 100%, 0% -228px; }
-  .img-top--index__svg {
-    width: 460px;
-    height: 350px;
-    position: relative; }
-  .img-top--photo__svg {
-    width: 458px;
-    height: 78px; }
-  .img-top--form__svg {
-    width: 458px;
-    height: 78px; } }
+    padding-left: 155px;
+    padding-right: 155px;
+    background-position: 50% 100%, 0% -228px; } }
 
 @media (min-width: 1200px) {
   .page-main__img-top {
@@ -363,23 +355,23 @@ img {
 
 @media (min-width: 1200px) {
   .img-top--index {
-    padding-top: 80px;
+    padding-top: 78px;
     padding-bottom: 91px;
+    padding-left: 370px;
+    padding-right: 370px;
     background-position: 50% 100%, left bottom; }
   .img-top--photo {
     padding-top: 101px;
     padding-bottom: 120px;
+    padding-left: 370px;
+    padding-right: 370px;
     background-position: 50% 100%, 0 -217px; }
   .img-top--form {
     padding-top: 101px;
     padding-bottom: 119px;
-    background-position: 50% 100%, 0 -218px; }
-  .img-top--photo__svg {
-    width: 461px;
-    height: 80px; }
-  .img-top--form__svg {
-    width: 461px;
-    height: 80px; } }
+    padding-left: 370px;
+    padding-right: 370px;
+    background-position: 50% 100%, 0 -218px; } }
 
 /* ---------------------------------заголовок главной страницы*/
 /* СЕДОНА — НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!
@@ -502,12 +494,12 @@ img {
     content: "";
     position: absolute;
     bottom: -37px;
-    height: 37px;
+    min-height: 37px;
     width: 100%;
     background-image: url("../img/sprite/intro-triangle.svg");
-    background-size: auto;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: 0% 50%; } }
+    background-position: 50% 0%; } }
 
 @media (max-width: 767px) {
   .features-list :first-child .feature-picture__content-text {
@@ -670,9 +662,9 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding: 35px 41px 39px 70px; }
 
 .feature-icons__feature-icon {
@@ -989,7 +981,7 @@ img {
 
 @media (min-width: 1200px) {
   .page-main__hotel-search {
-    padding: 53px 374px 67px 374px; }
+    padding: 53px 372px 67px 372px; }
   .hotel-search__content-text {
     margin-right: auto;
     margin-left: auto;
@@ -1004,7 +996,7 @@ img {
   margin: 0; }
 
 .button {
-  width: 96%;
+  width: 100%;
   margin: 0;
   padding: 0;
   padding-top: 16px;
@@ -1058,7 +1050,8 @@ img {
 
 @media (min-width: 1200px) {
   .page-main__map {
-    background-image: url("../img/map@1x@desktop.jpg"); } }
+    background-image: url("../img/map@1x@desktop.jpg");
+    margin-bottom: 2px; } }
   @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
     .page-main__map {
       background-image: url("../img/map@2x@desktop.jpg");
@@ -1265,7 +1258,6 @@ img {
 
 .photo-wrapper {
   min-height: 280px;
-  max-width: 280px;
   margin: 0;
   overflow-y: hidden; }
 
@@ -1355,15 +1347,17 @@ img {
         -ms-flex-pack: justify;
             justify-content: space-between;
     background-color: #f2f2f2;
-    padding-top: 17px; }
+    padding-top: 16px; }
   .additional__wrapper {
     margin: 0;
-    margin-left: 21px;
+    margin-left: 20px;
     padding: 0; }
+  .additional__photo-title {
+    margin-bottom: 6px; }
   .additional__photo-author {
     margin-bottom: 20px; }
   .additional__photo-likes {
-    margin: 13px 21px 0 0; }
+    margin: 15px 21px 0 0; }
   .additional__photo-likes::before {
     left: -30px;
     top: -2px; }
@@ -1393,6 +1387,8 @@ img {
   .photo-wrapper {
     max-height: 267px;
     min-height: 267px; }
+  .photo-wrapper--bright {
+    max-height: 400px; }
   .photo-block__additional {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -1458,7 +1454,7 @@ img {
 @media (min-width: 768px) {
   .video {
     margin: 0;
-    padding: 66px 60px 0 60px; }
+    padding: 68px 60px 0 60px; }
   .heading--video {
     margin: 0 0 31px 0;
     padding: 0;
@@ -1503,7 +1499,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 87.5%; }
+  width: 280px; }
 
 .progress-container {
   background-color: rgba(0, 0, 0, 0.6);
@@ -1632,7 +1628,7 @@ img {
   .controls {
     top: 453px;
     left: 0;
-    width: 100%; }
+    width: 648px; }
   #play-pause {
     top: -405px;
     height: 405px; }
@@ -1676,7 +1672,10 @@ img {
 
 @media (min-width: 1200px) {
   .controls {
-    top: 407px; }
+    top: 411px;
+    width: 800px; }
+  .progress-container {
+    min-height: 90px; }
   #repeat {
     top: 30px; }
   #full-screen {
@@ -1921,10 +1920,10 @@ img {
   background-position: center; }
 
 .phone-icon {
-  background-image: url("../img/phone.svg"); }
+  background-image: url("../img/sprite/phone.svg"); }
 
 .mail-icon {
-  background-image: url("../img/mail.svg"); }
+  background-image: url("../img/sprite/mail.svg"); }
 
 /* Ваше общее впечатление */
 .impression__row {
@@ -2051,7 +2050,7 @@ img {
 .description__textarea {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  max-width: 280px;
+  max-width: 100%;
   min-height: 160px;
   padding: 16px 20px 16px 20px;
   resize: none;
@@ -2372,7 +2371,7 @@ img {
     right: -71px; }
   .rewiew__button-container {
     padding-top: 61px;
-    padding-bottom: 57px; }
+    padding-bottom: 59px; }
   .review__button {
     width: 50%;
     padding-right: 58px; } }

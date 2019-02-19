@@ -15,7 +15,7 @@
 
 .photo-wrapper {
   min-height: 280px;
-  max-width: 280px;
+  // max-width: 280px;
   margin: 0;
   overflow-y: hidden;
 }
@@ -110,13 +110,17 @@
     flex-direction: row;
     justify-content: space-between;
     background-color: #f2f2f2;
-    padding-top: 17px;
+    padding-top: 16px;
   }
 
   .additional__wrapper {
     margin: 0;
-    margin-left: 21px;
+    margin-left: 20px;
     padding: 0;
+  }
+
+  .additional__photo-title {
+    margin-bottom: 6px;
   }
 
   .additional__photo-author {
@@ -124,7 +128,7 @@
   }
 
   .additional__photo-likes {
-    margin: 13px 21px 0 0; // спросить у Ксении, как выровнять его по другому, тк через align-self ничего не выравнивается
+    margin: 15px 21px 0 0; // спросить у Ксении, как выровнять его по другому, тк через align-self ничего не выравнивается
   }
 
   .additional__photo-likes::before {
@@ -175,6 +179,10 @@
   .photo-wrapper {
     max-height: 267px;
     min-height: 267px;
+  }
+
+  .photo-wrapper--bright {
+    max-height: 400px;
   }
 
   .photo-block__additional {

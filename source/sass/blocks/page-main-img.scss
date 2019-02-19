@@ -1,21 +1,5 @@
 /* Надпись Седона SVG*/
 
-.img-top--index__svg {
-  width: 280px;
-  height: 214px;
-}
-
-
-.img-top--photo__svg {
-  width: 229px;
-  height: 39px;
-}
-
-.img-top--form__svg {
-  width: 229px;
-  height: 39px;
-}
-
 /*-------------------------------------Картинка с каньоном МОБИЛКА */
 .page-main__img-top {
   width: 100%;
@@ -26,6 +10,8 @@
   align-items: center;
   background-image: url("../img/sprite/1200-triangle.svg"), url("../img/background-main.jpg");
   background-repeat: no-repeat;
+  background-origin: border-box;
+  background-size: auto, cover;
 
 
   @media #{$retina} {
@@ -37,6 +23,8 @@
 .img-top--index {
   padding-top: 88px;
   padding-bottom: 87px;
+  padding-left: 19px;
+  padding-right: 19px;
   background-position: 50% 100%, -413px -40px;
 
 
@@ -49,6 +37,8 @@
 .img-top--photo {
   padding-top: 49px;
   padding-bottom: 67px;
+  padding-left: 45px;
+  padding-right: 45px;
   background-position: 50% 100%, -440px -309px;
 
   @media #{$retina} {
@@ -60,6 +50,8 @@
 .img-top--form {
   padding-top: 50px;
   padding-bottom: 70px;
+  padding-left: 45px;
+  padding-right: 45px;
   background-position: 50% 100%, -440px -309px;
 
   @media #{$retina} {
@@ -84,34 +76,40 @@
   .img-top--index {
     padding-top: 77px;
     padding-bottom: 92px;
+    padding-left: 154px;
+    padding-right: 154px;
   }
 
   .img-top--photo {
     padding-top: 94px;
     padding-bottom: 117px;
+    padding-left: 155px;
+    padding-right: 155px;
   }
 
   .img-top--form {
     padding-top: 94px;
     padding-bottom: 117px;
+    padding-left: 155px;
+    padding-right: 155px;
     background-position: 50% 100%, 0% -228px;
   }
 
-  .img-top--index__svg {
-    width: 460px;
-    height: 350px;
-    position: relative;
-  }
+  // .img-top--index__svg {
+  //   width: 460px;
+  //   height: 350px;
+  //   position: relative;
+  // }
 
-  .img-top--photo__svg {
-    width: 458px;
-    height: 78px;
-  }
+  // .img-top--photo__svg {
+  //   width: 458px;
+  //   height: 78px;
+  // }
 
-  .img-top--form__svg {
-    width: 458px;
-    height: 78px;
-  }
+  // .img-top--form__svg {
+  //   width: 458px;
+  //   height: 78px;
+  // }
 }
 
 @media (min-width: $desktop-width) {
@@ -125,30 +123,36 @@
   }
 
   .img-top--index {
-    padding-top: 80px;
+    padding-top: 78px;
     padding-bottom: 91px;
+    padding-left: 370px;
+    padding-right: 370px;
     background-position: 50% 100%, left bottom;
   }
 
   .img-top--photo {
     padding-top: 101px;
     padding-bottom: 120px;
+    padding-left: 370px;
+    padding-right: 370px;
     background-position: 50% 100%, 0 -217px;
   }
 
   .img-top--form {
     padding-top: 101px;
     padding-bottom: 119px;
+    padding-left: 370px;
+    padding-right: 370px;
     background-position: 50% 100%, 0 -218px;
   }
 
-  .img-top--photo__svg {
-    width: 461px;
-    height: 80px;
-  }
+  // .img-top--photo__svg {
+  //   width: 461px;
+  //   height: 80px;
+  // }
 
-  .img-top--form__svg {
-    width: 461px;
-    height: 80px;
-  }
+  // .img-top--form__svg {
+  //   width: 461px;
+  //   height: 80px;
+  // }
 }

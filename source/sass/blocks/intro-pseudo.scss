@@ -5,11 +5,11 @@
     content: "";
     position: absolute;
     bottom: -37px;
-    height: 37px;
+    min-height: 37px;
     width: 100%;
     background-image: url("../img/sprite/intro-triangle.svg");
-    background-size: auto;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: 0% 50%;
+    background-position: 50% 0%;
   }
 }
