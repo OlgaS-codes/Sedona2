@@ -6,27 +6,31 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/style.css" rel="stylesheet">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+  <script>document.createElement("picture");</script>
+  <script src="js/picturefill.min.js" async></script>
   <title>Фотографии и видео Седоны</title>
+  <!-- <script src="js/picturefill.min.js"></script> -->
   <!-- Pixel Glass -->
   <!-- <style>
     html {
       background-repeat: no-repeat;
       background-position: 50% 0;
       /* По умолчанию мобильный макет */
-      background-image: url("img/sedona-photo-mobile.jpg");
+      background-image: url("img/pixel-perfect/sedona-photo-mobile.jpg");
     }
     /* Планшет */
     @media (min-width: 768px) {
       html {
         /* Планшетный макет */
-        background-image: url("img/sedona-photo-tablet.jpg");
+        background-image: url("img/pixel-perfect/sedona-photo-tablet.jpg");
       }
     }
     /* Десктоп */
     @media (min-width: 1200px) {
       html {
         /* Десктопный макет */
-        background-image: url("img/sedona-photo-desktop.jpg");
+        background-image: url("img/pixel-perfect/sedona-photo-desktop.jpg");
       }
     }
 
@@ -53,9 +57,10 @@
         <div class="header__logo logo logo--photos">
           <a href="#" class="logo__main-link main-link">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/sprite/logotype-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/sprite/logotype-tablet.svg">
-              <img class="main-link__logo" src="img/sprite/logotyle-mobile.svg" alt="логотип Седона" width="102" height="83">
+              <source media="(min-width: 1200px)" srcset="img/content/desk/logo-sedona-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/content/tab/logo-sedona-tablet.svg">
+              <img class="main-link__logo" src="img/content/mob/logo-sedona-mobile.svg" alt="логотип Седона" width="102"
+                height="83">
             </picture>
           </a>
         </div>
@@ -63,8 +68,8 @@
       </nav>
     </header>
     <main class="page-main">
-      <div class="page-main__img-top img-top--photo">
-        <img class="img-top--photo__svg" src="img/sprite/sedona-top-logo.svg" alt="Sedona" width="229"
+      <div class="page-main__top top top--photo">
+        <img class="top--photo__svg" src="img/content/text-sedona.svg" alt="Sedona" width="229"
         height="39">
       </div>
       <section class="photos">
@@ -217,8 +222,8 @@
     </main>
   </div>
   <!-- <script src="js/jquery-3.1.1.min.js"></script> -->
-  <script src="js/script.js"></script>
-  <script src="js/menu.js"></script>
+  <script src="js/menu.min.js"></script>
+  <!-- <script src="js/picturefill.min.js"></script> -->
 </body>
 
 </html>

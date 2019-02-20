@@ -7,28 +7,38 @@
   <link rel="preload" href="fonts/ptsans.woff2" as="font">
   <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
   <link href="css/style.css" rel="stylesheet">
+
+  <meta property="og:image" content="img/back@1x@tablet.jpg">
+  <meta property="og:image:height" content="518">
+  <meta property="og:image:width" content="768">
+  <meta property="og:url" content="https://github.com/ChloeSilent/Sedona2"> <!--переделать ссылку на сайт, а не на репу-->
+  <meta property="og:title" content="Sedona">
+  <meta property="og:description" content="Welcome to the gorgeous Sedona">
+
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <title>Добро пожаловать в Седону!</title>
+  <script>document.createElement("picture");</script>
+  <script src="js/picturefill.min.js" async></script>
   <!-- Pixel Glass -->
   <!-- <style>
   html {
     background-repeat: no-repeat;
     background-position: 50% 0;
     /* По умолчанию мобильный макет */
-    background-image: url("img/sedona-index-mobile.jpg");
+    background-image: url("img/pixel-perfect/sedona-index-mobile.jpg");
   }
   /* Планшет */
   @media (min-width: 768px) {
     html {
       /* Планшетный макет */
-      background-image: url("img/sedona-index-tablet.jpg");
+      background-image: url("img/pixel-perfect/sedona-index-tablet.jpg");
     }
   }
   /* Десктоп */
   @media (min-width: 1200px) {
     html {
       /* Десктопный макет */
-      background-image: url("img/sedona-index-desktop.jpg");
+      background-image: url("img/pixel-perfect/sedona-index-desktop.jpg");
     }
   }
 
@@ -56,10 +66,10 @@
         <div class="header__logo logo">
           <a href="#" class="logo__main-link main-link">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/sprite/logotype-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/sprite/logotype-tablet.svg">
-              <img class="main-link__logo" src="img/sprite/logotyle-mobile.svg" alt="логотип Седона" width="282"
-                height="214">
+              <source media="(min-width: 1200px)" srcset="img/content/desk/logo-sedona-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/content/tab/logo-sedona-tablet.svg">
+              <img class="main-link__logo" src="img/content/mob/logo-sedona-mobile.svg" alt="логотип Седона" width="102"
+                height="83">
             </picture>
           </a>
         </div>
@@ -67,10 +77,10 @@
       </nav>
     </header>
     <main class="page-main">
-      <div class="page-main__img-top img-top--index">
+      <div class="page-main__top top top--index">
         <h1 class="visually-hidden">Welcome to the gorgeous Sedona</h1>
         <p class="visually-hidden">Because the Grand Canyon sucks</p>
-        <img class="img-top--index__svg" src="img/sprite/index-logo.svg" alt="логотип Седона" width="282"
+        <img class="top--index__svg" src="img/content/text-sedona-index.svg" alt="логотип Седона" width="282"
         height="214">
       </div>
       <div class="page-main__intro intro intro--index">
@@ -182,8 +192,10 @@
       </div>
     </footer>
   </div>
+
   <script src="js/jquery-3.1.1.min.js"></script>
-  <script src="js/menu.js"></script>
+  <script src="js/menu.min.js"></script>
+  <!-- <script src="js/picturefill.min.js"></script> -->
   <!-- <script src="modernizr-custom.js"></script> -->
 </body>
 

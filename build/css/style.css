@@ -204,7 +204,7 @@ img {
     position: relative;
     margin: 0;
     padding: 0;
-    min-height: 57px; }
+    min-height: 54px; }
   .logo__main-link {
     border: none;
     background-color: transparent;
@@ -261,7 +261,7 @@ img {
 
 /* Надпись Седона SVG*/
 /*-------------------------------------Картинка с каньоном МОБИЛКА */
-.page-main__img-top {
+.page-main__top {
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -275,70 +275,68 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url("../img/sprite/1200-triangle.svg"), url("../img/background-main.jpg");
+  background-image: url("../img/decorative/tab/bg-intro-triangle-tablet.svg"), url("../img/decorative/mob/back@1x@mobile.jpg");
   background-repeat: no-repeat;
-  background-origin: border-box;
-  background-size: auto, cover; }
+  background-origin: border-box; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .page-main__img-top {
-      background: url("../img/sprite/320-triangle.svg"), url("../img/back@2x@mobile.jpg");
+    .page-main__top {
+      background: url("../img/decorative/tab/bg-intro-triangle-tablet.svg"), url("../img/decorative/mob/back@2x@mobile.jpg");
       background-repeat: no-repeat; } }
 
-.img-top--index {
-  padding-top: 88px;
-  padding-bottom: 87px;
+.top--index {
   padding-left: 19px;
   padding-right: 19px;
-  background-position: 50% 100%, -413px -40px; }
+  background-position: 50% 100%, 0% 0%; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .img-top--index {
+    .top--index {
       background-size: auto, cover;
       background-position: 0% 100%, 0% 0%; } }
+  .top--index .top--index__svg {
+    padding-top: 90px;
+    padding-bottom: 85px; }
 
-.img-top--photo {
+.top--photo {
   padding-top: 49px;
   padding-bottom: 67px;
   padding-left: 45px;
   padding-right: 45px;
   background-position: 50% 100%, -440px -309px; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .img-top--photo {
-      background-size: auto, cover;
+    .top--photo {
       background-position: 0% 100%, 0% 99%; } }
 
-.img-top--form {
+.top--form {
   padding-top: 50px;
   padding-bottom: 70px;
   padding-left: 45px;
   padding-right: 45px;
   background-position: 50% 100%, -440px -309px; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .img-top--form {
-      background-size: auto, cover;
+    .top--form {
       background-position: 0% 100%, 0% 101%; } }
 
 @media (min-width: 768px) {
-  .page-main__img-top {
-    background-image: url("../img/sprite/1200-triangle.svg"), url("../img/back@1x@tablet.jpg");
-    background-size: auto, 127%;
+  .page-main__top {
+    background-image: url("/../img/decorative/tab/bg-intro-triangle-tablet.svg") url("../img/decorative/tab/back@1x@tablet.jpg");
     background-position: 50% 100%, 0% 100%; } }
   @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
-    .page-main__img-top {
-      background-image: url("../img/sprite/768-triangle.svg"), url("../img/back@2x@tablet.jpg");
+    .page-main__top {
+      background-image: url("/../img/decorative/tab/bg-intro-triangle-tablet.svg"), url("../img/decorative/tab/back@2x@tablet.jpg");
       background-size: auto, 768px auto; } }
 
 @media (min-width: 768px) {
-  .img-top--index {
-    padding-top: 77px;
-    padding-bottom: 92px;
+  .top--index {
     padding-left: 154px;
     padding-right: 154px; }
-  .img-top--photo {
+  .top--index__svg {
+    padding-top: 77px;
+    padding-bottom: 92px; }
+  .top--photo {
     padding-top: 94px;
     padding-bottom: 117px;
     padding-left: 155px;
     padding-right: 155px; }
-  .img-top--form {
+  .top--form {
     padding-top: 94px;
     padding-bottom: 117px;
     padding-left: 155px;
@@ -346,27 +344,28 @@ img {
     background-position: 50% 100%, 0% -228px; } }
 
 @media (min-width: 1200px) {
-  .page-main__img-top {
-    background-image: url("../img/sprite/1200-triangle.svg"), url("../img/back@1x@desktop.jpg"); } }
+  .page-main__top {
+    background-image: url("/../img/decorative/desk/bg-intro-triangle-desktop.svg"), url("../img/decorative/desk/back@1x@desktop.jpg"); } }
   @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
-    .page-main__img-top {
-      background-image: url("../img/sprite/1200-triangle.svg"), url("../img/back@2x@desktop.jpg");
-      background-size: auto, 1200px auto; } }
+    .page-main__top {
+      background-image: url("/../img/decorative/desk/bg-intro-triangle-desktop.svg"), url("../img/decorative/desk/back@2x@desktop.jpg");
+      background-size: auto, auto; } }
 
 @media (min-width: 1200px) {
-  .img-top--index {
-    padding-top: 78px;
-    padding-bottom: 91px;
+  .top--index {
     padding-left: 370px;
     padding-right: 370px;
-    background-position: 50% 100%, left bottom; }
-  .img-top--photo {
+    background-position: 50% 100%, 50% 30%; }
+  .top--index__svg {
+    padding-top: 78px;
+    padding-bottom: 91px; }
+  .top--photo {
     padding-top: 101px;
     padding-bottom: 120px;
     padding-left: 370px;
     padding-right: 370px;
     background-position: 50% 100%, 0 -217px; }
-  .img-top--form {
+  .top--form {
     padding-top: 101px;
     padding-bottom: 119px;
     padding-left: 370px;

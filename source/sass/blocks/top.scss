@@ -1,0 +1,147 @@
+/* Надпись Седона SVG*/
+
+/*-------------------------------------Картинка с каньоном МОБИЛКА */
+.page-main__top {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/decorative/tab/bg-intro-triangle-tablet.svg"), url("../img/decorative/mob/back@1x@mobile.jpg");
+  background-repeat: no-repeat;
+  background-origin: border-box;
+//   background-size: contain, cover;
+
+
+  @media #{$retina} {
+    background: url("../img/decorative/tab/bg-intro-triangle-tablet.svg"), url("../img/decorative/mob/back@2x@mobile.jpg");
+    background-repeat: no-repeat;
+  }
+}
+
+.top--index {
+
+  padding-left: 19px;
+  padding-right: 19px;
+  background-position: 50% 100%, 0% 0%;
+
+  @media #{$retina} {
+    background-size: auto, cover;
+    background-position: 0% 100%, 0% 0%;
+  }
+
+  .top--index__svg {
+    padding-top: 90px;
+    padding-bottom: 85px;
+  }
+}
+
+.top--photo {
+  padding-top: 49px;
+  padding-bottom: 67px;
+  padding-left: 45px;
+  padding-right: 45px;
+  background-position: 50% 100%, -440px -309px;
+
+  @media #{$retina} {
+    // background-size: auto, cover;
+    background-position: 0% 100%, 0% 99%;
+  }
+}
+
+.top--form {
+  padding-top: 50px;
+  padding-bottom: 70px;
+  padding-left: 45px;
+  padding-right: 45px;
+  background-position: 50% 100%, -440px -309px;
+
+  @media #{$retina} {
+    // background-size: auto, cover;
+    background-position: 0% 100%, 0% 101%;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .page-main__top {
+    background-image: url("/../img/decorative/tab/bg-intro-triangle-tablet.svg")
+     url("../img/decorative/tab/back@1x@tablet.jpg");
+    // background-size: auto, 127%;
+    background-position: 50% 100%, 0% 100%;
+
+    @media #{$retina} {
+      background-image: url("/../img/decorative/tab/bg-intro-triangle-tablet.svg"), url("../img/decorative/tab/back@2x@tablet.jpg");
+      background-size: auto, 768px auto;
+    }
+  }
+
+  .top--index {
+
+    padding-left: 154px;
+    padding-right: 154px;
+  }
+
+  .top--index__svg {
+    padding-top: 77px;
+    padding-bottom: 92px;
+  }
+
+  .top--photo {
+    padding-top: 94px;
+    padding-bottom: 117px;
+    padding-left: 155px;
+    padding-right: 155px;
+  }
+
+  .top--form {
+    padding-top: 94px;
+    padding-bottom: 117px;
+    padding-left: 155px;
+    padding-right: 155px;
+    background-position: 50% 100%, 0% -228px;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__top {
+    background-image: url("/../img/decorative/desk/bg-intro-triangle-desktop.svg"), url("../img/decorative/desk/back@1x@desktop.jpg");
+
+    @media #{$retina} {
+      background-image: url("/../img/decorative/desk/bg-intro-triangle-desktop.svg"), url("../img/decorative/desk/back@2x@desktop.jpg");
+      background-size: auto, auto;
+    }
+  }
+
+  .top--index {
+
+    padding-left: 370px;
+    padding-right: 370px;
+    background-position: 50% 100%, 50% 30%;
+  }
+
+  .top--index__svg {
+    padding-top: 78px;
+    padding-bottom: 91px;
+  }
+
+
+  .top--photo {
+    padding-top: 101px;
+    padding-bottom: 120px;
+    padding-left: 370px;
+    padding-right: 370px;
+    background-position: 50% 100%, 0 -217px;
+  }
+
+  .top--form {
+    padding-top: 101px;
+    padding-bottom: 119px;
+    padding-left: 370px;
+    padding-right: 370px;
+    background-position: 50% 100%, 0 -218px;
+  }
+
+}
