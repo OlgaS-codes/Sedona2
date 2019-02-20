@@ -11,11 +11,11 @@
   background-image: url("../img/decorative/tab/bg-intro-triangle-tablet.svg"), url("../img/decorative/mob/back@1x@mobile.jpg");
   background-repeat: no-repeat;
   background-origin: border-box;
-//   background-size: contain, cover;
+  background-size: cover;
 
 
   @media #{$retina} {
-    background: url("../img/decorative/tab/bg-intro-triangle-tablet.svg"), url("../img/decorative/mob/back@2x@mobile.jpg");
+    background: url("../img/decorative/mob/bg-intro-triangle-mobile.svg"), url("../img/decorative/mob/back@2x@mobile.jpg");
     background-repeat: no-repeat;
   }
 }

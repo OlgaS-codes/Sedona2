@@ -277,10 +277,11 @@ img {
           align-items: center;
   background-image: url("../img/decorative/tab/bg-intro-triangle-tablet.svg"), url("../img/decorative/mob/back@1x@mobile.jpg");
   background-repeat: no-repeat;
-  background-origin: border-box; }
+  background-origin: border-box;
+  background-size: cover; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .page-main__top {
-      background: url("../img/decorative/tab/bg-intro-triangle-tablet.svg"), url("../img/decorative/mob/back@2x@mobile.jpg");
+      background: url("../img/decorative/mob/bg-intro-triangle-mobile.svg"), url("../img/decorative/mob/back@2x@mobile.jpg");
       background-repeat: no-repeat; } }
 
 .top--index {
