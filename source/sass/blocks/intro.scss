@@ -10,7 +10,7 @@
 }
 
 .intro--index {
-  padding-top: 38px;
+  padding-top: 40px;
   padding-bottom: 4px;
   padding-left: 20px;
   padding-right: 20px;
@@ -47,12 +47,16 @@
 
 @media (min-width: $tablet-width) {
   .intro--index {
-    padding: 49px 143px 50px 138px;
+    padding: 51px 134px 50px 138px;
   }
 
   .intro__heading {
     font-size: 21px;
     line-height: 26px;
+  }
+
+  .heading--index {
+    margin-bottom: 28px;
   }
 
   .intro__content-text {
@@ -87,7 +91,7 @@
 
 @media (min-width: $tablet-width) {
   .intro--photo {
-    padding: 73px 171px 69px 171px;
+    padding: 69px 171px 69px 171px;
     border: none;
   }
 

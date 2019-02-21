@@ -44,6 +44,9 @@
 </head>
 
 <body>
+    <div class="none">
+        <include src="build/img/sprite.svg"></include>
+      </div>
   <div class="main-wrapper">
     <header class="header">
       <nav class="header__nav nav">
@@ -56,12 +59,11 @@
         </ul>
         <div class="header__logo logo logo--photos">
           <a href="#" class="logo__main-link main-link">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/content/desk/logo-sedona-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/content/tab/logo-sedona-tablet.svg">
-              <img class="main-link__logo" src="img/content/mob/logo-sedona-mobile.svg" alt="логотип Седона" width="102"
-                height="83">
-            </picture>
+              <picture>
+                  <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+                  <img class="main-link__logo" src="img/logo-sedona-mobile.svg" alt="логотип Седона" width="102" height="83">
+                </picture>
           </a>
         </div>
         <button class="nav__toggle toggle open" type="button"><span class="visually-hidden">открыть меню</span></button>
@@ -69,7 +71,7 @@
     </header>
     <main class="page-main">
       <div class="page-main__top top top--photo">
-        <img class="top--photo__svg" src="img/content/text-sedona.svg" alt="Sedona" width="229"
+        <img class="top--photo__svg" src="img/text-sedona.svg" alt="Sedona" width="229"
         height="39">
       </div>
       <section class="photos">
@@ -97,7 +99,10 @@
                 <span class="additional__photo-title">неродные просторы</span>
                 <span class="additional__photo-author">Автор фото: Борис</span>
               </div>
-              <span class="additional__photo-likes">1350</span>
+              <a href="#" class="additional__photo-like">
+              <svg width="22" height="20"><use xlink:href="#icon-like"></use></svg>
+              <span class="additional__photo-likes-counter">1350</span>
+            </a>
             </div>
           </li>
           <li class="gallery__photo photo-block">
@@ -118,7 +123,10 @@
                 <span class="additional__photo-title">местная растительность</span>
                 <span class="additional__photo-author">Автор фото: Сергей</span>
               </div>
-              <span class="additional__photo-likes">143</span>
+              <a href="#" class="additional__photo-like">
+              <svg width="22" height="20"><use xlink:href="#icon-like"></use></svg>
+              <span class="additional__photo-likes-counter">143</span>
+            </a>
             </div>
           </li>
           <li class="gallery__photo photo-block">
@@ -139,7 +147,10 @@
                 <span class="additional__photo-title">дорога на север</span>
                 <span class="additional__photo-author">Автор фото: Петр</span>
               </div>
-              <span class="additional__photo-likes">96</span>
+              <a href="#" class="additional__photo-like">
+              <svg width="22" height="20"><use xlink:href="#icon-like"></use></svg>
+              <span class="additional__photo-likes-counter">96</span>
+            </a>
             </div>
           </li>
           <li class="gallery__photo photo-block">
@@ -160,7 +171,9 @@
                 <span class="additional__photo-title">мост дьявола</span>
                 <span class="additional__photo-author">Автор фото: Антон</span>
               </div>
-              <span class="additional__photo-likes">254</span>
+              <a href="#" class="additional__photo-like">
+              <svg width="22" height="20"><use xlink:href="#icon-like"></use></svg>
+              <span class="additional__photo-likes-counter">254</span>
             </div>
 
           </li>
@@ -200,25 +213,43 @@
         <!-- <iframe width="320" height="202" src="https://www.youtube.com/embed/-pjw1_GucsA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
       </section>
       <footer class="footer">
-        <div class="footer__col footer__hash-tag hash-tag">
-          <a class="hash-tag__link" href="#visitsedona">#visitsedona</a>
-        </div>
-        <div class="footer__col footer__social">
-          <ul class="social__social__list social__list">
-            <li class="social__list__item"><a href="#" class="social__link social__link--tw"><span
-                  class="social__link__span visually-hidden">Twitter</span></a></li>
-            <li class="social__list__item"><a href="#" class="social__link social__link--fb"><span
-                  class="social__link__span visually-hidden">Facebook</span></a></li>
-            <li class="social__list__item"><a href="#" class="social__link social__link--yt"><span
-                  class="social__link__span visually-hidden">YouTube</span></a></li>
-          </ul>
-        </div>
-        <div class="footer__col footer__developed developed">
-          <p class="developed__text">Разработано<a class="developed__link" href="https://htmlacademy.ru/intensive/htmlcss"
-              target="_blank"><span class="visually-hidden">htmlacademy.ru</span>
-            </a></p>
-        </div>
-      </footer>
+          <div class="footer__col footer__hash-tag hash-tag">
+            <a class="hash-tag__link" href="#visitsedona">#visitsedona</a>
+          </div>
+          <div class="footer__col footer__social">
+            <ul class="social social__list">
+              <li class="social__list__item">
+                <a href="#" class="social__link social__link--tw">
+                  <span class="visually-hidden">Twitter</span>
+                  <svg class="social__icon" width="18" height="15">
+                    <use xlink:href="#icon-tw"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__list__item"><a href="#" class="social__link social__link--fb">
+                  <span class="visually-hidden">Facebook</span>
+                  <svg class="social__icon" width="9" height="18">
+                    <use xlink:href="#icon-fb"></use>
+                  </svg>
+                </a></li>
+              <li class="social__list__item"><a href="#" class="social__link social__link--yt">
+                  <span class="visually-hidden">YouTube</span>
+                  <svg class="social__icon" width="20" height="14">
+                    <use xlink:href="#icon-yt"></use>
+                  </svg>
+                </a></li>
+            </ul>
+          </div>
+          <div class="footer__col footer__developed developed">
+            <p class="developed__text">Разработано<a class="developed__link" href="#"
+                target="_blank">
+                <span class="visually-hidden">htmlacademy.ru</span>
+                <svg width="28" height="35">
+                  <use xlink:href="#logo-htmlacademy"></use>
+                </svg>
+              </a></p>
+          </div>
+        </footer>
     </main>
   </div>
   <!-- <script src="js/jquery-3.1.1.min.js"></script> -->

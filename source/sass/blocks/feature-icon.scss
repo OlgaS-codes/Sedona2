@@ -42,7 +42,7 @@
     content: " ";
     width: 39px;
     height: 37px;
-    background-image: url("../img/sprite/icon-house.svg");
+    background-image: url("../img/icon-house.svg");
     background-size: contain;
     background-repeat: no-repeat;
     left: -49px;
@@ -54,23 +54,23 @@
     content: " ";
     width: 39px;
     height: 38px;
-    background-image: url("../img/sprite/icon-burger.svg");
+    background-image: url("../img/icon-burger.svg");
     background-repeat: no-repeat;
     background-size: contain;
     left: -51px;
-    top: -3px;
+    top: -6px;
   }
 
   &__heading--souvenirs::before {
     position: absolute;
     content: " ";
     width: 39px;
-    height: 40px;
-    background-image: url("../img/sprite/icon-gift.svg");
+    height: 39px;
+    background-image: url("../img/icon-gift.svg");
     background-repeat: no-repeat;
     background-size: contain;
     left: -46px;
-    top: -11px;
+    top: -12px;
   }
 
   &__text {
@@ -155,7 +155,7 @@
 /* ------------------------------------------десктоп*/
 @media (min-width: $desktop-width) {
   .features-list__feature-icons {
-    padding-top: 159px;
+    padding-top: 158px;
     padding-bottom: 80px;
   }
 

@@ -2,7 +2,7 @@
   box-sizing: border-box;
   width: 100%;
   min-height: 413px;
-  padding: 22px 20px 21px 20px;
+  padding: 22px 20px 20px 20px;
   margin: 0;
 }
 
@@ -15,7 +15,6 @@
 
 .photo-wrapper {
   min-height: 280px;
-  // max-width: 280px;
   margin: 0;
   overflow-y: hidden;
 }
@@ -48,35 +47,26 @@
 
 .additional__photo-author {
   display: block;
-  margin: 0 0 16px 0;
+  margin: 0 0 8px 0;
   padding: 0;
   text-transform: none;
   font-size: 14px;
   line-height: 18px;
 }
 
-.additional__photo-likes {
-  display: block;
-  position: relative;
-  margin: 0 0 0 36px;
-  padding: 0;
-
+.additional__photo-like {
+  text-decoration: none;
   font-size: 14px;
   font-weight: bold;
-  line-height: 15px;
-}
+  line-height: 17px;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  fill: #a9a9a9;
 
-
-.additional__photo-likes::before {
-  position: absolute;
-  content: " ";
-  background-image: url("../img/sprite/like-icon.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 32px;
-  height: 21px;
-  left: -37px;
-  top: -6px;
+  .additional__photo-likes-counter {
+    margin-left: 11px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -96,7 +86,7 @@
 
   .photo-block--bright {
     flex-grow: 2;
-    min-height: 476px;
+    // min-height: 476px;
     width: 100%;
     overflow-y: hidden;
   }
@@ -110,7 +100,7 @@
     flex-direction: row;
     justify-content: space-between;
     background-color: #f2f2f2;
-    padding-top: 16px;
+    padding-top: 19px;
   }
 
   .additional__wrapper {
@@ -127,13 +117,17 @@
     margin-bottom: 20px;
   }
 
-  .additional__photo-likes {
-    margin: 15px 21px 0 0; // спросить у Ксении, как выровнять его по другому, тк через align-self ничего не выравнивается
-  }
+  .additional__photo-like {
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 16px;
+    margin: 8px 0 0 0;
 
-  .additional__photo-likes::before {
-    left: -30px;
-    top: -2px;
+    .additional__photo-likes-counter {
+      display: block;
+      margin-left: 3px;
+      margin-right: 20px;
+    }
   }
 
   .video__video {
@@ -141,11 +135,11 @@
   }
 
   /* выравние лайков, не знаю как сделать это правильно*/
-  .photo-block:nth-child(2) .photo-block__additional .additional__photo-likes {
+  .photo-block:nth-child(2) .photo-block__additional .additional__photo-likes-counter {
     margin-right: 30px;
   }
 
-  .photo-block:nth-child(3) .photo-block__additional .additional__photo-likes {
+  .photo-block:nth-child(3) .photo-block__additional .additional__photo-likes-counter {
     margin-right: 37px;
   }
 
@@ -154,7 +148,7 @@
     padding-top: 15px;
   }
 
-  .photo-block:nth-child(4) .photo-block__additional .additional__photo-likes {
+  .photo-block:nth-child(4) .photo-block__additional .additional__photo-likes-counter {
     margin-right: 30px;
   }
 }
@@ -201,7 +195,7 @@
     padding-top: 18px;
   }
 
-  .additional__photo-likes {
+  .additional__photo-likes-counter {
     margin-top: 14px;
     margin-right: 22px;
     line-height: 16px;

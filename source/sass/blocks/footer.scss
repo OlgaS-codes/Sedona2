@@ -12,7 +12,6 @@
   padding: 0;
 }
 
-
 .footer__col:first-child {
   margin-bottom: 34px;
 }
@@ -30,7 +29,7 @@
   line-height: 25px;
 }
 
-.social__social__list {
+.social__list {
   margin: 0;
   padding: 0;
   display: flex;
@@ -40,39 +39,15 @@
 }
 
 .social__link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 46px;
   height: 49px;
-  padding: 0;
   background-color: #81b3d2;
   margin: 3px;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-origin: padding-box;
-
-  &--tw {
-    background-image: url("../img/sprite/icon-twitter-mobile.svg");
-  }
-
-  &--fb {
-    background-image: url("../img/sprite/icon-facebook-mobile.svg");
-  }
-
-  &--yt {
-    background-image: url("../img/sprite/icon-youtube-mobile.svg");
-  }
-
-  &--tw:active {
-    background-image: url("../img/sprite/twitter-active.svg");
-  }
-
-  &--fb:active {
-    background-image: url("../img/sprite/facebook-active.svg");
-  }
-
-  &--yt:active {
-    background-image: url("../img/sprite/y-tube-active.svg.svg");
-  }
+  text-align: center;
+  fill: white;
 }
 
 .social__link:hover {
@@ -81,6 +56,7 @@
 
 .social__link:active {
   background-color: #5496bd;
+  fill: rgba(255, 255, 255, 0.3);
 }
 
 .developed {
@@ -101,17 +77,15 @@
     width: 27px;
     height: 34px;
     margin-left: 12px;
-    background-image: url("../img/sprite/htmlacademy.svg");
-    background-position: center;
-    background-repeat: no-repeat;
   }
 
-  &__link:hover {
-    background-image: url("../img/sprite/htmlacademy-hover.svg");
+  &__link:hover,
+  &__link:focus {
+    fill: #81b3d2;
   }
 
   &__link:active {
-    background-image: url("../img/sprite/htmlacademy-active.svg");
+    fill: rgbs(0, 0, 0, 0.3);
   }
 }
 
@@ -158,7 +132,6 @@
   }
 
   .hash-tag__link {
-
     padding-right: 23px;
   }
 

@@ -39,7 +39,6 @@
   }
 
   .hotel-search__content-text {
-    min-width: 490px;
     font-size: 14px;
     line-height: 23px;
     margin-bottom: 43px;
@@ -47,9 +46,8 @@
     margin-left: auto;
   }
 
-  .button__search {
-    width: 49.89%;
-    padding: 16px 117px 15px 115px;
+  .button.button__search {
+    width: 100%;
   }
 }
 
@@ -76,4 +74,3 @@
   min-height: 350px;
   margin: 0;
 }
-

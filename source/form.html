@@ -42,6 +42,9 @@
 </head>
 
 <body>
+  <div class="none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <div class="main-wrapper">
     <header class="header">
       <nav class="header__nav nav">
@@ -55,10 +58,9 @@
         <div class="header__logo logo logo--form">
           <a href="#" class="logo__main-link main-link">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/content/desk/logo-sedona-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/content/tab/logo-sedona-tablet.svg">
-              <img class="main-link__logo" src="img/content/mob/logo-sedona-mobile.svg" alt="логотип Седона" width="102"
-                height="83">
+              <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+              <img class="main-link__logo" src="img/logo-sedona-mobile.svg" alt="логотип Седона" width="102" height="83">
             </picture>
           </a>
         </div>
@@ -67,8 +69,7 @@
     </header>
     <main class="page-main">
       <div class="page-main__top top top--form">
-        <img class="top--photo__svg" src="img/content/text-sedona.svg" alt="Sedona" width="229"
-        height="39">
+        <img class="top--photo__svg" src="img/text-sedona.svg" alt="Sedona" width="229" height="39">
       </div>
       <div class="page-main__intro intro intro--form">
         <h1 class="intro__heading heading heading--form">Оставьте свой отзыв</h1>
@@ -150,9 +151,9 @@
           <textarea class="review__input description__textarea" rows="4" cols="30" name="text" placeholder="Опишите подробно все свои восторги"></textarea>
         </div>
         <div class="review rewiew__button-container">
-        <button class="button review__button" type="submit" value="Отправить">Отправить&nbsp;отзыв</button>
-        <p class="review__additional">* — обязательные поля</p>
-      </div>
+          <button class="button review__button" type="submit" value="Отправить">Отправить&nbsp;отзыв</button>
+          <p class="review__additional">* — обязательные поля</p>
+        </div>
       </form>
 
       <footer class="footer">
@@ -160,18 +161,35 @@
           <a class="hash-tag__link" href="#visitsedona">#visitsedona</a>
         </div>
         <div class="footer__col footer__social">
-          <ul class="social__social__list social__list">
-            <li class="social__list__item"><a href="#" class="social__link social__link--tw"><span
-                  class="social__link__span visually-hidden">Twitter</span></a></li>
-            <li class="social__list__item"><a href="#" class="social__link social__link--fb"><span
-                  class="social__link__span visually-hidden">Facebook</span></a></li>
-            <li class="social__list__item"><a href="#" class="social__link social__link--yt"><span
-                  class="social__link__span visually-hidden">YouTube</span></a></li>
+          <ul class="social social__list">
+            <li class="social__list__item">
+              <a href="#" class="social__link social__link--tw">
+                <span class="visually-hidden">Twitter</span>
+                <svg class="social__icon" width="18" height="15">
+                  <use xlink:href="#icon-tw"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__list__item"><a href="#" class="social__link social__link--fb">
+                <span class="visually-hidden">Facebook</span>
+                <svg class="social__icon" width="9" height="18">
+                  <use xlink:href="#icon-fb"></use>
+                </svg>
+              </a></li>
+            <li class="social__list__item"><a href="#" class="social__link social__link--yt">
+                <span class="visually-hidden">YouTube</span>
+                <svg class="social__icon" width="20" height="14">
+                  <use xlink:href="#icon-yt"></use>
+                </svg>
+              </a></li>
           </ul>
         </div>
         <div class="footer__col footer__developed developed">
-          <p class="developed__text">Разработано<a class="developed__link" href="https://htmlacademy.ru/intensive/htmlcss"
-              target="_blank"><span class="visually-hidden">htmlacademy.ru</span>
+          <p class="developed__text">Разработано<a class="developed__link" href="#" target="_blank">
+              <span class="visually-hidden">htmlacademy.ru</span>
+              <svg width="28" height="35">
+                <use xlink:href="#logo-htmlacademy"></use>
+              </svg>
             </a></p>
         </div>
       </footer>

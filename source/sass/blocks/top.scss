@@ -8,20 +8,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../img/decorative/tab/bg-intro-triangle-tablet.svg"), url("../img/decorative/mob/back@1x@mobile.jpg");
+  background-image: url("../img/bg-intro-triangle-tablet.svg"),
+    url("../img/back@1x@mobile.jpg");
   background-repeat: no-repeat;
   background-origin: border-box;
   background-size: cover;
 
-
   @media #{$retina} {
-    background: url("../img/decorative/mob/bg-intro-triangle-mobile.svg"), url("../img/decorative/mob/back@2x@mobile.jpg");
+    background: url("../img/bg-intro-triangle-mobile.svg"),
+      url("../img/back@2x@mobile.jpg");
     background-repeat: no-repeat;
   }
 }
 
 .top--index {
-
   padding-left: 19px;
   padding-right: 19px;
   background-position: 50% 100%, 0% 0%;
@@ -30,11 +30,11 @@
     background-size: auto, cover;
     background-position: 0% 100%, 0% 0%;
   }
+}
 
-  .top--index__svg {
-    padding-top: 90px;
-    padding-bottom: 85px;
-  }
+.top--index__svg {
+  padding-top: 90px;
+  padding-bottom: 85px;
 }
 
 .top--photo {
@@ -42,11 +42,11 @@
   padding-bottom: 67px;
   padding-left: 45px;
   padding-right: 45px;
-  background-position: 50% 100%, -440px -309px;
+  background-position: 0% 100%, 0% 100%;
+  background-size: contain, cover;
 
   @media #{$retina} {
-    // background-size: auto, cover;
-    background-position: 0% 100%, 0% 99%;
+    background-size: auto, cover;
   }
 }
 
@@ -55,78 +55,70 @@
   padding-bottom: 70px;
   padding-left: 45px;
   padding-right: 45px;
-  background-position: 50% 100%, -440px -309px;
+  background-position: 0% 100%, 0% 100%;
+  background-size: contain, cover;
 
   @media #{$retina} {
-    // background-size: auto, cover;
-    background-position: 0% 100%, 0% 101%;
+    background-size: auto, cover;
   }
 }
 
-
 @media (min-width: $tablet-width) {
   .page-main__top {
-    background-image: url("/../img/decorative/tab/bg-intro-triangle-tablet.svg")
-     url("../img/decorative/tab/back@1x@tablet.jpg");
-    // background-size: auto, 127%;
+    background-image: url("../img/bg-intro-triangle-tablet.svg")
+      url("../img/back@1x@tablet.jpg");
+    background-size: contain, cover;
     background-position: 50% 100%, 0% 100%;
 
     @media #{$retina} {
-      background-image: url("/../img/decorative/tab/bg-intro-triangle-tablet.svg"), url("../img/decorative/tab/back@2x@tablet.jpg");
+      background-image: url("../img/bg-intro-triangle-tablet.svg"),
+        url("../img/back@2x@tablet.jpg");
       background-size: auto, 768px auto;
     }
   }
 
   .top--index {
-
     padding-left: 154px;
     padding-right: 154px;
   }
 
   .top--index__svg {
-    padding-top: 77px;
-    padding-bottom: 92px;
+    padding-top: 78px;
+    padding-bottom: 89px;
   }
 
-  .top--photo {
-    padding-top: 94px;
-    padding-bottom: 117px;
-    padding-left: 155px;
-    padding-right: 155px;
-  }
-
+  .top--photo,
   .top--form {
     padding-top: 94px;
     padding-bottom: 117px;
     padding-left: 155px;
     padding-right: 155px;
-    background-position: 50% 100%, 0% -228px;
   }
-
 }
 
 @media (min-width: $desktop-width) {
   .page-main__top {
-    background-image: url("/../img/decorative/desk/bg-intro-triangle-desktop.svg"), url("../img/decorative/desk/back@1x@desktop.jpg");
+    background-size: contain, cover;
+    background-image: url("../img/bg-intro-triangle-desktop.svg"),
+      url("../img/back@1x@desktop.jpg");
 
     @media #{$retina} {
-      background-image: url("/../img/decorative/desk/bg-intro-triangle-desktop.svg"), url("../img/decorative/desk/back@2x@desktop.jpg");
+      background-image: url("../img/bg-intro-triangle-desktop.svg"),
+        url("../img/back@2x@desktop.jpg");
       background-size: auto, auto;
     }
   }
 
   .top--index {
-
     padding-left: 370px;
     padding-right: 370px;
     background-position: 50% 100%, 50% 30%;
-  }
 
-  .top--index__svg {
-    padding-top: 78px;
-    padding-bottom: 91px;
+    .top--index__svg {
+      padding-top: 78px;
+      padding-bottom: 91px;
+    }
   }
-
 
   .top--photo {
     padding-top: 101px;
@@ -143,5 +135,4 @@
     padding-right: 370px;
     background-position: 50% 100%, 0 -218px;
   }
-
 }
