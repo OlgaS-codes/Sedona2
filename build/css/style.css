@@ -313,7 +313,7 @@ img {
 
 .top--form {
   padding-top: 50px;
-  padding-bottom: 70px;
+  padding-bottom: 67px;
   padding-left: 45px;
   padding-right: 45px;
   background-position: 0% 100%, 0% 100%;
@@ -394,7 +394,8 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   color: black;
-  position: relative; }
+  position: relative;
+  max-width: 280px; }
 
 .intro--index {
   padding-top: 40px;
@@ -402,9 +403,13 @@ img {
   padding-left: 20px;
   padding-right: 20px; }
 
-@media (max-width: 767px) {
-  .intro__heading {
-    width: 96%; } }
+.intro--photo {
+  padding: 40px 20px 27px 20px;
+  border-bottom: 1px solid gray; }
+
+.intro--form {
+  padding: 38px 21px 18px 21px;
+  border-bottom: 1px solid gray; }
 
 .intro__heading {
   margin: 0;
@@ -417,6 +422,12 @@ img {
 .heading--index {
   margin-bottom: 27px; }
 
+.heading--photo {
+  margin-bottom: 26px; }
+
+.heading--form {
+  margin-bottom: 25px; }
+
 .intro__content-text {
   width: 96%;
   font-weight: 400;
@@ -426,71 +437,56 @@ img {
   margin: 0;
   padding: 0; }
 
-@media (min-width: 768px) {
-  .intro--index {
-    padding: 51px 134px 50px 138px; }
-  .intro__heading {
-    font-size: 21px;
-    line-height: 26px; }
-  .heading--index {
-    margin-bottom: 28px; }
-  .intro__content-text {
-    width: 100%; } }
-
-@media (min-width: 1200px) {
-  .intro--index {
-    padding: 49px 355px 50px 355px; }
-  .intro__heading {
-    font-size: 22px;
-    line-height: 26px; } }
-
-/*-----------------------------------------------------фото-файл */
-.intro--photo {
-  padding: 40px 20px 27px 20px;
-  border-bottom: 1px solid gray; }
-
-.heading--photo {
-  margin-bottom: 26px; }
-
 .content-text--photo {
   line-height: 24px; }
-
-@media (min-width: 768px) {
-  .intro--photo {
-    padding: 69px 171px 70px 171px;
-    border: none; }
-  .heading--photo {
-    font-size: 30px;
-    line-height: 34px; } }
-
-@media (min-width: 1200px) {
-  .intro--photo {
-    padding: 108px 388px 72px 384px; } }
-
-/*-----------------------------------------------------форма-файл */
-.intro--form {
-  padding: 36px 21px 18px 21px;
-  border-bottom: 1px solid gray; }
-
-.heading--form {
-  margin-bottom: 25px; }
 
 .content-text--form {
   line-height: 24px;
   width: 100%; }
 
+@media (max-width: 767px) {
+  .intro__heading {
+    width: 96%; } }
+
 @media (min-width: 768px) {
-  .intro--form {
-    padding: 70px 154px 48px 154px;
+  .intro {
+    max-width: 510px; }
+  .intro--index {
+    padding: 51px 134px 50px 138px; }
+  .intro--photo {
+    padding: 69px 171px 70px 171px;
     border: none; }
-  .heading--form {
+  .intro--form {
+    padding: 68px 154px 48px 154px;
+    border: none; }
+  .intro__heading {
+    font-size: 21px;
+    line-height: 26px; }
+  .heading--index {
+    margin-bottom: 28px; }
+  .heading--photo.intro__heading {
+    font-size: 30px;
+    line-height: 34px; }
+  .heading--form.intro__heading {
     font-size: 31px;
-    line-height: 36px; } }
+    line-height: 36px; }
+  .intro__content-text {
+    width: 100%; } }
 
 @media (min-width: 1200px) {
+  .intro {
+    max-width: 510px;
+    margin: 0 auto; }
+  .intro--index {
+    padding: 49px 355px 50px 355px; }
+  .intro--photo {
+    padding: 108px 388px 72px 384px; }
   .intro--form {
     padding: 108px 360px 37px 362px;
-    border: none; } }
+    border: none; }
+  .intro__heading {
+    font-size: 22px;
+    line-height: 26px; } }
 
 /*h*/
 /* -------------------------------------------белый угол после интро*/
@@ -1882,7 +1878,7 @@ img {
   background-image: url("../img/sprite/icon-phone.svg"); }
 
 .mail-icon {
-  background-image: url("../img/sprite/icon-mail.svg"); }
+  background-image: url("../img/sprite/icon-email.svg"); }
 
 /* Ваше общее впечатление */
 .impression__row {
