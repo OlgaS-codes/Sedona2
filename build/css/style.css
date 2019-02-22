@@ -380,19 +380,6 @@ img {
 /* СЕДОНА — НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!
 РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН! */
 .intro {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   color: black;
   position: relative;
   max-width: 280px; }
@@ -420,13 +407,13 @@ img {
   text-align: center; }
 
 .heading--index {
-  margin-bottom: 27px; }
+  margin: 0 auto 27px; }
 
 .heading--photo {
-  margin-bottom: 26px; }
+  margin: 0 auto 26px; }
 
 .heading--form {
-  margin-bottom: 25px; }
+  margin: 0 auto 25px; }
 
 .intro__content-text {
   width: 96%;
@@ -434,7 +421,7 @@ img {
   text-align: center;
   font-size: 14px;
   line-height: 26px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0; }
 
 .content-text--photo {
@@ -495,6 +482,7 @@ img {
     content: "";
     position: absolute;
     bottom: -37px;
+    left: 0;
     min-height: 37px;
     width: 100%;
     background-image: url("../img/bg-triangle.svg");
@@ -1225,7 +1213,7 @@ img {
           box-sizing: border-box;
   width: 100%;
   min-height: 413px;
-  padding: 22px 20px 20px 20px;
+  padding: 21px 20px 21px 20px;
   margin: 0; }
 
 .photo-block__img {
@@ -1239,7 +1227,7 @@ img {
 .photo-block__additional {
   margin: 0;
   padding: 0;
-  padding-top: 14px; }
+  padding-top: 18px; }
 
 .additional__wrapper {
   padding: 0;
@@ -1366,25 +1354,12 @@ img {
 
 .video {
   margin: 0;
-  padding: 32px 0 65px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  padding: 32px 0 65px 0; }
 
 .heading--video {
-  margin: 0;
-  margin-bottom: 28px;
-  padding: 0 45px 0 50px;
+  margin: 0 auto 28px;
+  padding: 0 20px;
+  text-align: center;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold; }
@@ -1411,7 +1386,7 @@ img {
     margin: 0;
     padding: 68px 60px 0 60px; }
   .heading--video {
-    margin: 0 0 31px 0;
+    margin: 0 auto 31px;
     padding: 0;
     font-size: 30px; }
   .content-text--video {
