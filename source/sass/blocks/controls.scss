@@ -41,14 +41,12 @@
   border-radius: 50%;
 }
 
-
 .down-buttons {
   width: 100%;
   height: 66px;
   background-color: white;
-  fill: #5c6870;
+  fill: rgb(92, 104, 112);
 }
-
 
 .controls button {
   background-color: transparent;
@@ -117,7 +115,6 @@
   background-position: center;
 }
 
-
 #cc {
   position: absolute;
   top: 59px;
@@ -125,12 +122,11 @@
   content: " ";
   width: 35px;
   height: 35px;
-
 }
 
 @media (min-width: $tablet-width) {
   .controls {
-    top: 453px;
+    top: 454px;
     left: 0;
     width: 648px;
   }
@@ -157,61 +153,45 @@
     width: 100%;
     height: 90px;
     background-color: rgba(255, 255, 255, 0.5);
+    fill: rgb(255, 255, 255);
   }
 
   #repeat {
-    background-image: url("../img/sprite/replay-white.svg");
-    top: 31px;
-    left: 29px;
-  }
-
-
-  #repeat:hover {
-    background-image: url("../img/sprite/replay-hover.svg");
-  }
-
-  #repeat:active {
-    background-image: url("../img/sprite/replay-active.svg");
-  }
-
-  #full-screen {
-    background-image: url("../img/sprite/fullscreen-white.svg");
-    top: 31px;
-    right: 33px;
-  }
-
-  #full-screen:hover {
-    background-image: url("../img/sprite/fullscreen-hover.svg");
-  }
-
-  #full-screen:active {
-    background-image: url("../img/sprite/fullscreen-active.svg");
+    top: 33px;
+    left: 30px;
   }
 
   #cc {
-    background-image: url("../img/sprite/subtitles-white.svg");
-    top: 30px;
+    top: 31px;
     right: 91px;
   }
 
-  #cc:hover {
-    background-image: url("../img/sprite/subtitles-hover.svg");
+  #full-screen {
+    top: 31px;
+    right: 34px;
   }
 
+  #repeat:hover,
+  #full-screen:hover,
+  #cc:hover {
+    fill: rgba(255, 255, 255, 0.6);
+  }
+
+  #repeat:active,
+  #full-screen:active,
   #cc:active {
-    background-image: url("../img/sprite/subtitles-active.svg");
+    fill: rgba(255, 255, 255, 0.3);
   }
 }
 
 @media (min-width: $desktop-width) {
   .controls {
-    top: 411px;
+    top: 407px;
     width: 800px;
   }
 
-
   .progress-container {
-    min-height: 90px;
+    min-height: 93px;
   }
 
   #repeat {
