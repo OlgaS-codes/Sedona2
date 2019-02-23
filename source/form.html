@@ -10,7 +10,7 @@
   <script>document.createElement("picture");</script>
   <script src="js/picturefill.min.js" async></script>
   <!-- Pixel Glass -->
-  <style>
+  <!-- <style>
     html {
       background-repeat: no-repeat;
       background-position: 50% 0;
@@ -37,7 +37,7 @@
     }
       </style>
   <link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
-  <script src="../node_modules/pixel-glass/script.js"></script>
+  <script src="../node_modules/pixel-glass/script.js"></script> -->
   <!-- Pixel Glass -->
 </head>
 
@@ -76,20 +76,21 @@
         <p class="intro__content-text content-text content-text--form">Помогите нашим отелям стать лучше! Оставьте
           отзыв о них,<br class="text-break--tablet"> а также о посещенных вами достопримечательностях</p>
       </div>
-      <form class="form__review" action="/action_page.php" method="get">
+      <form class="form__review" method="post" enctype="multipart/form-data" action="https://js.dump.academy/code-and-magick"
+        autocomplete="off">
         <div class="review review__name name">
           <h3 class="review__heading name__heading">Представьтесь:</h3>
           <div class="name-wrapper name__row">
             <label for="firstName" class="review__label label label--name">Имя*:</label>
-            <input class="review__input" type="text" id="firstName" name="firstName" placeholder="Петр">
+            <input class="review__input" type="text" id="firstName" name="firstName" placeholder="Петр" minlength="2" maxlength="25" > <!--required-->
           </div>
           <div class="name-wrapper name__row">
             <label for="secondName" class="review__label label label--name">Фамилия*:</label>
-            <input class="review__input" type="text" id="secondName" name="secondName" placeholder="Иванов">
+            <input class="review__input" type="text" id="secondName" name="secondName" placeholder="Иванов" minlength="2" maxlength="25">
           </div>
           <div class="name-wrapper name__row">
             <label for="fathersName" class="review__label label label--name">Отчество:</label>
-            <input class="review__input" type="text" id="fathersName" name="fathersName" placeholder="Александрович">
+            <input class="review__input" type="text" id="fathersName" name="fathersName" placeholder="Александрович" minlength="2" maxlength="25">
           </div>
         </div>
         <div class="review review__contact-info contact-info">
@@ -117,7 +118,7 @@
           <h3 class="review__heading impression__heading">Ваше общее впечатление:</h3>
           <div class="impression__row">
             <input class="impression-input" type="radio" id="goodImpression" name="impression" value="goodImpression"
-              checked>
+              checked ><!--required-->
             <label for="goodImpression" class="review__label label--impression">Скорее положительное</label>
           </div>
           <div class="impression__row">
@@ -132,7 +133,7 @@
         <div class="review review__visitedPlaces visitedPlaces">
           <h3 class="review__heading review__heading--lines visitedPlaces__heading">Посещенные достопримечательности:</h3>
 
-          <input class="visitedPlaces__input" type="checkbox" id="devilsBridge" name="devilsBridge" checked>
+          <input class="visitedPlaces__input" type="checkbox" id="devilsBridge" name="devilsBridge" checked > <!--required-->
           <label for="devilsBridge" class="review__label visitedPlaces__label">Мост Дъявола</label>
 
 
@@ -148,10 +149,10 @@
         </div>
         <div class="review review__description description">
           <h3 class="review__heading review__heading--lines description__heading">Опишите свои эмоции:</h3>
-          <textarea class="review__input description__textarea" rows="4" cols="30" name="text" placeholder="Опишите подробно все свои восторги"></textarea>
+          <textarea class="review__input description__textarea" rows="4" cols="30" name="text" placeholder="Опишите подробно все свои восторги" ></textarea> <!--required-->
         </div>
         <div class="review rewiew__button-container">
-          <button class="button review__button" type="submit" value="Отправить">Отправить&nbsp;отзыв</button>
+          <button class="button review__button review__submit" type="submit" value="Отправить">Отправить&nbsp;отзыв</button>
           <p class="review__additional">* — обязательные поля</p>
         </div>
       </form>
@@ -196,7 +197,7 @@
     </main>
   </div>
   <script src="js/menu.min.js"></script>
-  <!-- <script src="js/picturefill.min.js"></script> -->
+  <script src="js/form.min.js"></script>
 </body>
 
 </html>
