@@ -1,0 +1,51 @@
+.template {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 26;
+}
+
+// .template__succes {
+//   display: block;
+// }
+
+.message__container {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 80%;
+  height: 30%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.message__container.success {
+  height: 10%;
+}
+
+.message__container p.error {
+  margin: 0 0 40px 0;
+  padding: 0;
+}
+
+
+@media (min-width: $tablet-width) {
+  .message__container {
+    width: 50%;
+    height: 15%;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .message__container {
+    width: 25%;
+    height: 15%;
+  }
+}

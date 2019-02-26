@@ -28,6 +28,8 @@
   flex-direction: column;
   flex-wrap: wrap;
   padding: 18px 20px 26px 20px;
+  margin: 0;
+  border: none;
 }
 
 @media (max-width: $mobile-width-only) {
@@ -318,10 +320,11 @@
 .description__textarea {
   box-sizing: border-box;
   max-width: 100%;
+  width: 100%;
   min-height: 160px;
   // margin-bottom: 52px;
   padding: 16px 20px 16px 20px;
-  resize: none;
+  resize: vertical;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
