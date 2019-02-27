@@ -6,8 +6,8 @@
   var userNameInput = document.querySelector('#firstName');
   var submitButtonElement = document.querySelector('.review__submit');
   var formReview = document.querySelector(".form__review");
-  var visitedPlacesElement = document.querySelector(".visitedPlaces");
-  var fieldsetInFormContainer = formReview.querySelectorAll('fieldset');
+  var visitedPlacesElement = document.querySelector(".visitedPlaces__input");
+  var fieldsetInFormContainer = formReview.querySelectorAll('input');
 
   userNameInput.addEventListener('invalid', function (evt) {
     if (userNameInput.validity.tooShort) {
@@ -23,23 +23,18 @@
 
   var setFormNew = function () {
 
-    fieldsetInFormContainer.forEach(function (node) {
+    fieldsetInFormContainer.forEach(function (node) { // ИСПРАВИТЬ НА VALUE ИНПУТОВ!!!!!
       node.value = '';
     });
-    formAdElement.reset();
-    window.form.setAddress(window.map.getCoordinateX(), window.map.getCoordinateY());
+    formReview.reset();
   };
 
 
   var onSubmitButtonElementClick = function () {
-    var visitedPlacesCheckedContainer = document.querySelectorAll('input[type="checkbox"]:checked');
-    console.log("I work");
-    visitedPlacesCheckedContainer.length === 0 ? visitedPlacesElement.setCustomValidity('Укажите, пожалуйста, посещенные достопримечателености') : visitedPlacesElement.setCustomValidity('');
 
-    if (formReview.checkValidity()) {
       window.backend.upload(new FormData(formReview), window.backend.onSuccessUpLoad);
+      console.log("Send data");
       setFormNew();
-    }
 
   };
 

@@ -7,7 +7,7 @@
   window.backend = {};
 
   var URL = {
-    'SEND': 'https://js.dump.academy/keksobooking',
+    'SEND': 'https://echo.htmlacademy.ru',
   };
 
   var TIME_OUT = 10000;
@@ -37,7 +37,7 @@
     templateSuccessMessageElement.style.display = "block"; // 1) покажем сообщение поставим ему дисплей блок
 
     var removeMessageListeners = function () { //6) удаление слушателей, которые в п 4 5 были добавлены
-      successMessageClone.removeEventListener('click', removeSuccessMessage);
+      templateSuccessMessageElement.removeEventListener('click', removeSuccessMessage);
       document.removeEventListener('keydown', onSuccessEscDown);
     };
 
@@ -54,7 +54,7 @@
     };
 
 
-    successMessageClone.addEventListener('click', removeSuccessMessage); // 2) добавим туда скрывание сообщения по клику на него, а оно занимает весь экран
+    templateSuccessMessageElement.addEventListener('click', removeSuccessMessage); // 2) добавим туда скрывание сообщения по клику на него, а оно занимает весь экран
     document.addEventListener('keydown', onSuccessEscDown); // 3) добавим туда скрывание сообщения по esc
 
   };

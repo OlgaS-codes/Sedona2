@@ -80,15 +80,19 @@
           <h3 class="review__heading name__heading">Представьтесь:</h3>
           <div class="name-wrapper name__row">
             <label for="firstName" class="review__label label label--name">Имя*:</label>
-            <input class="review__input" type="text" id="firstName" name="firstName" placeholder="Петр" minlength="2" maxlength="25" > <!--required-->
+            <input class="review__input" type="text" id="firstName" name="firstName" placeholder="Петр" minlength="2"
+              maxlength="25" required>
+            <!--required-->
           </div>
           <div class="name-wrapper name__row">
             <label for="secondName" class="review__label label label--name">Фамилия*:</label>
-            <input class="review__input" type="text" id="secondName" name="secondName" placeholder="Иванов" minlength="2" maxlength="25">
+            <input class="review__input" type="text" id="secondName" name="secondName" placeholder="Иванов" minlength="2"
+              maxlength="25">
           </div>
           <div class="name-wrapper name__row">
             <label for="fathersName" class="review__label label label--name">Отчество:</label>
-            <input class="review__input" type="text" id="fathersName" name="fathersName" placeholder="Александрович" minlength="2" maxlength="25">
+            <input class="review__input" type="text" id="fathersName" name="fathersName" placeholder="Александрович"
+              minlength="2" maxlength="25">
           </div>
         </div>
         <div class="review review__contact-info contact-info">
@@ -107,7 +111,7 @@
             <label for="emailAddress" class="review__label label--email">Электронная почта*:</label>
             <div class="mail-wrapper input-wrapper">
               <input class="review__input review__input-email" id="emailAddress" name="emailAddress" type="email"
-                placeholder="Введите e-mail">
+                placeholder="Введите e-mail" required>
               <i class="contact-info__icon icon mail-icon"></i>
             </div>
           </div>
@@ -116,7 +120,8 @@
           <h3 class="review__heading impression__heading">Ваше общее впечатление:</h3>
           <div class="impression__row">
             <input class="impression-input" type="radio" id="goodImpression" name="impression" value="goodImpression"
-              checked ><!--required-->
+              checked required>
+            <!--required-->
             <label for="goodImpression" class="review__label label--impression">Скорее положительное</label>
           </div>
           <div class="impression__row">
@@ -131,7 +136,8 @@
         <div class="review review__visitedPlaces visitedPlaces">
           <h3 class="review__heading review__heading--lines visitedPlaces__heading">Посещенные достопримечательности:</h3>
 
-          <input class="visitedPlaces__input" type="checkbox" id="devilsBridge" name="devilsBridge" checked > <!--required-->
+          <input class="visitedPlaces__input" type="checkbox" id="devilsBridge" name="devilsBridge" checked required>
+          <!--required-->
           <label for="devilsBridge" class="review__label visitedPlaces__label">Мост Дъявола</label>
 
 
@@ -147,7 +153,8 @@
         </div>
         <div class="review review__description description">
           <h3 class="review__heading review__heading--lines description__heading">Опишите свои эмоции:</h3>
-          <textarea class="review__input description__textarea" rows="4" cols="30" name="text" placeholder="Опишите подробно все свои восторги" ></textarea> <!--required-->
+          <textarea class="review__input description__textarea" rows="4" cols="30" name="text" placeholder="Опишите подробно все свои восторги" required></textarea>
+          <!--required-->
         </div>
         <div class="review rewiew__button-container">
           <button class="button review__button review__submit" type="submit" value="Отправить">Отправить&nbsp;отзыв</button>
@@ -194,8 +201,23 @@
       </footer>
     </main>
   </div>
+
+  <div id="success" class="template template__success">
+    <div class="message__container success">
+      <p class="success__message">Ваш отзыв отправлен!</p>
+    </div>
+  </div>
+
+
+  <div id="error" class="template template__error">
+    <div class="message__container error">
+      <p class="error">Ошибка загрузки отзыва</p>
+      <button class="message__button button" href="#">Попробовать снова</button>
+    </div>
+  </div>
   <script src="js/menu.min.js"></script>
-  <script src="js/form.min.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/backend.js"></script>
 </body>
 
 </html>

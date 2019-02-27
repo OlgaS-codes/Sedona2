@@ -7,7 +7,7 @@
   color: #ffffff;
 
   &__content-text {
-    padding: 39px 15px 40px;
+    padding: 40px 15px 41px;
     text-align: center;
   }
 
@@ -52,6 +52,11 @@
     object-fit: cover;
     margin: 0 0;
   }
+
+}
+
+.feature-picture--right-align .feature-picture__content-text {
+  padding-bottom: 39px;
 }
 
 @media (min-width: $tablet-width) {

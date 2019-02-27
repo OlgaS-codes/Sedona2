@@ -1,6 +1,18 @@
+// @media (max-width: $mobile-width-only) {
+//   .features-list :first-child .feature-picture__content-text {
+//     padding-top: 78px;
+//   }
+// }
+
 
 @media (max-width: $mobile-width-only) {
-  .features-list :first-child .feature-picture__content-text {
-    padding-top: 78px;
+  .features-list {
+    width: 100%;
+    background-image: url("../img/bg-triangle.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: #81b3d2;
+    padding-top: 37px;
   }
 }

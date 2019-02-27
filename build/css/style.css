@@ -381,8 +381,7 @@ img {
 РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН! */
 .intro {
   color: black;
-  position: relative;
-  max-width: 280px; }
+  position: relative; }
 
 .intro--index {
   padding-top: 40px;
@@ -478,21 +477,14 @@ img {
 /*h*/
 /* -------------------------------------------белый угол после интро*/
 @media (max-width: 767px) {
-  .intro--index::after {
-    content: "";
-    position: absolute;
-    bottom: -37px;
-    left: 0;
-    min-height: 37px;
+  .features-list {
     width: 100%;
     background-image: url("../img/bg-triangle.svg");
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: 50% 0%; } }
-
-@media (max-width: 767px) {
-  .features-list :first-child .feature-picture__content-text {
-    padding-top: 78px; } }
+    background-position: top center;
+    background-color: #81b3d2;
+    padding-top: 37px; } }
 
 /* -------------------------------первый синий блок с картинкой*/
 .features-list__feature-picture {
@@ -501,7 +493,7 @@ img {
 .feature-picture {
   color: #ffffff; }
   .feature-picture__content-text {
-    padding: 39px 15px 40px;
+    padding: 40px 15px 41px;
     text-align: center; }
   .feature-picture__heading {
     font-size: 18px;
@@ -535,6 +527,9 @@ img {
     -o-object-fit: cover;
        object-fit: cover;
     margin: 0 0; }
+
+.feature-picture--right-align .feature-picture__content-text {
+  padding-bottom: 39px; }
 
 @media (min-width: 768px) {
   .feature-picture {
@@ -639,7 +634,8 @@ img {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 35px 41px 39px 70px; }
+  padding: 35px 41px 39px 70px;
+  background-color: #ffffff; }
 
 .feature-icons__feature-icon {
   display: -webkit-box;
@@ -811,8 +807,7 @@ img {
   background-color: #eeeeee; }
 
 .feature-numbers__feature-number {
-  margin: 0;
-  padding: 26px 35px 13px 33px; }
+  margin: 0; }
 
 .feature-number__heading {
   display: block;
@@ -843,6 +838,16 @@ img {
   margin-left: auto;
   padding: 1px;
   line-height: 1.5; }
+
+@media (max-width: 767px) {
+  .feature-numbers {
+    padding-left: 33px;
+    padding-right: 35px; }
+  .feature-numbers__feature-number {
+    padding-top: 26px;
+    padding-bottom: 13px; }
+  .feature-numbers__feature-number:not(:last-child) {
+    border-bottom: 1px solid #d6d6d6; } }
 
 @media (min-width: 768px) {
   .features-list__feature-numbers {

@@ -5,7 +5,6 @@
 
 .feature-numbers__feature-number {
   margin: 0;
-  padding: 26px 35px 13px 33px;
 }
 
 .feature-number__heading {
@@ -37,6 +36,23 @@
   margin-left: auto;
   padding: 1px;
   line-height: 1.5;
+}
+
+@media (max-width: $mobile-width-only) {
+  .feature-numbers {
+
+    padding-left: 33px;
+    padding-right: 35px;
+  }
+
+  .feature-numbers__feature-number {
+    padding-top: 26px;
+    padding-bottom: 13px;
+  }
+
+  .feature-numbers__feature-number:not(:last-child) {
+    border-bottom: 1px solid #d6d6d6;
+  }
 }
 
 @media (min-width: $tablet-width) {
