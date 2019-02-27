@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="ru">
 
 <head>
@@ -31,7 +30,6 @@
         background-image: url("img/pixel-perfect/sedona-form-desktop.jpg");
       }
     }
-
     body {
       opacity: 0.5;
     }
@@ -76,13 +74,13 @@
         <p class="intro__content-text content-text content-text--form">Помогите нашим отелям стать лучше! Оставьте
           отзыв о них,<br class="text-break--tablet"> а также о посещенных вами достопримечательностях</p>
       </div>
-      <form class="form__review" method="post" enctype="multipart/form-data" action="https://js.dump.academy/keksobooking"
+      <form class="form__review" method="post" enctype="multipart/form-data" action="https://echo.htmlacademy.ru"
         autocomplete="off">
-        <fieldset class="review review__name name">
-          <legend class="review__heading name__heading">Представьтесь:</legend>
+        <div class="review review__name name">
+          <h3 class="review__heading name__heading">Представьтесь:</h3>
           <div class="name-wrapper name__row">
             <label for="firstName" class="review__label label label--name">Имя*:</label>
-            <input class="review__input" type="text" id="firstName" name="firstName" placeholder="Петр" minlength="2" maxlength="25" required> <!--required-->
+            <input class="review__input" type="text" id="firstName" name="firstName" placeholder="Петр" minlength="2" maxlength="25" > <!--required-->
           </div>
           <div class="name-wrapper name__row">
             <label for="secondName" class="review__label label label--name">Фамилия*:</label>
@@ -92,10 +90,10 @@
             <label for="fathersName" class="review__label label label--name">Отчество:</label>
             <input class="review__input" type="text" id="fathersName" name="fathersName" placeholder="Александрович" minlength="2" maxlength="25">
           </div>
-        </fieldset>
-        <fieldset class="review review__contact-info contact-info">
-          <legend class="review__heading review__heading--lines contact-info__heading">Контактная
-            информация:</legend>
+        </div>
+        <div class="review review__contact-info contact-info">
+          <h3 class="review__heading review__heading--lines contact-info__heading">Контактная
+            информация:</h3>
           <div class="contact-info-wrapper contact-info__row">
             <label for="phoneNumber" class="review__label label--phone"> <span class="contact-info__vh">Контактный
               </span>телефон*:</label>
@@ -106,19 +104,19 @@
             </div>
           </div>
           <div class="contact-info-wrapper contact-info__row">
-            <label for="emailAddress" class="review__label label--email">Электронная почта*:</label>   <!--required-->
+            <label for="emailAddress" class="review__label label--email">Электронная почта*:</label>
             <div class="mail-wrapper input-wrapper">
               <input class="review__input review__input-email" id="emailAddress" name="emailAddress" type="email"
-                placeholder="Введите e-mail" required>
+                placeholder="Введите e-mail">
               <i class="contact-info__icon icon mail-icon"></i>
             </div>
           </div>
-        </fieldset>
-        <fieldset class="review review__impression impression">
-          <legend class="review__heading impression__heading">Ваше общее впечатление:</legend>
+        </div>
+        <div class="review review__impression impression">
+          <h3 class="review__heading impression__heading">Ваше общее впечатление:</h3>
           <div class="impression__row">
             <input class="impression-input" type="radio" id="goodImpression" name="impression" value="goodImpression"
-              checked required><!--required-->
+              checked ><!--required-->
             <label for="goodImpression" class="review__label label--impression">Скорее положительное</label>
           </div>
           <div class="impression__row">
@@ -129,11 +127,11 @@
             <input class="impression-input" type="radio" id="uncertainImpression" name="impression" value="uncertainImpression">
             <label for="uncertainImpression" class="review__label label label--impression">Затрудняюсь ответить</label>
           </div>
-        </fieldset>
-        <fieldset class="review review__visitedPlaces visitedPlaces">
-          <legend class="review__heading review__heading--lines visitedPlaces__heading">Посещенные достопримечательности:</legend>
+        </div>
+        <div class="review review__visitedPlaces visitedPlaces">
+          <h3 class="review__heading review__heading--lines visitedPlaces__heading">Посещенные достопримечательности:</h3>
 
-          <input class="visitedPlaces__input" type="checkbox" id="devilsBridge" name="devilsBridge" checked required> <!--required-->
+          <input class="visitedPlaces__input" type="checkbox" id="devilsBridge" name="devilsBridge" checked > <!--required-->
           <label for="devilsBridge" class="review__label visitedPlaces__label">Мост Дъявола</label>
 
 
@@ -146,11 +144,11 @@
           <input class="visitedPlaces__input" type="checkbox" id="redRock" name="redRock">
           <label for="redRock" class="review__label visitedPlaces__label">Красные скалы</label>
 
-        </fieldset>
-        <fieldset class="review review__description description">
-          <legend class="review__heading review__heading--lines description__heading">Опишите свои эмоции:</legend>
-          <textarea class="review__input description__textarea" name="text" placeholder="Опишите подробно все свои восторги" ></textarea> <!--required-->
-        </fieldset>
+        </div>
+        <div class="review review__description description">
+          <h3 class="review__heading review__heading--lines description__heading">Опишите свои эмоции:</h3>
+          <textarea class="review__input description__textarea" rows="4" cols="30" name="text" placeholder="Опишите подробно все свои восторги" ></textarea> <!--required-->
+        </div>
         <div class="review rewiew__button-container">
           <button class="button review__button review__submit" type="submit" value="Отправить">Отправить&nbsp;отзыв</button>
           <p class="review__additional">* — обязательные поля</p>
@@ -196,22 +194,6 @@
       </footer>
     </main>
   </div>
-
-
-    <div id="success" class="template template__success">
-      <div class="message__container success">
-        <p class="success__message">Ваш отзыв отправлен!</p>
-      </div>
-    </div>
-
-
-    <div id="error" class="template template__error">
-      <div class="message__container error">
-        <p class="error">Ошибка загрузки отзыва</p>
-        <button class="message__button button" href="#">Попробовать снова</button>
-      </div>
-    </div>
-
   <script src="js/menu.min.js"></script>
   <script src="js/form.min.js"></script>
 </body>

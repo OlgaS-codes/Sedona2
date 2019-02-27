@@ -13,6 +13,8 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -343,6 +345,7 @@
 
 .rewiew__button-container {
   padding-top: 25px;
+  padding-bottom: 19px;
 }
 
 .review__button {
@@ -352,7 +355,7 @@
   padding: 16px 20px 16px 20px;
   text-transform: uppercase;
   font-size: 19px;
-  margin-bottom: 9px;
+
 }
 
 @media (min-width: $tablet-width) {
@@ -517,7 +520,7 @@
     justify-content: space-between;
     width: 100%;
     padding-top: 60px;
-    padding-bottom: 51px;
+    padding-bottom: 60px;
     order: 6;
   }
 
@@ -713,7 +716,7 @@
 
   .rewiew__button-container {
     padding-top: 61px;
-    padding-bottom: 59px;
+    padding-bottom: 69px;
   }
 
   .review__button {
