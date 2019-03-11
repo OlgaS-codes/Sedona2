@@ -71,12 +71,12 @@
 }
 
 #play-pause.play:active {
-  background-image: url("../img/sprite/play-button.svg");
+  background-image: url("../img/play-button.svg");
   opacity: 0.5;
 }
 
 #play-pause.pause:active {
-  background-image: url("../img/sprite/pause-button.svg");
+  background-image: url("../img/pause-button.svg");
   opacity: 0.5;
 }
 
@@ -187,11 +187,16 @@
 @media (min-width: $desktop-width) {
   .controls {
     top: 407px;
-    width: 800px;
+    width: 796px;
+    left: 2px;
   }
 
   .progress-container {
     min-height: 93px;
+  }
+
+  .down-buttons {
+    height: 93px;
   }
 
   #repeat {

@@ -33,7 +33,7 @@
     }
   }
 
-  /* функция, показывает текущее время просмотра видео и перематывает его*/
+  /* функция, показывает текущее время просмотра видео*/
   var showWatched = function () {
     var watchPostition = video.currentTime / video.duration;
     watched.style.width = watchPostition * 100 + "%";

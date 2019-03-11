@@ -16,13 +16,13 @@
   var toggleDisplayMenu = function (e) {
     e.preventDefault();
     if (toggle.classList.contains("open")) {
-      console.log("close menu!");
+      // console.log("close menu!");
       toggle.classList.remove("open");
       toggle.classList.add("close");
       menu.style.display = "none";
 
     } else {
-      console.log("show menu!");
+      // console.log("show menu!");
       toggle.classList.remove("close");
       toggle.classList.add("open");
       menu.style.display = "flex";
