@@ -35,42 +35,25 @@
 
   /* функция, показывает текущее время просмотра видео*/
   var showWatched = function () {
-    var watchPostition = video.currentTime / video.duration;
-    watched.style.width = watchPostition * 100 + "%";
-    watchedPoint.style.left = watchPostition * 100 + "%";
+    var watchPostition = video.duration * (progressBar.value / 100);
+    video.currentTime = watchPostition;
   }
 
 
-  watchedPoint.addEventListener('touchmove', function (event) {
+  /* функция, перемотки видео с помощью ползунка*/
+  var showWatchedUpdate = function () {
+    var newTime = video.currentTime * (100 / video.duration);
+    progressBar.value = newTime;
+  }
 
-    if (event.targetTouches.length == 1) {
-      var touch = event.targetTouches[0];
-
-      /*не работает на айпаде, скорее всего проблема в ограничителях */
-      if (LEFT_X > touch.pageX || touch.pageX > RIGHT_X) {
-        watchedPoint.style.left = -touch.pageX;
-      } else {
-        watchedPoint.style.left = touch.pageX + 'px';
-        // console.log(touch.pageX);
-        watched.style.width = touch.pageX * 100 / 227 + "%";
-        video.currentTime = (video.duration * parseInt(watched.style.width) / 100);
-
-
-      }
-
-    }
-
-  }, false);
-
-
-  /* обновить все */
+  /*функция обновить все */
   var refreshVideo = function () {
 
-    watched.style.width = "0%";
-    watchedPoint.style.left = "0%";
+    progressBar.value = "0";
     btnPlayPause.className = "play";
     video.currentTime = 0;
   }
+  
   /* показать полный экран */
   var fullscreenOnClick = function () {
     video.requestFullscreen();
@@ -78,7 +61,8 @@
 
 
   btnPlayPause.addEventListener("click", togglePlayPause);
-  video.addEventListener("timeupdate", showWatched);
+  video.addEventListener("timeupdate", showWatchedUpdate);
+  progressBar.addEventListener("change", showWatched)
   video.addEventListener("ended", refreshVideo);
   btnRepeat.addEventListener("click", refreshVideo);
   btnFullscreen.addEventListener("click", fullscreenOnClick);

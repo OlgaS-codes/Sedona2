@@ -185,14 +185,8 @@
           <div class="controls">
             <button id="play-pause" class="play"></button>
             <div class="progress-container">
-              <div class="progress-bar">
-                <!--полоса загрузки -->
-                <div class="watched-Line">
-                  <!--полоса уже просмотрено -->
-                  <div class="watched-indicator"></div>
-                  <!--кружочек где сейчас просмотр -->
-                </div>
-              </div>
+              <input type="range" class="progress-bar" min="0" max="100" step="1" value="0">
+              </input>
             </div>
             <div class="down-buttons">
               <button id="repeat"><svg width="16" height="20"><use xlink:href="#icon-video-replay"></use></svg></button>

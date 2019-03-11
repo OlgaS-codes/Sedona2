@@ -6,6 +6,7 @@
   display: flex;
   flex-direction: column;
   width: 280px;
+  // background-color: rgba(0, 0, 0, 0.6);
 }
 
 .progress-container {
@@ -15,36 +16,32 @@
 }
 
 .progress-bar {
+  -webkit-appearance: none;
   position: absolute;
   top: 21px;
   left: 22px;
-  height: 4px;
+  border-radius: 0;
   width: 84%;
+  height: 4px;
+  outline: none;
+  border: none;
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-.watched-Line {
-  top: 0;
-  left: 0;
-  height: 4px;
-  width: 8px; // сюда передавать данные
-  background-color: rgba(255, 255, 255, 0.8);
-}
-
-.watched-indicator {
-  position: absolute;
-  left: 0; // сюда передавать данные
-  top: -3px;
+.progress-bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
   width: 8px;
   height: 9px;
+  background: #D4D4D4;
+  border-radius: 18px;
+  cursor: pointer;
   background-color: white;
-  border-radius: 50%;
 }
 
 .down-buttons {
   width: 100%;
   height: 66px;
-  background-color: white;
+  background-color: #f2f2f2;
   fill: rgb(92, 104, 112);
 }
 
@@ -126,9 +123,10 @@
 
 @media (min-width: $tablet-width) {
   .controls {
-    top: 454px;
+    top: 364px;
     left: 0;
-    width: 648px;
+    width: 647px;
+    background-color: rgba(0, 0, 0, 0.6);
   }
 
   #play-pause {
@@ -140,6 +138,7 @@
     width: 100%;
     min-height: 94px;
     position: absolute;
+    background-color: transparent;
   }
 
   .progress-bar {
@@ -152,7 +151,7 @@
   .down-buttons {
     width: 100%;
     height: 90px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: transparent;
     fill: rgb(255, 255, 255);
   }
 
